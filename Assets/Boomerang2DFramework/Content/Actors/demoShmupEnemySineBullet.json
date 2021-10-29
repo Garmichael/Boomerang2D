@@ -1,0 +1,332 @@
+{
+    "Name": "demoShmupEnemySineBullet",
+    "IsPlayer": false,
+    "SpriteWidth": 6.0,
+    "SpriteHeight": 6.0,
+    "ObeysChunking": false,
+    "States": [
+        {
+            "Name": "Positive",
+            "Class": "Boomerang2DFramework.Framework.Actors.States.SineWave, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "PropertiesClass": "Boomerang2DFramework.Framework.Actors.States.SineWaveProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Properties": "{\"CanBeGrounded\":false,\"CollidesWithGeometry\":false,\"CollidesWithActors\":false,\"OverlapsGeometry\":false,\"OverlapsOtherActors\":true,\"OverlapsWeapons\":false,\"Amplitude\":{\"StartValue\":2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"Period\":{\"StartValue\":2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"Speed\":{\"StartValue\":6.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ForceFacingDirectionOnEntry\":true,\"FacingDirectionOnEntry\":2}",
+            "TransitionTriggers": [],
+            "RandomTransitionTriggers": [],
+            "ModificationTriggers": [],
+            "WeaponTriggers": [],
+            "Animations": [
+                {
+                    "Name": "animate",
+                    "BoundToGlobalTimeManager": false,
+                    "IndefinitelyLoops": true,
+                    "FixedLoopCount": 0,
+                    "FinalFrameAfterLoops": 0,
+                    "StartOnExistingSpriteFrame": false,
+                    "BoundToWeaponDuration": false,
+                    "WeaponBoundTo": "",
+                    "AnimationFrames": [
+                        {
+                            "SpriteFrame": 0,
+                            "Duration": 0.0,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [
+                                {
+                                    "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 4.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "Size": {
+                                        "x": 4.0,
+                                        "y": 4.0
+                                    },
+                                    "Offset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "RayCastUp": false,
+                                    "RayCountUp": 1,
+                                    "RayLengthUp": 5.0,
+                                    "RayInsetUp": 0.0,
+                                    "RayInsetFirstUp": 0.0,
+                                    "RayInsetLastUp": 0.0,
+                                    "RayCastRight": false,
+                                    "RayCountRight": 1,
+                                    "RayLengthRight": 5.0,
+                                    "RayInsetRight": 0.0,
+                                    "RayInsetFirstRight": 0.0,
+                                    "RayInsetLastRight": 0.0,
+                                    "RayCastDown": false,
+                                    "RayCountDown": 1,
+                                    "RayLengthDown": 5.0,
+                                    "RayInsetDown": 0.0,
+                                    "RayInsetFirstDown": 0.0,
+                                    "RayInsetLastDown": 0.0,
+                                    "RayCastLeft": false,
+                                    "RayCountLeft": 1,
+                                    "RayLengthLeft": 5.0,
+                                    "RayInsetLeft": 0.0,
+                                    "RayInsetFirstLeft": 0.0,
+                                    "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "enemyBullet"
+                                    ],
+                                    "Flags": [
+                                        "enemyBullet"
+                                    ]
+                                }
+                            ],
+                            "ParticleEffectProperties": []
+                        }
+                    ],
+                    "AnimationConditions": []
+                }
+            ],
+            "SoundEffects": [],
+            "EditorPosition": {
+                "x": 30.0,
+                "y": 30.0
+            },
+            "StateEntryActorEvents": []
+        },
+        {
+            "Name": "Negative",
+            "Class": "Boomerang2DFramework.Framework.Actors.States.SineWave, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "PropertiesClass": "Boomerang2DFramework.Framework.Actors.States.SineWaveProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Properties": "{\"CanBeGrounded\":false,\"CollidesWithGeometry\":false,\"CollidesWithActors\":false,\"OverlapsGeometry\":false,\"OverlapsOtherActors\":true,\"OverlapsWeapons\":false,\"Amplitude\":{\"StartValue\":-2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"Period\":{\"StartValue\":2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"Speed\":{\"StartValue\":6.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ForceFacingDirectionOnEntry\":true,\"FacingDirectionOnEntry\":2}",
+            "TransitionTriggers": [],
+            "RandomTransitionTriggers": [],
+            "ModificationTriggers": [],
+            "WeaponTriggers": [],
+            "Animations": [
+                {
+                    "Name": "animate",
+                    "BoundToGlobalTimeManager": false,
+                    "IndefinitelyLoops": true,
+                    "FixedLoopCount": 0,
+                    "FinalFrameAfterLoops": 0,
+                    "StartOnExistingSpriteFrame": false,
+                    "BoundToWeaponDuration": false,
+                    "WeaponBoundTo": "",
+                    "AnimationFrames": [
+                        {
+                            "SpriteFrame": 0,
+                            "Duration": 0.0,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [
+                                {
+                                    "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 4.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "Size": {
+                                        "x": 4.0,
+                                        "y": 4.0
+                                    },
+                                    "Offset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "RayCastUp": false,
+                                    "RayCountUp": 1,
+                                    "RayLengthUp": 5.0,
+                                    "RayInsetUp": 0.0,
+                                    "RayInsetFirstUp": 0.0,
+                                    "RayInsetLastUp": 0.0,
+                                    "RayCastRight": false,
+                                    "RayCountRight": 1,
+                                    "RayLengthRight": 5.0,
+                                    "RayInsetRight": 0.0,
+                                    "RayInsetFirstRight": 0.0,
+                                    "RayInsetLastRight": 0.0,
+                                    "RayCastDown": false,
+                                    "RayCountDown": 1,
+                                    "RayLengthDown": 5.0,
+                                    "RayInsetDown": 0.0,
+                                    "RayInsetFirstDown": 0.0,
+                                    "RayInsetLastDown": 0.0,
+                                    "RayCastLeft": false,
+                                    "RayCountLeft": 1,
+                                    "RayLengthLeft": 5.0,
+                                    "RayInsetLeft": 0.0,
+                                    "RayInsetFirstLeft": 0.0,
+                                    "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "enemyBullet"
+                                    ],
+                                    "Flags": [
+                                        "enemyBullet"
+                                    ]
+                                }
+                            ],
+                            "ParticleEffectProperties": []
+                        }
+                    ],
+                    "AnimationConditions": []
+                }
+            ],
+            "SoundEffects": [],
+            "EditorPosition": {
+                "x": 30.0,
+                "y": 110.0
+            },
+            "StateEntryActorEvents": []
+        },
+        {
+            "Name": "Neutral",
+            "Class": "Boomerang2DFramework.Framework.Actors.States.SineWave, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "PropertiesClass": "Boomerang2DFramework.Framework.Actors.States.SineWaveProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Properties": "{\"CanBeGrounded\":false,\"CollidesWithGeometry\":false,\"CollidesWithActors\":false,\"OverlapsGeometry\":false,\"OverlapsOtherActors\":true,\"OverlapsWeapons\":false,\"Amplitude\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"Period\":{\"StartValue\":2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"Speed\":{\"StartValue\":6.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ForceFacingDirectionOnEntry\":true,\"FacingDirectionOnEntry\":2}",
+            "TransitionTriggers": [],
+            "RandomTransitionTriggers": [],
+            "ModificationTriggers": [],
+            "WeaponTriggers": [],
+            "Animations": [
+                {
+                    "Name": "animate",
+                    "BoundToGlobalTimeManager": false,
+                    "IndefinitelyLoops": true,
+                    "FixedLoopCount": 0,
+                    "FinalFrameAfterLoops": 0,
+                    "StartOnExistingSpriteFrame": false,
+                    "BoundToWeaponDuration": false,
+                    "WeaponBoundTo": "",
+                    "AnimationFrames": [
+                        {
+                            "SpriteFrame": 0,
+                            "Duration": 0.0,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [
+                                {
+                                    "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 4.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "Size": {
+                                        "x": 2.0,
+                                        "y": 2.0
+                                    },
+                                    "Offset": {
+                                        "x": -1.0,
+                                        "y": 1.0
+                                    },
+                                    "RayCastUp": false,
+                                    "RayCountUp": 1,
+                                    "RayLengthUp": 5.0,
+                                    "RayInsetUp": 0.0,
+                                    "RayInsetFirstUp": 0.0,
+                                    "RayInsetLastUp": 0.0,
+                                    "RayCastRight": false,
+                                    "RayCountRight": 1,
+                                    "RayLengthRight": 5.0,
+                                    "RayInsetRight": 0.0,
+                                    "RayInsetFirstRight": 0.0,
+                                    "RayInsetLastRight": 0.0,
+                                    "RayCastDown": false,
+                                    "RayCountDown": 1,
+                                    "RayLengthDown": 5.0,
+                                    "RayInsetDown": 0.0,
+                                    "RayInsetFirstDown": 0.0,
+                                    "RayInsetLastDown": 0.0,
+                                    "RayCastLeft": false,
+                                    "RayCountLeft": 1,
+                                    "RayLengthLeft": 5.0,
+                                    "RayInsetLeft": 0.0,
+                                    "RayInsetFirstLeft": 0.0,
+                                    "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "enemyBullet"
+                                    ],
+                                    "Flags": [
+                                        "enemyBullet"
+                                    ]
+                                }
+                            ],
+                            "ParticleEffectProperties": []
+                        }
+                    ],
+                    "AnimationConditions": []
+                }
+            ],
+            "SoundEffects": [],
+            "EditorPosition": {
+                "x": 30.0,
+                "y": 190.0
+            },
+            "StateEntryActorEvents": []
+        }
+    ],
+    "Weapons": [],
+    "BoundingBoxes": [
+        {
+            "Enabled": true,
+            "DefaultSize": {
+                "x": 2.0,
+                "y": 2.0
+            },
+            "DefaultOffset": {
+                "x": -1.0,
+                "y": 1.0
+            },
+            "Size": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "Offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "RayCastUp": false,
+            "RayCountUp": 1,
+            "RayLengthUp": 5.0,
+            "RayInsetUp": 0.0,
+            "RayInsetFirstUp": 0.0,
+            "RayInsetLastUp": 0.0,
+            "RayCastRight": false,
+            "RayCountRight": 1,
+            "RayLengthRight": 5.0,
+            "RayInsetRight": 0.0,
+            "RayInsetFirstRight": 0.0,
+            "RayInsetLastRight": 0.0,
+            "RayCastDown": false,
+            "RayCountDown": 1,
+            "RayLengthDown": 5.0,
+            "RayInsetDown": 0.0,
+            "RayInsetFirstDown": 0.0,
+            "RayInsetLastDown": 0.0,
+            "RayCastLeft": false,
+            "RayCountLeft": 1,
+            "RayLengthLeft": 5.0,
+            "RayInsetLeft": 0.0,
+            "RayInsetFirstLeft": 0.0,
+            "RayInsetLastLeft": 0.0,
+            "DefaultFlags": [
+                "enemyBullet"
+            ],
+            "Flags": []
+        }
+    ],
+    "StatsFloats": [],
+    "StatsStrings": [],
+    "StatsBools": [],
+    "InteractionEvents": [],
+    "ChildrenActors": [],
+    "ParticleEffects": []
+}

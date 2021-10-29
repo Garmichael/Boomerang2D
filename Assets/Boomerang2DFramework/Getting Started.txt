@@ -1,0 +1,16 @@
+Welcome to Boomerang 2D!
+
+Start a fresh project with only this package in your Assets. 
+
+Then, follow the short guide under Tools => Boomerang2D => Getting Started 
+
+This Framework includes several editors and options that can be found under Tools => Boomerang2D.
+
+For More Help:
+
+Tutorial   Videos:   https://www.boomerang2d.com/Tutorials 
+join  our Discord:   https://discord.gg/UWXJhm4
+Email for support:   support@stormgardenstudio.com
+
+
+Thank you, and have fun!

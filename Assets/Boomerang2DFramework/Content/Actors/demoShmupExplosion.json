@@ -1,0 +1,133 @@
+{
+    "Name": "demoShmupExplosion",
+    "IsPlayer": false,
+    "SpriteWidth": 24.0,
+    "SpriteHeight": 24.0,
+    "ObeysChunking": false,
+    "States": [
+        {
+            "Name": "boom",
+            "Class": "Boomerang2DFramework.Framework.Actors.States.Idle, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "PropertiesClass": "Boomerang2DFramework.Framework.Actors.States.IdleProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Properties": "{\"CanBeGrounded\":true,\"CollidesWithGeometry\":true,\"CollidesWithActors\":true,\"OverlapsGeometry\":true,\"OverlapsOtherActors\":true,\"OverlapsWeapons\":true,\"Deceleration\":{\"StartValue\":1.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"GlueHeight\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}",
+            "TransitionTriggers": [],
+            "RandomTransitionTriggers": [],
+            "ModificationTriggers": [],
+            "WeaponTriggers": [],
+            "Animations": [
+                {
+                    "Name": "boom",
+                    "BoundToGlobalTimeManager": false,
+                    "IndefinitelyLoops": false,
+                    "FixedLoopCount": 1,
+                    "FinalFrameAfterLoops": 7,
+                    "StartOnExistingSpriteFrame": false,
+                    "BoundToWeaponDuration": false,
+                    "WeaponBoundTo": "",
+                    "AnimationFrames": [
+                        {
+                            "SpriteFrame": 0,
+                            "Duration": 0.05000000074505806,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 1,
+                            "Duration": 0.05000000074505806,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 2,
+                            "Duration": 0.05000000074505806,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 3,
+                            "Duration": 0.05000000074505806,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 4,
+                            "Duration": 0.05000000074505806,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 5,
+                            "Duration": 0.05000000074505806,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 6,
+                            "Duration": 0.05000000074505806,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 7,
+                            "Duration": 0.05000000074505806,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        }
+                    ],
+                    "AnimationConditions": []
+                }
+            ],
+            "SoundEffects": [],
+            "EditorPosition": {
+                "x": 70.0,
+                "y": 140.0
+            },
+            "StateEntryActorEvents": [
+                {
+                    "ActorTriggerBuilders": [],
+                    "ActorEventBuilders": [
+                        {
+                            "StartTime": 1.0,
+                            "AffectFilteredActors": false,
+                            "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.KillActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.KillActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "ActorEventProperties": "{}"
+                        },
+                        {
+                            "StartTime": 0.0,
+                            "AffectFilteredActors": false,
+                            "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.PlaySoundEffect, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.PlaySoundEffectProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "ActorEventProperties": "{\"SoundEffectName\":\"demoSfxBomb\"}"
+                        }
+                    ],
+                    "Triggers": []
+                }
+            ]
+        }
+    ],
+    "Weapons": [],
+    "BoundingBoxes": [],
+    "StatsFloats": [],
+    "StatsStrings": [],
+    "StatsBools": [],
+    "InteractionEvents": [],
+    "ChildrenActors": [],
+    "ParticleEffects": []
+}

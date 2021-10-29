@@ -1,0 +1,2848 @@
+fileFormatVersion: 2
+guid: ae344782ee7f3544ab52c4c6f98df753
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 204700009012639667
+    second: demoShmup8x8_0
+  - first:
+      213: -6669378588907817118
+    second: demoShmup8x8_1
+  - first:
+      213: 7012400049834288378
+    second: demoShmup8x8_2
+  - first:
+      213: -5166384478729468300
+    second: demoShmup8x8_3
+  - first:
+      213: -4246615855931908074
+    second: demoShmup8x8_4
+  - first:
+      213: -8410705247105398347
+    second: demoShmup8x8_5
+  - first:
+      213: 9136955675953313138
+    second: demoShmup8x8_6
+  - first:
+      213: -1615641471055128096
+    second: demoShmup8x8_7
+  - first:
+      213: 2831577020100283123
+    second: demoShmup8x8_8
+  - first:
+      213: 560612341516799397
+    second: demoShmup8x8_9
+  - first:
+      213: -1424379135035323119
+    second: demoShmup8x8_10
+  - first:
+      213: -6457192771225489783
+    second: demoShmup8x8_11
+  - first:
+      213: 4231558221597719637
+    second: demoShmup8x8_12
+  - first:
+      213: -1359466318332468676
+    second: demoShmup8x8_13
+  - first:
+      213: -4593573219983835793
+    second: demoShmup8x8_14
+  - first:
+      213: 6026691090874720216
+    second: demoShmup8x8_15
+  - first:
+      213: -3633645949722097813
+    second: demoShmup8x8_16
+  - first:
+      213: -1710849103625987028
+    second: demoShmup8x8_17
+  - first:
+      213: 8544689945442624869
+    second: demoShmup8x8_18
+  - first:
+      213: 6216954571295878652
+    second: demoShmup8x8_19
+  - first:
+      213: 6916694734888569207
+    second: demoShmup8x8_20
+  - first:
+      213: 1273839941759718216
+    second: demoShmup8x8_21
+  - first:
+      213: -5616449453467783779
+    second: demoShmup8x8_22
+  - first:
+      213: 5139225100662442359
+    second: demoShmup8x8_23
+  - first:
+      213: 8892658145319112304
+    second: demoShmup8x8_24
+  - first:
+      213: 2736340669167207805
+    second: demoShmup8x8_25
+  - first:
+      213: -1587863796634085266
+    second: demoShmup8x8_26
+  - first:
+      213: -9086149289947715803
+    second: demoShmup8x8_27
+  - first:
+      213: 7447440715300113894
+    second: demoShmup8x8_28
+  - first:
+      213: -7002294924019953535
+    second: demoShmup8x8_29
+  - first:
+      213: 4111458611607861060
+    second: demoShmup8x8_30
+  - first:
+      213: 6222666997716195882
+    second: demoShmup8x8_31
+  - first:
+      213: -5810997596390990205
+    second: demoShmup8x8_32
+  - first:
+      213: -2589801865601673186
+    second: demoShmup8x8_33
+  - first:
+      213: 3208830350784211285
+    second: demoShmup8x8_34
+  - first:
+      213: 5497406501977796933
+    second: demoShmup8x8_35
+  - first:
+      213: -226979388286011583
+    second: demoShmup8x8_36
+  - first:
+      213: -832441546112466123
+    second: demoShmup8x8_37
+  - first:
+      213: 1935854872877182954
+    second: demoShmup8x8_38
+  - first:
+      213: 6485857534178366651
+    second: demoShmup8x8_39
+  - first:
+      213: -6830940404650412
+    second: demoShmup8x8_40
+  - first:
+      213: -2550810887047830338
+    second: demoShmup8x8_41
+  - first:
+      213: 4369491941291476800
+    second: demoShmup8x8_42
+  - first:
+      213: -3119370260571494209
+    second: demoShmup8x8_43
+  - first:
+      213: 526224212109207624
+    second: demoShmup8x8_44
+  - first:
+      213: -7788721371063380570
+    second: demoShmup8x8_45
+  - first:
+      213: -8939219933437934139
+    second: demoShmup8x8_46
+  - first:
+      213: 1251978042577058887
+    second: demoShmup8x8_47
+  - first:
+      213: -327405225383870220
+    second: demoShmup8x8_48
+  - first:
+      213: 453880592408438082
+    second: demoShmup8x8_49
+  - first:
+      213: 8969463234078362171
+    second: demoShmup8x8_50
+  - first:
+      213: 7312950959365171331
+    second: demoShmup8x8_51
+  - first:
+      213: -7251320393761454881
+    second: demoShmup8x8_52
+  - first:
+      213: 6106866174533230694
+    second: demoShmup8x8_53
+  - first:
+      213: 2962300513517296154
+    second: demoShmup8x8_54
+  - first:
+      213: 1066501390461008511
+    second: demoShmup8x8_55
+  - first:
+      213: -585717391571465293
+    second: demoShmup8x8_56
+  - first:
+      213: 7429161595655590837
+    second: demoShmup8x8_57
+  - first:
+      213: -8033382616006815912
+    second: demoShmup8x8_58
+  - first:
+      213: 5404728669398188595
+    second: demoShmup8x8_59
+  - first:
+      213: -9119466041358276697
+    second: demoShmup8x8_60
+  - first:
+      213: 7844687041134887789
+    second: demoShmup8x8_61
+  - first:
+      213: 7931013898505738666
+    second: demoShmup8x8_62
+  - first:
+      213: -2660637131233754247
+    second: demoShmup8x8_63
+  - first:
+      213: 4616348674533468528
+    second: demoShmup8x8_64
+  - first:
+      213: 5616656859196983180
+    second: demoShmup8x8_65
+  - first:
+      213: -5989065609825983264
+    second: demoShmup8x8_66
+  - first:
+      213: -5985845750224091489
+    second: demoShmup8x8_67
+  - first:
+      213: -7324893894440528678
+    second: demoShmup8x8_68
+  - first:
+      213: 7081083384664363563
+    second: demoShmup8x8_69
+  - first:
+      213: 8480684719530180067
+    second: demoShmup8x8_70
+  - first:
+      213: 6057015503488998325
+    second: demoShmup8x8_71
+  - first:
+      213: 3246704909670462811
+    second: demoShmup8x8_72
+  - first:
+      213: -2076796053445839661
+    second: demoShmup8x8_73
+  - first:
+      213: -1766308430877171798
+    second: demoShmup8x8_74
+  - first:
+      213: 1947222098808396561
+    second: demoShmup8x8_75
+  - first:
+      213: 1430616184658195262
+    second: demoShmup8x8_76
+  - first:
+      213: -7626810723551378697
+    second: demoShmup8x8_77
+  - first:
+      213: 8060205177391889927
+    second: demoShmup8x8_78
+  - first:
+      213: 7963398311808295756
+    second: demoShmup8x8_79
+  - first:
+      213: -4257272860951759254
+    second: demoShmup8x8_80
+  - first:
+      213: -3738635218703444080
+    second: demoShmup8x8_81
+  - first:
+      213: 2144120614479658230
+    second: demoShmup8x8_82
+  - first:
+      213: 4180931161126558681
+    second: demoShmup8x8_83
+  - first:
+      213: -7337931035249804685
+    second: demoShmup8x8_84
+  - first:
+      213: -4421024606678945293
+    second: demoShmup8x8_85
+  - first:
+      213: 3492442824111197152
+    second: demoShmup8x8_86
+  - first:
+      213: 2168133006913305357
+    second: demoShmup8x8_87
+  - first:
+      213: -5707626944038230581
+    second: demoShmup8x8_88
+  - first:
+      213: 7950203228843998599
+    second: demoShmup8x8_89
+  - first:
+      213: -4890779916919647030
+    second: demoShmup8x8_90
+  - first:
+      213: 1323120802634293113
+    second: demoShmup8x8_91
+  - first:
+      213: 8091303583880528446
+    second: demoShmup8x8_92
+  - first:
+      213: -5220715556443377694
+    second: demoShmup8x8_93
+  - first:
+      213: 6615118135378767225
+    second: demoShmup8x8_94
+  - first:
+      213: 5552181451373801468
+    second: demoShmup8x8_95
+  - first:
+      213: 478922341833799034
+    second: demoShmup8x8_96
+  - first:
+      213: -1253218024019112108
+    second: demoShmup8x8_97
+  - first:
+      213: 662413504959910436
+    second: demoShmup8x8_98
+  - first:
+      213: 3722643602982417328
+    second: demoShmup8x8_99
+  - first:
+      213: 6083857228567351016
+    second: demoShmup8x8_100
+  - first:
+      213: -3490012350176223443
+    second: demoShmup8x8_101
+  - first:
+      213: -3132253817979289716
+    second: demoShmup8x8_102
+  - first:
+      213: -7185686208769039415
+    second: demoShmup8x8_103
+  - first:
+      213: 1029271269427594103
+    second: demoShmup8x8_104
+  - first:
+      213: -8372962972801066613
+    second: demoShmup8x8_105
+  - first:
+      213: -2071566514087123941
+    second: demoShmup8x8_106
+  - first:
+      213: 4609716404568057503
+    second: demoShmup8x8_107
+  - first:
+      213: -6160088243639154442
+    second: demoShmup8x8_108
+  - first:
+      213: 1118962899239683827
+    second: demoShmup8x8_109
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: demoShmup8x8_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7b7bad29d37d200800000000000000
+      internalID: 204700009012639667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267bd8f528b9173a0800000000000000
+      internalID: -6669378588907817118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4ed4921bc015160800000000000000
+      internalID: 7012400049834288378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_3
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4760d3470b05d48b0800000000000000
+      internalID: -5166384478729468300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61023a9e06df015c0800000000000000
+      internalID: -4246615855931908074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9c4cbb32c274b80800000000000000
+      internalID: -8410705247105398347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 275bfa117ccfcce70800000000000000
+      internalID: 9136955675953313138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e99e5164a61499e0800000000000000
+      internalID: -1615641471055128096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa8c352c48cb4720800000000000000
+      internalID: 2831577020100283123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad0fc054f1b7c700800000000000000
+      internalID: 560612341516799397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11dcdbe29b69b3ce0800000000000000
+      internalID: -1424379135035323119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_11
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e62e0e2617366a0800000000000000
+      internalID: -6457192771225489783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c37b468c389ba30800000000000000
+      internalID: 4231558221597719637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c326fa31694322de0800000000000000
+      internalID: -1359466318332468676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6dbd158e795040c0800000000000000
+      internalID: -4593573219983835793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df599acd9b13a350800000000000000
+      internalID: 6026691090874720216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b670747b242b29dc0800000000000000
+      internalID: -3633645949722097813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_17
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2cd3120ec7d148e0800000000000000
+      internalID: -1710849103625987028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565a5f1db36d49670800000000000000
+      internalID: 8544689945442624869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfde4d66e3f074650800000000000000
+      internalID: 6216954571295878652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77909d417390dff50800000000000000
+      internalID: 6916694734888569207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843da4d8da69da110800000000000000
+      internalID: 1273839941759718216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_22
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9dad13bafc5e02b0800000000000000
+      internalID: -5616449453467783779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_23
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77981c11002325740800000000000000
+      internalID: 5139225100662442359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ecab4c771196b70800000000000000
+      internalID: 8892658145319112304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_25
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d758a22475f69f520800000000000000
+      internalID: 2736340669167207805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_26
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e681ce13a46c6f9e0800000000000000
+      internalID: -1587863796634085266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_27
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527af7c7c5387e180800000000000000
+      internalID: -9086149289947715803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed8e315fdf9a5760800000000000000
+      internalID: 7447440715300113894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_29
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 64
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1801549cdd9d2de90800000000000000
+      internalID: -7002294924019953535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4477b95e2d5de0930800000000000000
+      internalID: 4111458611607861060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_31
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a9b625aaa5b5650800000000000000
+      internalID: 6222666997716195882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_32
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e577c59703b5fa0800000000000000
+      internalID: -5810997596390990205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_33
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e181b22bcec2f0cd0800000000000000
+      internalID: -2589801865601673186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5592cf2f33e088c20800000000000000
+      internalID: 3208830350784211285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_35
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5413f484616ba4c40800000000000000
+      internalID: 5497406501977796933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_36
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14770ede27b99dcf0800000000000000
+      internalID: -226979388286011583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_37
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53380b303d29274f0800000000000000
+      internalID: -832441546112466123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aefad8210c98dda10800000000000000
+      internalID: 1935854872877182954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_39
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb41e745015620a50800000000000000
+      internalID: 6485857534178366651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ee2bfbb4bb7eff0800000000000000
+      internalID: -6830940404650412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_41
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4a0545303b99cd0800000000000000
+      internalID: -2550810887047830338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_42
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0474c9125cd83ac30800000000000000
+      internalID: 4369491941291476800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_43
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8e7bf6645c5b4d0800000000000000
+      internalID: -3119370260571494209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848aaf202268d4700800000000000000
+      internalID: 526224212109207624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_45
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5164fed27e8e390800000000000000
+      internalID: -7788721371063380570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_46
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5475225d281f380800000000000000
+      internalID: -8939219933437934139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_47
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74cf46e756bef5110800000000000000
+      internalID: 1251978042577058887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f04363aea2d47bf0800000000000000
+      internalID: -327405225383870220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_49
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 48
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 245e2f87ef18c4600800000000000000
+      internalID: 453880592408438082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3aca250a4fe97c70800000000000000
+      internalID: 8969463234078362171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_51
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38820d0e622dc7560800000000000000
+      internalID: 7312950959365171331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_52
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd48d4165822e5b90800000000000000
+      internalID: -7251320393761454881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_53
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660e6ef1e62ffb450800000000000000
+      internalID: 6106866174533230694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_54
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ad7224f943c1920800000000000000
+      internalID: 2962300513517296154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_55
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a73e23d59fcce00800000000000000
+      internalID: 1066501390461008511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_56
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb4d98b22d1fd7f0800000000000000
+      internalID: -585717391571465293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_57
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b396002c1fa91760800000000000000
+      internalID: 7429161595655590837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f8d1cc211b38090800000000000000
+      internalID: -8033382616006815912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_59
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33249ded614710b40800000000000000
+      internalID: 5404728669398188595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a72a9fc3f5217180800000000000000
+      internalID: -9119466041358276697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_61
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6384fc0d4deddc60800000000000000
+      internalID: 7844687041134887789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_62
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9de11de1f901e60800000000000000
+      internalID: 7931013898505738666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_63
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973099430a4831bd0800000000000000
+      internalID: -2660637131233754247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_64
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079a9e839a0901040800000000000000
+      internalID: 4616348674533468528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_65
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8782b5b7af52fd40800000000000000
+      internalID: 5616656859196983180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_66
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e460dd2f8092eca0800000000000000
+      internalID: -5989065609825983264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_67
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f968c9921010eeca0800000000000000
+      internalID: -5985845750224091489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_68
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4d17cdfcfb85a90800000000000000
+      internalID: -7324893894440528678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_69
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2217d732df054260800000000000000
+      internalID: 7081083384664363563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3edfdafd1d171b570800000000000000
+      internalID: 8480684719530180067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_71
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbde7c4287de0450800000000000000
+      internalID: 6057015503488998325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_72
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55bc6fd9ec9e0d20800000000000000
+      internalID: 3246704909670462811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_73
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d47d632efcbd23e0800000000000000
+      internalID: -2076796053445839661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_74
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aafd9c527dfcc77e0800000000000000
+      internalID: -1766308430877171798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_75
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11bd34a9e2ce50b10800000000000000
+      internalID: 1947222098808396561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_76
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33f97817d19ad310800000000000000
+      internalID: 1430616184658195262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_77
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f284953e00282690800000000000000
+      internalID: -7626810723551378697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_78
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e353f67e99bdf60800000000000000
+      internalID: 8060205177391889927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_79
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43674c929ca38e60800000000000000
+      internalID: 7963398311808295756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a663f0393e02be4c0800000000000000
+      internalID: -4257272860951759254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_81
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0979a64a313bd1cc0800000000000000
+      internalID: -3738635218703444080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_82
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcf6adb65271cd10800000000000000
+      internalID: 2144120614479658230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_83
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db5f415db6a50a30800000000000000
+      internalID: 4180931161126558681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_84
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37afe99f99e6a2a90800000000000000
+      internalID: -7337931035249804685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_85
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1f3a73b8d55a2c0800000000000000
+      internalID: -4421024606678945293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_86
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb8289ae36a77030800000000000000
+      internalID: 3492442824111197152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_87
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0bfdd68b71c61e10800000000000000
+      internalID: 2168133006913305357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_88
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc52722e88f6ac0b0800000000000000
+      internalID: -5707626944038230581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_89
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78df863f6bbc45e60800000000000000
+      internalID: 7950203228843998599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4d369f395702cb0800000000000000
+      internalID: -4890779916919647030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_91
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97f52fb1c5bac5210800000000000000
+      internalID: 1323120802634293113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_92
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e324b0f6db51a4070800000000000000
+      internalID: 8091303583880528446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_93
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef26d8acda4c87b0800000000000000
+      internalID: -5220715556443377694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_94
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97dee7e45ee9dcb50800000000000000
+      internalID: 6615118135378767225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_95
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffe5a10d9f4d0d40800000000000000
+      internalID: 5552181451373801468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_96
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75700c155975a600800000000000000
+      internalID: 478922341833799034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_97
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f4934d8dcab9ee0800000000000000
+      internalID: -1253218024019112108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_98
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4229e89b29d513900800000000000000
+      internalID: 662413504959910436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_99
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b3b52d22ac79a330800000000000000
+      internalID: 3722643602982417328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee03fc6ae33e6450800000000000000
+      internalID: 6083857228567351016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_101
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f1506224cf09fc0800000000000000
+      internalID: -3490012350176223443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_102
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8fbbf87fbff784d0800000000000000
+      internalID: -3132253817979289716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_103
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3e5eae670574c90800000000000000
+      internalID: -7185686208769039415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_104
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7734fb724c4b84e00800000000000000
+      internalID: 1029271269427594103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_105
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8991b0c9824dcb80800000000000000
+      internalID: -8372962972801066613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_106
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b142e372b315043e0800000000000000
+      internalID: -2071566514087123941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_107
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96e19985a009ff30800000000000000
+      internalID: 4609716404568057503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_108
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f804d44168f28aa0800000000000000
+      internalID: -6160088243639154442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demoShmup8x8_109
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6c50e04da578f00800000000000000
+      internalID: 1118962899239683827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      demoShmup8x8_36: -226979388286011583
+      demoShmup8x8_4: -4246615855931908074
+      demoShmup8x8_11: -6457192771225489783
+      demoShmup8x8_17: -1710849103625987028
+      demoShmup8x8_18: 8544689945442624869
+      demoShmup8x8_48: -327405225383870220
+      demoShmup8x8_42: 4369491941291476800
+      demoShmup8x8_96: 478922341833799034
+      demoShmup8x8_94: 6615118135378767225
+      demoShmup8x8_12: 4231558221597719637
+      demoShmup8x8_32: -5810997596390990205
+      demoShmup8x8_89: 7950203228843998599
+      demoShmup8x8_21: 1273839941759718216
+      demoShmup8x8_43: -3119370260571494209
+      demoShmup8x8_84: -7337931035249804685
+      demoShmup8x8_9: 560612341516799397
+      demoShmup8x8_7: -1615641471055128096
+      demoShmup8x8_56: -585717391571465293
+      demoShmup8x8_41: -2550810887047830338
+      demoShmup8x8_39: 6485857534178366651
+      demoShmup8x8_83: 4180931161126558681
+      demoShmup8x8_79: 7963398311808295756
+      demoShmup8x8_37: -832441546112466123
+      demoShmup8x8_68: -7324893894440528678
+      demoShmup8x8_63: -2660637131233754247
+      demoShmup8x8_70: 8480684719530180067
+      demoShmup8x8_88: -5707626944038230581
+      demoShmup8x8_72: 3246704909670462811
+      demoShmup8x8_13: -1359466318332468676
+      demoShmup8x8_98: 662413504959910436
+      demoShmup8x8_102: -3132253817979289716
+      demoShmup8x8_55: 1066501390461008511
+      demoShmup8x8_40: -6830940404650412
+      demoShmup8x8_57: 7429161595655590837
+      demoShmup8x8_20: 6916694734888569207
+      demoShmup8x8_30: 4111458611607861060
+      demoShmup8x8_33: -2589801865601673186
+      demoShmup8x8_104: 1029271269427594103
+      demoShmup8x8_49: 453880592408438082
+      demoShmup8x8_27: -9086149289947715803
+      demoShmup8x8_53: 6106866174533230694
+      demoShmup8x8_100: 6083857228567351016
+      demoShmup8x8_71: 6057015503488998325
+      demoShmup8x8_107: 4609716404568057503
+      demoShmup8x8_61: 7844687041134887789
+      demoShmup8x8_45: -7788721371063380570
+      demoShmup8x8_5: -8410705247105398347
+      demoShmup8x8_60: -9119466041358276697
+      demoShmup8x8_109: 1118962899239683827
+      demoShmup8x8_0: 204700009012639667
+      demoShmup8x8_108: -6160088243639154442
+      demoShmup8x8_86: 3492442824111197152
+      demoShmup8x8_50: 8969463234078362171
+      demoShmup8x8_2: 7012400049834288378
+      demoShmup8x8_52: -7251320393761454881
+      demoShmup8x8_65: 5616656859196983180
+      demoShmup8x8_77: -7626810723551378697
+      demoShmup8x8_22: -5616449453467783779
+      demoShmup8x8_97: -1253218024019112108
+      demoShmup8x8_69: 7081083384664363563
+      demoShmup8x8_73: -2076796053445839661
+      demoShmup8x8_16: -3633645949722097813
+      demoShmup8x8_31: 6222666997716195882
+      demoShmup8x8_99: 3722643602982417328
+      demoShmup8x8_103: -7185686208769039415
+      demoShmup8x8_90: -4890779916919647030
+      demoShmup8x8_66: -5989065609825983264
+      demoShmup8x8_24: 8892658145319112304
+      demoShmup8x8_74: -1766308430877171798
+      demoShmup8x8_38: 1935854872877182954
+      demoShmup8x8_85: -4421024606678945293
+      demoShmup8x8_92: 8091303583880528446
+      demoShmup8x8_106: -2071566514087123941
+      demoShmup8x8_82: 2144120614479658230
+      demoShmup8x8_35: 5497406501977796933
+      demoShmup8x8_51: 7312950959365171331
+      demoShmup8x8_25: 2736340669167207805
+      demoShmup8x8_59: 5404728669398188595
+      demoShmup8x8_95: 5552181451373801468
+      demoShmup8x8_15: 6026691090874720216
+      demoShmup8x8_75: 1947222098808396561
+      demoShmup8x8_80: -4257272860951759254
+      demoShmup8x8_8: 2831577020100283123
+      demoShmup8x8_54: 2962300513517296154
+      demoShmup8x8_81: -3738635218703444080
+      demoShmup8x8_76: 1430616184658195262
+      demoShmup8x8_46: -8939219933437934139
+      demoShmup8x8_6: 9136955675953313138
+      demoShmup8x8_67: -5985845750224091489
+      demoShmup8x8_26: -1587863796634085266
+      demoShmup8x8_34: 3208830350784211285
+      demoShmup8x8_1: -6669378588907817118
+      demoShmup8x8_78: 8060205177391889927
+      demoShmup8x8_93: -5220715556443377694
+      demoShmup8x8_14: -4593573219983835793
+      demoShmup8x8_28: 7447440715300113894
+      demoShmup8x8_87: 2168133006913305357
+      demoShmup8x8_105: -8372962972801066613
+      demoShmup8x8_19: 6216954571295878652
+      demoShmup8x8_29: -7002294924019953535
+      demoShmup8x8_62: 7931013898505738666
+      demoShmup8x8_44: 526224212109207624
+      demoShmup8x8_58: -8033382616006815912
+      demoShmup8x8_3: -5166384478729468300
+      demoShmup8x8_64: 4616348674533468528
+      demoShmup8x8_101: -3490012350176223443
+      demoShmup8x8_23: 5139225100662442359
+      demoShmup8x8_10: -1424379135035323119
+      demoShmup8x8_47: 1251978042577058887
+      demoShmup8x8_91: 1323120802634293113
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

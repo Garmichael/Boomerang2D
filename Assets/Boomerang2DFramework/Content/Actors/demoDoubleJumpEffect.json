@@ -1,0 +1,86 @@
+{
+    "Name": "demoDoubleJumpEffect",
+    "IsPlayer": false,
+    "SpriteWidth": 16.0,
+    "SpriteHeight": 16.0,
+    "ObeysChunking": false,
+    "States": [
+        {
+            "Name": "idle",
+            "Class": "Boomerang2DFramework.Framework.Actors.States.Idle, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "PropertiesClass": "Boomerang2DFramework.Framework.Actors.States.IdleProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Properties": "{\"CanBeGrounded\":false,\"CollidesWithGeometry\":false,\"CollidesWithActors\":false,\"OverlapsGeometry\":false,\"OverlapsOtherActors\":false,\"OverlapsWeapons\":false,\"Deceleration\":{\"StartValue\":1000.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"GlueHeight\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}",
+            "TransitionTriggers": [],
+            "RandomTransitionTriggers": [],
+            "ModificationTriggers": [],
+            "WeaponTriggers": [],
+            "Animations": [
+                {
+                    "Name": "idle",
+                    "BoundToGlobalTimeManager": false,
+                    "IndefinitelyLoops": true,
+                    "FixedLoopCount": 0,
+                    "FinalFrameAfterLoops": 0,
+                    "StartOnExistingSpriteFrame": false,
+                    "BoundToWeaponDuration": false,
+                    "WeaponBoundTo": "",
+                    "AnimationFrames": [
+                        {
+                            "SpriteFrame": 0,
+                            "Duration": 0.05000000074505806,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 1,
+                            "Duration": 0.05000000074505806,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 2,
+                            "Duration": 0.05000000074505806,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        }
+                    ],
+                    "AnimationConditions": []
+                }
+            ],
+            "SoundEffects": [],
+            "EditorPosition": {
+                "x": 40.0,
+                "y": 40.0
+            },
+            "StateEntryActorEvents": [
+                {
+                    "ActorTriggerBuilders": [],
+                    "ActorEventBuilders": [
+                        {
+                            "StartTime": 0.15000000596046449,
+                            "AffectFilteredActors": false,
+                            "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.KillActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.KillActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "ActorEventProperties": "{}"
+                        }
+                    ],
+                    "Triggers": []
+                }
+            ]
+        }
+    ],
+    "Weapons": [],
+    "BoundingBoxes": [],
+    "StatsFloats": [],
+    "StatsStrings": [],
+    "StatsBools": [],
+    "InteractionEvents": [],
+    "ChildrenActors": [],
+    "ParticleEffects": []
+}

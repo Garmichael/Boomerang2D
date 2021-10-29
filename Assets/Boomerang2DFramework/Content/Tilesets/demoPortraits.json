@@ -1,0 +1,168 @@
+{
+    "Name": "demoPortraits",
+    "TileSize": 32,
+    "EditorTilePerRow": 10,
+    "Tiles": [
+        {
+            "Slot": 1,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                0
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 2,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                1
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 3,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                2
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 4,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                3
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 5,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                4
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 6,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                5
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        }
+    ],
+    "Stamps": [
+        {
+            "Name": "NPC1 (Jackson)",
+            "Width": 1,
+            "Height": 1,
+            "RepeatableRows": [],
+            "RepeatableColumns": [],
+            "TileRows": [
+                "1"
+            ]
+        },
+        {
+            "Name": "NPC2 (Claire)",
+            "Width": 1,
+            "Height": 1,
+            "RepeatableRows": [],
+            "RepeatableColumns": [],
+            "TileRows": [
+                "2"
+            ]
+        }
+    ],
+    "Brushes": []
+}

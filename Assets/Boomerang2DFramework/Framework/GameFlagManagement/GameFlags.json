@@ -1,0 +1,47 @@
+{
+    "FloatFlags": [
+        {
+            "Key": "PlayerHp",
+            "Value": 10.0
+        },
+        {
+            "Key": "OverworldPositionX",
+            "Value": 6.125
+        },
+        {
+            "Key": "OverworldPositionY",
+            "Value": 25.25
+        }
+    ],
+    "StringFlags": [],
+    "BoolFlags": [
+        {
+            "Key": "FirstTimePlaying",
+            "Value": true
+        },
+        {
+            "Key": "canPunch",
+            "Value": false
+        },
+        {
+            "Key": "canWallGrab",
+            "Value": false
+        },
+        {
+            "Key": "canWallClimb",
+            "Value": false
+        },
+        {
+            "Key": "canDoubleJump",
+            "Value": false
+        },
+        {
+            "Key": "canThrowBombs",
+            "Value": false
+        },
+        {
+            "Key": "shmupBossDead",
+            "Value": false
+        }
+    ]
+}

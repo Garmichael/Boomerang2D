@@ -1,0 +1,672 @@
+{
+    "Name": "demoShmupEnemySpawner",
+    "IsPlayer": false,
+    "SpriteWidth": 48.0,
+    "SpriteHeight": 16.0,
+    "ObeysChunking": false,
+    "States": [
+        {
+            "Name": "idle",
+            "Class": "Boomerang2DFramework.Framework.Actors.States.Idle, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "PropertiesClass": "Boomerang2DFramework.Framework.Actors.States.IdleProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Properties": "{\"CanBeGrounded\":true,\"CollidesWithGeometry\":true,\"CollidesWithActors\":true,\"OverlapsGeometry\":true,\"OverlapsOtherActors\":true,\"OverlapsWeapons\":true,\"Deceleration\":{\"StartValue\":1.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"GlueHeight\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}",
+            "TransitionTriggers": [],
+            "RandomTransitionTriggers": [],
+            "ModificationTriggers": [],
+            "WeaponTriggers": [],
+            "Animations": [
+                {
+                    "Name": "idle",
+                    "BoundToGlobalTimeManager": false,
+                    "IndefinitelyLoops": true,
+                    "FixedLoopCount": 0,
+                    "FinalFrameAfterLoops": 0,
+                    "StartOnExistingSpriteFrame": false,
+                    "BoundToWeaponDuration": false,
+                    "WeaponBoundTo": "",
+                    "AnimationFrames": [
+                        {
+                            "SpriteFrame": 0,
+                            "Duration": 0.0,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        }
+                    ],
+                    "AnimationConditions": []
+                }
+            ],
+            "SoundEffects": [],
+            "EditorPosition": {
+                "x": 30.0,
+                "y": 40.0
+            },
+            "StateEntryActorEvents": []
+        }
+    ],
+    "Weapons": [],
+    "BoundingBoxes": [],
+    "StatsFloats": [],
+    "StatsStrings": [],
+    "StatsBools": [],
+    "InteractionEvents": [
+        {
+            "Name": "Disable All",
+            "HasExecuted": false,
+            "Enabled": true,
+            "ActorFinderFilterBuilders": [],
+            "FoundActorsComparison": 0,
+            "FoundActorsCount": 0,
+            "ActorTriggerBuilders": [],
+            "ActorEventBuilders": [
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"DisableEventId\":5}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"DisableEventId\":4}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"DisableEventId\":3}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"DisableEventId\":2}"
+                },
+                {
+                    "StartTime": 2.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.EnableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.EnableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"EnableEventId\":2}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"DisableEventId\":1}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"DisableEventId\":7}"
+                }
+            ],
+            "Triggers": []
+        },
+        {
+            "Name": "Spawn First Wave",
+            "HasExecuted": false,
+            "Enabled": true,
+            "ActorFinderFilterBuilders": [],
+            "FoundActorsComparison": 0,
+            "FoundActorsCount": 0,
+            "ActorTriggerBuilders": [],
+            "ActorEventBuilders": [
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"DisableEventId\":2}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 0.20000000298023225,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 0.20000000298023225,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 0.4000000059604645,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-4.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 0.4000000059604645,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":4.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 1.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 1.2000000476837159,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 1.2000000476837159,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 1.399999976158142,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-4.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 1.399999976158142,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":4.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.4000000953674318,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.5999999046325685,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.799999952316284,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.799999952316284,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-0.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 3.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":1.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 3.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-1.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 3.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 3.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 3.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-3.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 3.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":3.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 3.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":4.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 3.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-4.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 4.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.EnableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.EnableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"EnableEventId\":3}"
+                }
+            ],
+            "Triggers": []
+        },
+        {
+            "Name": "Spawn Second Wave",
+            "HasExecuted": false,
+            "Enabled": true,
+            "ActorFinderFilterBuilders": [],
+            "FoundActorsComparison": 0,
+            "FoundActorsCount": 0,
+            "ActorTriggerBuilders": [],
+            "ActorEventBuilders": [
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"DisableEventId\":3}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupStrider\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":5.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":1}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupStrider\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-5.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":1}"
+                },
+                {
+                    "StartTime": 1.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":1}"
+                },
+                {
+                    "StartTime": 1.2000000476837159,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-1.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":1}"
+                },
+                {
+                    "StartTime": 1.2000000476837159,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":1.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":1}"
+                },
+                {
+                    "StartTime": 2.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-5.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":1}"
+                },
+                {
+                    "StartTime": 2.200000047683716,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-6.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":1}"
+                },
+                {
+                    "StartTime": 2.200000047683716,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-4.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":1}"
+                },
+                {
+                    "StartTime": 2.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":5.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":1}"
+                },
+                {
+                    "StartTime": 2.200000047683716,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":6.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":1}"
+                },
+                {
+                    "StartTime": 2.200000047683716,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":4.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":1}"
+                },
+                {
+                    "StartTime": 3.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupStrider\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":5.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":1}"
+                },
+                {
+                    "StartTime": 3.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupStrider\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-5.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":1}"
+                },
+                {
+                    "StartTime": 4.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-8.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 4.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":8.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 4.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 5.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.EnableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.EnableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"EnableEventId\":4}"
+                }
+            ],
+            "Triggers": []
+        },
+        {
+            "Name": "Spawn Third Wave",
+            "HasExecuted": false,
+            "Enabled": true,
+            "ActorFinderFilterBuilders": [],
+            "FoundActorsComparison": 0,
+            "FoundActorsCount": 0,
+            "ActorTriggerBuilders": [],
+            "ActorEventBuilders": [
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"DisableEventId\":4}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupSiner\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":false,\"StateToStartIn\":\"positive\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupSiner\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":false,\"StateToStartIn\":\"negative\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupSiner\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":false,\"StateToStartIn\":\"positive\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupSiner\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":false,\"StateToStartIn\":\"negative\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 1.5,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupStrider\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":false,\"StateToStartIn\":\"negative\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 1.5,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupStrider\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":false,\"StateToStartIn\":\"negative\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.200000047683716,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":false,\"StateToStartIn\":\"negative\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.200000047683716,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-1.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":false,\"StateToStartIn\":\"negative\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.200000047683716,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":false,\"StateToStartIn\":\"negative\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.200000047683716,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":-3.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":false,\"StateToStartIn\":\"negative\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.200000047683716,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":1.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":false,\"StateToStartIn\":\"negative\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.200000047683716,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":2.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":false,\"StateToStartIn\":\"negative\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 2.200000047683716,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":3.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":false,\"StateToStartIn\":\"negative\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 8.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.EnableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.EnableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"EnableEventId\":5}"
+                }
+            ],
+            "Triggers": []
+        },
+        {
+            "Name": "Spawn Boss",
+            "HasExecuted": false,
+            "Enabled": true,
+            "ActorFinderFilterBuilders": [],
+            "FoundActorsComparison": 0,
+            "FoundActorsCount": 0,
+            "ActorTriggerBuilders": [],
+            "ActorEventBuilders": [
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"DisableEventId\":5}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupBoss\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":1.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.EnableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.EnableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"EnableEventId\":7}"
+                }
+            ],
+            "Triggers": []
+        },
+        {
+            "Name": "Spawn Random Periodic",
+            "HasExecuted": false,
+            "Enabled": true,
+            "ActorFinderFilterBuilders": [],
+            "FoundActorsComparison": 0,
+            "FoundActorsCount": 0,
+            "ActorTriggerBuilders": [],
+            "ActorEventBuilders": [
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupZipper\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.0,\"Entries\":[{\"Operation\":0,\"Value\":16,\"UsesSubValueFloat\":false,\"SubValueFloat\":0.0,\"UsesSubValueMinMax\":true,\"SubValueMin\":-8.0,\"SubValueMax\":8.0,\"UsesSubValueString\":false,\"SubValueString\":\"\"}],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 3.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupSiner\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.0,\"Entries\":[{\"Operation\":0,\"Value\":16,\"UsesSubValueFloat\":false,\"SubValueFloat\":0.0,\"UsesSubValueMinMax\":true,\"SubValueMin\":-8.0,\"SubValueMax\":8.0,\"UsesSubValueString\":false,\"SubValueString\":\"\"}],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 5.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"Actor\":\"demoShmupStrider\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.0,\"Entries\":[{\"Operation\":0,\"Value\":16,\"UsesSubValueFloat\":false,\"SubValueFloat\":0.0,\"UsesSubValueMinMax\":true,\"SubValueMin\":-8.0,\"SubValueMax\":8.0,\"UsesSubValueString\":false,\"SubValueString\":\"\"}],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":2}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"DisableEventId\":6}"
+                },
+                {
+                    "StartTime": 7.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.EnableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.EnableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"EnableEventId\":6}"
+                }
+            ],
+            "Triggers": []
+        },
+        {
+            "Name": "Boss Killed",
+            "HasExecuted": false,
+            "Enabled": true,
+            "ActorFinderFilterBuilders": [
+                {
+                    "FilterClass": "Boomerang2DFramework.Framework.Actors.ActorFinderFilters.Filters.Name, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "FilterPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorFinderFilters.Filters.NameProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "FilterProperties": "{\"Name\":\"demoShmupBoss\"}"
+                }
+            ],
+            "FoundActorsComparison": 2,
+            "FoundActorsCount": 0,
+            "ActorTriggerBuilders": [],
+            "ActorEventBuilders": [
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SetGameFlagBool, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SetGameFlagBoolProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"GameFlagName\":\"shmupBossDead\",\"GameFlagValue\":true}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEvent, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.DisableActorEventProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"DisableEventId\":7}"
+                }
+            ],
+            "Triggers": []
+        }
+    ],
+    "ChildrenActors": [],
+    "ParticleEffects": []
+}

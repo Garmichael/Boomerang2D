@@ -1,0 +1,51 @@
+{
+    "Name": "DialogBox",
+    "Shader": "Unlit/Transparent",
+    "Elements": [
+        {
+            "ElementName": "B2D: TextBox",
+            "ElementPropertiesClass": "Boomerang2DFramework.Framework.UiManagement.UiElements.Properties.TextBox, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ElementBehaviorClass": "Boomerang2DFramework.Framework.UiManagement.UiElements.Behaviors.TextBoxBehavior, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ElementEditorClass": "Boomerang2DFramework.Framework.UiManagement.UiElements.Editor.TextBoxEditor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Properties": "{\"IsActive\":true,\"Position\":{\"x\":8,\"y\":8},\"OriginCorner\":2,\"TextSource\":4,\"ContentId\":\"\",\"MappedContentProperty\":2,\"StaticText\":\"\",\"GameFlag\":\"\",\"PrefixWithZeroes\":false,\"FixedLengthOfText\":0,\"Font\":\"blockyFont\",\"ActiveFont\":\"blockyFont\",\"WordBreak\":1,\"RowSpacing\":1,\"LetterKerning\":1,\"ScalesHorizontally\":false,\"MinWidth\":1,\"MaxWidth\":20,\"ScalesVertically\":true,\"MinHeight\":3,\"MaxHeight\":6,\"PaddingTop\":8,\"PaddingRight\":10,\"PaddingBottom\":8,\"PaddingLeft\":8,\"Tileset\":\"demoUi\",\"BackgroundStampIndex\":0,\"ActiveBackgroundStampIndex\":0,\"UsesButtonPrompt\":false,\"OnlyShowButtonPromptOnActive\":false,\"ButtonPromptPosition\":{\"x\":0,\"y\":0},\"ButtonPromptSize\":{\"x\":1,\"y\":1},\"ButtonPromptTileset\":\"\",\"ButtonPromptStampIndex\":0,\"ButtonPromptOriginCorner\":3,\"HudElementContainer\":0,\"PreviewTextRowsToShow\":2}"
+        },
+        {
+            "ElementName": "B2D: TextBox",
+            "ElementPropertiesClass": "Boomerang2DFramework.Framework.UiManagement.UiElements.Properties.TextBox, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ElementBehaviorClass": "Boomerang2DFramework.Framework.UiManagement.UiElements.Behaviors.TextBoxBehavior, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ElementEditorClass": "Boomerang2DFramework.Framework.UiManagement.UiElements.Editor.TextBoxEditor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Properties": "{\"IsActive\":true,\"Position\":{\"x\":160,\"y\":12},\"OriginCorner\":2,\"TextSource\":4,\"ContentId\":\"\",\"MappedContentProperty\":1,\"StaticText\":\"Speaker\",\"GameFlag\":\"\",\"PrefixWithZeroes\":false,\"FixedLengthOfText\":0,\"Font\":\"blockyFont\",\"ActiveFont\":\"blockyFont\",\"WordBreak\":0,\"RowSpacing\":1,\"LetterKerning\":1,\"ScalesHorizontally\":false,\"MinWidth\":1,\"MaxWidth\":9,\"ScalesVertically\":false,\"MinHeight\":1,\"MaxHeight\":2,\"PaddingTop\":4,\"PaddingRight\":4,\"PaddingBottom\":4,\"PaddingLeft\":4,\"Tileset\":\"demoUi\",\"BackgroundStampIndex\":0,\"ActiveBackgroundStampIndex\":0,\"UsesButtonPrompt\":false,\"OnlyShowButtonPromptOnActive\":false,\"ButtonPromptPosition\":{\"x\":0,\"y\":0},\"ButtonPromptSize\":{\"x\":1,\"y\":1},\"ButtonPromptTileset\":\"\",\"ButtonPromptStampIndex\":0,\"ButtonPromptOriginCorner\":3,\"HudElementContainer\":0,\"PreviewTextRowsToShow\":1}"
+        },
+        {
+            "ElementName": "B2D: SingleGraphic",
+            "ElementPropertiesClass": "Boomerang2DFramework.Framework.UiManagement.UiElements.Properties.SingleGraphic, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ElementBehaviorClass": "Boomerang2DFramework.Framework.UiManagement.UiElements.Behaviors.SingleGraphicBehavior, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ElementEditorClass": "Boomerang2DFramework.Framework.UiManagement.UiElements.Editor.SingleGraphicEditor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Properties": "{\"IsActive\":true,\"Position\":{\"x\":169,\"y\":119},\"OriginCorner\":0,\"UsesPortraitContent\":true,\"ContentId\":\"\",\"Tileset\":\"demoPortraits\",\"StampIndex\":0,\"StampSize\":{\"x\":1,\"y\":1},\"PreviewTileset\":\"demoPortraits\",\"PreviewStampIndex\":0}"
+        }
+    ],
+    "InteractionEvents": [
+        {
+            "Name": "Test Event",
+            "FireOnce": false,
+            "HasExecuted": false,
+            "Enabled": true,
+            "TriggerBuilders": [
+                {
+                    "TriggerClass": "Boomerang2DFramework.Framework.UiManagement.TriggerSystem.Triggers.UserInputDown, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "TriggerPropertyClass": "Boomerang2DFramework.Framework.UiManagement.TriggerSystem.Triggers.UserInputDownProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "TriggerProperties": "{\"InputType\":2,\"InputValue\":\"X\"}"
+                }
+            ],
+            "GameEventBuilders": [
+                {
+                    "StartTime": 0.0,
+                    "GameEventClass": "Boomerang2DFramework.Framework.GameEvents.Events.CloseHudObject, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "GameEventPropertiesClass": "Boomerang2DFramework.Framework.GameEvents.Events.CloseHudObjectProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "GameEventProperties": "{\"HudObjectName\":\"DialogBox\"}"
+                }
+            ],
+            "Triggers": []
+        }
+    ]
+}

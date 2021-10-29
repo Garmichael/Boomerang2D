@@ -1,0 +1,14 @@
+{
+    "Name": "demoPlayerHud",
+    "Shader": "Unlit/Transparent",
+    "Elements": [
+        {
+            "ElementName": "B2D: GraphicGrid",
+            "ElementPropertiesClass": "Boomerang2DFramework.Framework.UiManagement.UiElements.Properties.GraphicGrid, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ElementBehaviorClass": "Boomerang2DFramework.Framework.UiManagement.UiElements.Behaviors.GraphicGridBehavior, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "ElementEditorClass": "Boomerang2DFramework.Framework.UiManagement.UiElements.Editor.GraphicGridEditor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Properties": "{\"IsActive\":true,\"Position\":{\"x\":4,\"y\":4},\"OriginCorner\":1,\"MaxValueSource\":0,\"StaticMaxValue\":10,\"MaxValueGameFlag\":\"\",\"CurrentValueSource\":1,\"StaticCurrentValue\":1,\"CurrentValueGameFlag\":\"PlayerHp\",\"ItemsPerRow\":5,\"Tileset\":\"demoUi\",\"FilledStampIndex\":4,\"FilledActiveStampIndex\":4,\"UsesEmptyStamp\":true,\"EmptyStampIndex\":5,\"EmptyActiveStampIndex\":5,\"StampSize\":{\"x\":1,\"y\":1},\"Spacing\":{\"x\":2,\"y\":0},\"PreviewMaxCount\":0,\"PreviewCurrentCount\":4}"
+        }
+    ],
+    "InteractionEvents": []
+}

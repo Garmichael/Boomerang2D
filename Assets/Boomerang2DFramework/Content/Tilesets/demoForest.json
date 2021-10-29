@@ -1,0 +1,2272 @@
+{
+    "Name": "demoForest",
+    "TileSize": 16,
+    "EditorTilePerRow": 8,
+    "Tiles": [
+        {
+            "Slot": 1,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                0
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 2,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                1
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 3,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                2
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 4,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                3
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 5,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                4
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 6,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                5
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 7,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                6
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 8,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                7
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 9,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                8
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 10,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                9
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 11,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                10
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 12,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                11
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 13,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                12
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 14,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                13
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 15,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                14
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 16,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                15
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 17,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                16
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 18,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                17
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 19,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                18
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 20,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                19
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 21,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                20
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 22,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                21
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 23,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                22
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 24,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                23
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 25,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                24
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 26,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                25
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 27,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                26
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 28,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                27
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 29,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                28
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 30,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                29
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 31,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                30
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 32,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                31
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 33,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                32
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 34,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                33
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 35,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                34
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 36,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                35
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 37,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                36
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 38,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                37
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 39,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                38
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 40,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                39
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 41,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                40
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 42,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                41
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 43,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                42
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 44,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                43
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 45,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                44
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 46,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                45
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 47,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                46
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 48,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                47
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 49,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                48
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 50,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                49
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 51,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                50
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 52,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                51
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 53,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                52
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 54,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "slope_1x1_surface",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                53
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 55,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "slope_1x1_notch",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                54
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 56,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "slope_1x1_surface",
+            "CollisionFlippedX": true,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                55
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 57,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                56
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 58,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                57
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 59,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                58
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 60,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                59
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 61,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                60
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 62,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                61
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 63,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "slope_1x1_notch",
+            "CollisionFlippedX": true,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                62
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 64,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                63
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 65,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                64
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 66,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                65
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 67,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 68,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                67
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 69,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                68
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 70,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "slope_1x1_notch",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                61
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 71,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "Square",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                68
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 72,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "slope_1x1_notch",
+            "CollisionFlippedX": true,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                63
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 73,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                72
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 74,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 75,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 76,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 77,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 78,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": false,
+            "SolidOnLeft": false,
+            "SolidOnRight": false,
+            "CollisionShape": "half_edge",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": -0.5
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                69
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 79,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": false,
+            "SolidOnLeft": false,
+            "SolidOnRight": false,
+            "CollisionShape": "half_edge",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": -0.5
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                70
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 80,
+            "UsesCollider": true,
+            "SolidOnTop": true,
+            "SolidOnBottom": false,
+            "SolidOnLeft": false,
+            "SolidOnRight": false,
+            "CollisionShape": "half_edge",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": -0.5
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                71
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 81,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 82,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 83,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 84,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 85,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 86,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                77
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 87,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                78
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 88,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                79
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 89,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 90,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 91,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 92,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 93,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                66
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 94,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                85
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 95,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                86
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        },
+        {
+            "Slot": 96,
+            "UsesCollider": false,
+            "SolidOnTop": true,
+            "SolidOnBottom": true,
+            "SolidOnLeft": true,
+            "SolidOnRight": true,
+            "CollisionShape": "elbow",
+            "CollisionFlippedX": false,
+            "CollisionFlippedY": false,
+            "CollisionRotation": 0.0,
+            "CollisionOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Flags": [],
+            "AnimationFrames": [
+                87
+            ],
+            "AnimationFramesSpeeds": [
+                0.0
+            ]
+        }
+    ],
+    "Stamps": [
+        {
+            "Name": "Light Shaft",
+            "Width": 3,
+            "Height": 1,
+            "RepeatableRows": [],
+            "RepeatableColumns": [],
+            "TileRows": [
+                "2,3,4"
+            ]
+        },
+        {
+            "Name": "Canopy",
+            "Width": 3,
+            "Height": 2,
+            "RepeatableRows": [
+                0
+            ],
+            "RepeatableColumns": [
+                1
+            ],
+            "TileRows": [
+                "9,10,11",
+                "17,18,19"
+            ]
+        },
+        {
+            "Name": "background",
+            "Width": 15,
+            "Height": 15,
+            "RepeatableRows": [],
+            "RepeatableColumns": [],
+            "TileRows": [
+                "0,0,0,0,0,0,0,0,2,3,4,0,0,0,0",
+                "0,0,0,0,0,0,0,2,3,4,0,0,0,0,0",
+                "0,0,0,0,0,0,2,3,4,0,0,0,0,0,0",
+                "0,0,0,0,0,2,3,4,0,0,0,0,0,0,0",
+                "0,0,0,0,2,3,4,0,0,0,0,0,0,0,0",
+                "0,0,0,2,3,4,0,0,0,0,0,0,0,0,0",
+                "0,0,2,3,4,0,0,0,0,0,0,0,0,0,0",
+                "0,2,3,4,0,0,0,0,0,0,0,0,0,0,0",
+                "2,3,4,0,0,0,0,0,0,0,0,0,0,0,0",
+                "3,4,0,0,0,0,0,0,0,0,0,0,0,0,2",
+                "4,0,0,0,0,0,0,0,0,0,0,0,0,2,3",
+                "0,0,0,0,0,0,0,0,0,0,0,0,2,3,4",
+                "0,0,0,0,0,0,0,0,0,0,0,2,3,4,0",
+                "0,0,0,0,0,0,0,0,0,0,2,3,4,0,0",
+                "0,0,0,0,0,0,0,0,0,2,3,4,0,0,0"
+            ]
+        }
+    ],
+    "Brushes": [
+        {
+            "Name": "Terrain",
+            "Definitions": "0:5;1:6;2:7;3:13;4:14;5:15;6:21;7:22;8:23;9:32;10:37;11:38;12:45;13:46;14:16;15:30;16:29;17:31;18:24;19:8;20:0;21:0;22:0;23:0;24:0;25:0;26:0;27:0;28:0;29:0;30:25;31:0;32:48;33:47;34:40;35:39;36:0;37:0;38:0;39:0;40:0;41:0;42:0;43:0;44:0;45:0;46:53;47:0;"
+        }
+    ]
+}

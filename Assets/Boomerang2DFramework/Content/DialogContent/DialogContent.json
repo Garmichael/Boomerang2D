@@ -1,0 +1,79 @@
+{
+    "ContentItems": [
+        {
+            "DialogContentId": "demoNPC1",
+            "SpeakerName": "Jackson",
+            "SpeakerPortraitTileset": "demoPortraits",
+            "SpeakerPortraitStampIndex": 0,
+            "Text": "You can Jump with the [K] Key or the [A] Button.",
+            "Choices": []
+        },
+        {
+            "DialogContentId": "demoNPC2",
+            "SpeakerName": "Claire",
+            "SpeakerPortraitTileset": "demoPortraits",
+            "SpeakerPortraitStampIndex": 1,
+            "Text": "Follow the path to the forest. Theres more Demo there.",
+            "Choices": []
+        },
+        {
+            "DialogContentId": "demoNPC3",
+            "SpeakerName": "Ellie",
+            "SpeakerPortraitTileset": "demoPortraits",
+            "SpeakerPortraitStampIndex": 1,
+            "Text": "Now there's a boss fight!",
+            "Choices": []
+        },
+        {
+            "DialogContentId": "main_menu",
+            "SpeakerName": "Main Menu",
+            "SpeakerPortraitTileset": "demoTownTileset",
+            "SpeakerPortraitStampIndex": 0,
+            "Text": "\t",
+            "Choices": [
+                "Start Game",
+                "View Controls"
+            ]
+        },
+        {
+            "DialogContentId": "received_bomb",
+            "SpeakerName": "",
+            "SpeakerPortraitTileset": "demoForest",
+            "SpeakerPortraitStampIndex": 0,
+            "Text": "Kaboom! Press the [i] Key or the [Y] Button to throw bombs!",
+            "Choices": []
+        },
+        {
+            "DialogContentId": "received_doublejump",
+            "SpeakerName": "",
+            "SpeakerPortraitTileset": "demoForest",
+            "SpeakerPortraitStampIndex": 0,
+            "Text": "Defy physics and gravity in typical platformer style!\nYou can now double jump!",
+            "Choices": []
+        },
+        {
+            "DialogContentId": "received_punching",
+            "SpeakerName": "",
+            "SpeakerPortraitTileset": "demoForest",
+            "SpeakerPortraitStampIndex": 0,
+            "Text": "You can punch now! \nPress the [j] key or the [x] Button to throw hands.",
+            "Choices": []
+        },
+        {
+            "DialogContentId": "received_wallclimb",
+            "SpeakerName": "",
+            "SpeakerPortraitTileset": "demoForest",
+            "SpeakerPortraitStampIndex": 0,
+            "Text": "You found another one of these things!\nNow you can climb up the wall.",
+            "Choices": []
+        },
+        {
+            "DialogContentId": "received_wallgrab",
+            "SpeakerName": "",
+            "SpeakerPortraitTileset": "demoForest",
+            "SpeakerPortraitStampIndex": 0,
+            "Text": "Oh snap! You can snap... to walls! Go try it!",
+            "Choices": []
+        }
+    ]
+}

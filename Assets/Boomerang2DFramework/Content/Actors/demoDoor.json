@@ -1,0 +1,511 @@
+{
+    "Name": "demoDoor",
+    "IsPlayer": false,
+    "SpriteWidth": 16.0,
+    "SpriteHeight": 32.0,
+    "ObeysChunking": false,
+    "States": [
+        {
+            "Name": "idle",
+            "Class": "Boomerang2DFramework.Framework.Actors.States.Idle, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "PropertiesClass": "Boomerang2DFramework.Framework.Actors.States.IdleProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Properties": "{\"CanBeGrounded\":false,\"CollidesWithGeometry\":false,\"CollidesWithActors\":false,\"OverlapsGeometry\":false,\"OverlapsOtherActors\":true,\"OverlapsWeapons\":false,\"Deceleration\":{\"StartValue\":1.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"GlueHeight\":{\"StartValue\":0.4000000059604645,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}",
+            "TransitionTriggers": [],
+            "RandomTransitionTriggers": [],
+            "ModificationTriggers": [],
+            "WeaponTriggers": [],
+            "Animations": [
+                {
+                    "Name": "idle",
+                    "BoundToGlobalTimeManager": false,
+                    "IndefinitelyLoops": true,
+                    "FixedLoopCount": 0,
+                    "FinalFrameAfterLoops": 0,
+                    "StartOnExistingSpriteFrame": false,
+                    "BoundToWeaponDuration": false,
+                    "WeaponBoundTo": "",
+                    "AnimationFrames": [
+                        {
+                            "SpriteFrame": 0,
+                            "Duration": 0.0,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [
+                                {
+                                    "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 2.0,
+                                        "y": 16.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -16.0
+                                    },
+                                    "Size": {
+                                        "x": 2.0,
+                                        "y": 16.0
+                                    },
+                                    "Offset": {
+                                        "x": 0.0,
+                                        "y": -16.0
+                                    },
+                                    "RayCastUp": false,
+                                    "RayCountUp": 1,
+                                    "RayLengthUp": 5.0,
+                                    "RayInsetUp": 0.0,
+                                    "RayInsetFirstUp": 0.0,
+                                    "RayInsetLastUp": 0.0,
+                                    "RayCastRight": false,
+                                    "RayCountRight": 1,
+                                    "RayLengthRight": 5.0,
+                                    "RayInsetRight": 0.0,
+                                    "RayInsetFirstRight": 0.0,
+                                    "RayInsetLastRight": 0.0,
+                                    "RayCastDown": false,
+                                    "RayCountDown": 1,
+                                    "RayLengthDown": 5.0,
+                                    "RayInsetDown": 0.0,
+                                    "RayInsetFirstDown": 0.0,
+                                    "RayInsetLastDown": 0.0,
+                                    "RayCastLeft": false,
+                                    "RayCountLeft": 1,
+                                    "RayLengthLeft": 5.0,
+                                    "RayInsetLeft": 0.0,
+                                    "RayInsetFirstLeft": 0.0,
+                                    "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Door"
+                                    ],
+                                    "Flags": [
+                                        "Door"
+                                    ]
+                                }
+                            ],
+                            "ParticleEffectProperties": []
+                        }
+                    ],
+                    "AnimationConditions": []
+                },
+                {
+                    "Name": "playerOn",
+                    "BoundToGlobalTimeManager": false,
+                    "IndefinitelyLoops": true,
+                    "FixedLoopCount": 0,
+                    "FinalFrameAfterLoops": 0,
+                    "StartOnExistingSpriteFrame": false,
+                    "BoundToWeaponDuration": false,
+                    "WeaponBoundTo": "",
+                    "AnimationFrames": [
+                        {
+                            "SpriteFrame": 1,
+                            "Duration": 0.10000000149011612,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [
+                                {
+                                    "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 2.0,
+                                        "y": 16.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -16.0
+                                    },
+                                    "Size": {
+                                        "x": 2.0,
+                                        "y": 16.0
+                                    },
+                                    "Offset": {
+                                        "x": 0.0,
+                                        "y": -16.0
+                                    },
+                                    "RayCastUp": false,
+                                    "RayCountUp": 1,
+                                    "RayLengthUp": 5.0,
+                                    "RayInsetUp": 0.0,
+                                    "RayInsetFirstUp": 0.0,
+                                    "RayInsetLastUp": 0.0,
+                                    "RayCastRight": false,
+                                    "RayCountRight": 1,
+                                    "RayLengthRight": 5.0,
+                                    "RayInsetRight": 0.0,
+                                    "RayInsetFirstRight": 0.0,
+                                    "RayInsetLastRight": 0.0,
+                                    "RayCastDown": false,
+                                    "RayCountDown": 1,
+                                    "RayLengthDown": 5.0,
+                                    "RayInsetDown": 0.0,
+                                    "RayInsetFirstDown": 0.0,
+                                    "RayInsetLastDown": 0.0,
+                                    "RayCastLeft": false,
+                                    "RayCountLeft": 1,
+                                    "RayLengthLeft": 5.0,
+                                    "RayInsetLeft": 0.0,
+                                    "RayInsetFirstLeft": 0.0,
+                                    "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Door"
+                                    ],
+                                    "Flags": [
+                                        "Door"
+                                    ]
+                                }
+                            ],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 2,
+                            "Duration": 0.10000000149011612,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [
+                                {
+                                    "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "Size": {
+                                        "x": 2.0,
+                                        "y": 16.0
+                                    },
+                                    "Offset": {
+                                        "x": 0.0,
+                                        "y": -16.0
+                                    },
+                                    "RayCastUp": false,
+                                    "RayCountUp": 1,
+                                    "RayLengthUp": 5.0,
+                                    "RayInsetUp": 0.0,
+                                    "RayInsetFirstUp": 0.0,
+                                    "RayInsetLastUp": 0.0,
+                                    "RayCastRight": false,
+                                    "RayCountRight": 1,
+                                    "RayLengthRight": 5.0,
+                                    "RayInsetRight": 0.0,
+                                    "RayInsetFirstRight": 0.0,
+                                    "RayInsetLastRight": 0.0,
+                                    "RayCastDown": false,
+                                    "RayCountDown": 1,
+                                    "RayLengthDown": 5.0,
+                                    "RayInsetDown": 0.0,
+                                    "RayInsetFirstDown": 0.0,
+                                    "RayInsetLastDown": 0.0,
+                                    "RayCastLeft": false,
+                                    "RayCountLeft": 1,
+                                    "RayLengthLeft": 5.0,
+                                    "RayInsetLeft": 0.0,
+                                    "RayInsetFirstLeft": 0.0,
+                                    "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
+                                    "Flags": [
+                                        "Door"
+                                    ]
+                                }
+                            ],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 3,
+                            "Duration": 0.10000000149011612,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [
+                                {
+                                    "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "Size": {
+                                        "x": 2.0,
+                                        "y": 16.0
+                                    },
+                                    "Offset": {
+                                        "x": 0.0,
+                                        "y": -16.0
+                                    },
+                                    "RayCastUp": false,
+                                    "RayCountUp": 1,
+                                    "RayLengthUp": 5.0,
+                                    "RayInsetUp": 0.0,
+                                    "RayInsetFirstUp": 0.0,
+                                    "RayInsetLastUp": 0.0,
+                                    "RayCastRight": false,
+                                    "RayCountRight": 1,
+                                    "RayLengthRight": 5.0,
+                                    "RayInsetRight": 0.0,
+                                    "RayInsetFirstRight": 0.0,
+                                    "RayInsetLastRight": 0.0,
+                                    "RayCastDown": false,
+                                    "RayCountDown": 1,
+                                    "RayLengthDown": 5.0,
+                                    "RayInsetDown": 0.0,
+                                    "RayInsetFirstDown": 0.0,
+                                    "RayInsetLastDown": 0.0,
+                                    "RayCastLeft": false,
+                                    "RayCountLeft": 1,
+                                    "RayLengthLeft": 5.0,
+                                    "RayInsetLeft": 0.0,
+                                    "RayInsetFirstLeft": 0.0,
+                                    "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
+                                    "Flags": [
+                                        "Door"
+                                    ]
+                                }
+                            ],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 4,
+                            "Duration": 0.10000000149011612,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [
+                                {
+                                    "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "Size": {
+                                        "x": 2.0,
+                                        "y": 16.0
+                                    },
+                                    "Offset": {
+                                        "x": 0.0,
+                                        "y": -16.0
+                                    },
+                                    "RayCastUp": false,
+                                    "RayCountUp": 1,
+                                    "RayLengthUp": 5.0,
+                                    "RayInsetUp": 0.0,
+                                    "RayInsetFirstUp": 0.0,
+                                    "RayInsetLastUp": 0.0,
+                                    "RayCastRight": false,
+                                    "RayCountRight": 1,
+                                    "RayLengthRight": 5.0,
+                                    "RayInsetRight": 0.0,
+                                    "RayInsetFirstRight": 0.0,
+                                    "RayInsetLastRight": 0.0,
+                                    "RayCastDown": false,
+                                    "RayCountDown": 1,
+                                    "RayLengthDown": 5.0,
+                                    "RayInsetDown": 0.0,
+                                    "RayInsetFirstDown": 0.0,
+                                    "RayInsetLastDown": 0.0,
+                                    "RayCastLeft": false,
+                                    "RayCountLeft": 1,
+                                    "RayLengthLeft": 5.0,
+                                    "RayInsetLeft": 0.0,
+                                    "RayInsetFirstLeft": 0.0,
+                                    "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
+                                    "Flags": [
+                                        "Door"
+                                    ]
+                                }
+                            ],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 5,
+                            "Duration": 0.10000000149011612,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [
+                                {
+                                    "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "Size": {
+                                        "x": 2.0,
+                                        "y": 16.0
+                                    },
+                                    "Offset": {
+                                        "x": 0.0,
+                                        "y": -16.0
+                                    },
+                                    "RayCastUp": false,
+                                    "RayCountUp": 1,
+                                    "RayLengthUp": 5.0,
+                                    "RayInsetUp": 0.0,
+                                    "RayInsetFirstUp": 0.0,
+                                    "RayInsetLastUp": 0.0,
+                                    "RayCastRight": false,
+                                    "RayCountRight": 1,
+                                    "RayLengthRight": 5.0,
+                                    "RayInsetRight": 0.0,
+                                    "RayInsetFirstRight": 0.0,
+                                    "RayInsetLastRight": 0.0,
+                                    "RayCastDown": false,
+                                    "RayCountDown": 1,
+                                    "RayLengthDown": 5.0,
+                                    "RayInsetDown": 0.0,
+                                    "RayInsetFirstDown": 0.0,
+                                    "RayInsetLastDown": 0.0,
+                                    "RayCastLeft": false,
+                                    "RayCountLeft": 1,
+                                    "RayLengthLeft": 5.0,
+                                    "RayInsetLeft": 0.0,
+                                    "RayInsetFirstLeft": 0.0,
+                                    "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
+                                    "Flags": [
+                                        "Door"
+                                    ]
+                                }
+                            ],
+                            "ParticleEffectProperties": []
+                        }
+                    ],
+                    "AnimationConditions": [
+                        {
+                            "ActorTriggerBuilders": [
+                                {
+                                    "TriggerClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.OverlapsColliderWithFlag, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                    "TriggerPropertyClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.OverlapsColliderWithFlagProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                    "TriggerProperties": "{\"UseAnySelfFlag\":true,\"SelfFlag\":\"\",\"OtherFlag\":\"Player\"}"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "SoundEffects": [],
+            "EditorPosition": {
+                "x": 50.0,
+                "y": 70.0
+            },
+            "StateEntryActorEvents": []
+        }
+    ],
+    "Weapons": [],
+    "BoundingBoxes": [
+        {
+            "Enabled": true,
+            "DefaultSize": {
+                "x": 2.0,
+                "y": 16.0
+            },
+            "DefaultOffset": {
+                "x": 0.0,
+                "y": -16.0
+            },
+            "Size": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "Offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "RayCastUp": false,
+            "RayCountUp": 1,
+            "RayLengthUp": 5.0,
+            "RayInsetUp": 0.0,
+            "RayInsetFirstUp": 0.0,
+            "RayInsetLastUp": 0.0,
+            "RayCastRight": false,
+            "RayCountRight": 1,
+            "RayLengthRight": 5.0,
+            "RayInsetRight": 0.0,
+            "RayInsetFirstRight": 0.0,
+            "RayInsetLastRight": 0.0,
+            "RayCastDown": false,
+            "RayCountDown": 1,
+            "RayLengthDown": 5.0,
+            "RayInsetDown": 0.0,
+            "RayInsetFirstDown": 0.0,
+            "RayInsetLastDown": 0.0,
+            "RayCastLeft": false,
+            "RayCountLeft": 1,
+            "RayLengthLeft": 5.0,
+            "RayInsetLeft": 0.0,
+            "RayInsetFirstLeft": 0.0,
+            "RayInsetLastLeft": 0.0,
+            "DefaultFlags": [
+                "Door"
+            ],
+            "Flags": []
+        }
+    ],
+    "StatsFloats": [
+        {
+            "Name": "DestinationX",
+            "InitialValue": 0.0,
+            "Value": 0.0,
+            "MapOverride": false
+        },
+        {
+            "Name": "DestinationY",
+            "InitialValue": 0.0,
+            "Value": 0.0,
+            "MapOverride": false
+        }
+    ],
+    "StatsStrings": [],
+    "StatsBools": [],
+    "InteractionEvents": [
+        {
+            "Name": "Teleport Player",
+            "HasExecuted": false,
+            "Enabled": true,
+            "ActorFinderFilterBuilders": [
+                {
+                    "FilterClass": "Boomerang2DFramework.Framework.Actors.ActorFinderFilters.Filters.OverlapsActorCollider, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "FilterPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorFinderFilters.Filters.OverlapsActorColliderProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "FilterProperties": "{\"UseAnySelfFlag\":true,\"SelfFlag\":\"\",\"UseAnyOtherFlag\":false,\"OtherFlag\":\"Player\"}"
+                }
+            ],
+            "FoundActorsComparison": 4,
+            "FoundActorsCount": 0,
+            "ActorTriggerBuilders": [
+                {
+                    "TriggerClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.UserInputDown, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "TriggerPropertyClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.UserInputDownProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "TriggerProperties": "{\"InputType\":1,\"InputValue\":\"Vertical+\"}"
+                }
+            ],
+            "ActorEventBuilders": [
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": true,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.ChangePosition, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.ChangePositionProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"UseThisVelocity\":false,\"IsRelativeChange\":false,\"UpdateX\":true,\"OffsetX\":{\"StartValue\":0.0,\"Entries\":[{\"Operation\":0,\"Value\":1,\"UsesSubValueFloat\":false,\"SubValueFloat\":0.0,\"UsesSubValueString\":true,\"SubValueString\":\"DestinationX\"}],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"UpdateY\":true,\"OffsetY\":{\"StartValue\":0.0,\"Entries\":[{\"Operation\":0,\"Value\":1,\"UsesSubValueFloat\":false,\"SubValueFloat\":0.0,\"UsesSubValueString\":true,\"SubValueString\":\"DestinationY\"}],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}"
+                },
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": true,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SetCameraTarget, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SetCameraTargetProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"SnapCameraPosition\":true}"
+                }
+            ],
+            "Triggers": []
+        }
+    ],
+    "ChildrenActors": [],
+    "ParticleEffects": []
+}

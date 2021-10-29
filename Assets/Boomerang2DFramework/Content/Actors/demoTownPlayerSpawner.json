@@ -1,0 +1,102 @@
+{
+    "Name": "demoTownPlayerSpawner",
+    "IsPlayer": false,
+    "SpriteWidth": 16.0,
+    "SpriteHeight": 16.0,
+    "ObeysChunking": false,
+    "States": [
+        {
+            "Name": "idle",
+            "Class": "Boomerang2DFramework.Framework.Actors.States.Idle, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "PropertiesClass": "Boomerang2DFramework.Framework.Actors.States.IdleProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Properties": "{\"CanBeGrounded\":false,\"CollidesWithGeometry\":false,\"CollidesWithActors\":false,\"OverlapsGeometry\":false,\"OverlapsOtherActors\":false,\"OverlapsWeapons\":false,\"Deceleration\":{\"StartValue\":1.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"GlueHeight\":{\"StartValue\":0.4000000059604645,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}",
+            "TransitionTriggers": [],
+            "RandomTransitionTriggers": [],
+            "ModificationTriggers": [],
+            "WeaponTriggers": [],
+            "Animations": [
+                {
+                    "Name": "idle",
+                    "BoundToGlobalTimeManager": false,
+                    "IndefinitelyLoops": true,
+                    "FixedLoopCount": 0,
+                    "FinalFrameAfterLoops": 0,
+                    "StartOnExistingSpriteFrame": false,
+                    "BoundToWeaponDuration": false,
+                    "WeaponBoundTo": "",
+                    "AnimationFrames": [
+                        {
+                            "SpriteFrame": 0,
+                            "Duration": 0.0,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        }
+                    ],
+                    "AnimationConditions": []
+                }
+            ],
+            "SoundEffects": [],
+            "EditorPosition": {
+                "x": 20.0,
+                "y": 20.0
+            },
+            "StateEntryActorEvents": [
+                {
+                    "ActorTriggerBuilders": [
+                        {
+                            "TriggerClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.GameFlagBoolValue, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "TriggerPropertyClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.GameFlagBoolValueProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "TriggerProperties": "{\"FlagName\":\"FirstTimePlaying\",\"FlagValue\":false}"
+                        }
+                    ],
+                    "ActorEventBuilders": [
+                        {
+                            "StartTime": 0.0,
+                            "AffectFilteredActors": false,
+                            "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "ActorEventProperties": "{\"Actor\":\"demoPlayer\",\"RelativePosition\":false,\"PositionX\":{\"StartValue\":11.625,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":14.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":true,\"FacingDirection\":3}"
+                        }
+                    ],
+                    "Triggers": []
+                },
+                {
+                    "ActorTriggerBuilders": [
+                        {
+                            "TriggerClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.GameFlagBoolValue, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "TriggerPropertyClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.GameFlagBoolValueProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "TriggerProperties": "{\"FlagName\":\"FirstTimePlaying\",\"FlagValue\":true}"
+                        }
+                    ],
+                    "ActorEventBuilders": [
+                        {
+                            "StartTime": 0.0,
+                            "AffectFilteredActors": false,
+                            "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SetGameFlagBool, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SetGameFlagBoolProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "ActorEventProperties": "{\"GameFlagName\":\"FirstTimePlaying\",\"GameFlagValue\":false}"
+                        },
+                        {
+                            "StartTime": 0.0,
+                            "AffectFilteredActors": false,
+                            "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActor, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.SpawnActorProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                            "ActorEventProperties": "{\"Actor\":\"demoPlayer\",\"RelativePosition\":false,\"PositionX\":{\"StartValue\":13.25,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":3.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":true,\"FacingDirection\":2}"
+                        }
+                    ],
+                    "Triggers": []
+                }
+            ]
+        }
+    ],
+    "Weapons": [],
+    "BoundingBoxes": [],
+    "StatsFloats": [],
+    "StatsStrings": [],
+    "StatsBools": [],
+    "InteractionEvents": [],
+    "ChildrenActors": [],
+    "ParticleEffects": []
+}

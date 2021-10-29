@@ -1,0 +1,154 @@
+{
+    "Name": "demoNPC2",
+    "IsPlayer": false,
+    "SpriteWidth": 16.0,
+    "SpriteHeight": 16.0,
+    "ObeysChunking": true,
+    "States": [
+        {
+            "Name": "idle",
+            "Class": "Boomerang2DFramework.Framework.Actors.States.Idle, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "PropertiesClass": "Boomerang2DFramework.Framework.Actors.States.IdleProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "Properties": "{\"CanBeGrounded\":true,\"CollidesWithGeometry\":true,\"CollidesWithActors\":true,\"OverlapsGeometry\":true,\"OverlapsOtherActors\":true,\"OverlapsWeapons\":true,\"Deceleration\":{\"StartValue\":1.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"GlueHeight\":{\"StartValue\":0.4000000059604645,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}",
+            "TransitionTriggers": [],
+            "RandomTransitionTriggers": [],
+            "ModificationTriggers": [],
+            "WeaponTriggers": [],
+            "Animations": [
+                {
+                    "Name": "idle",
+                    "BoundToGlobalTimeManager": false,
+                    "IndefinitelyLoops": true,
+                    "FixedLoopCount": 0,
+                    "FinalFrameAfterLoops": 0,
+                    "StartOnExistingSpriteFrame": false,
+                    "BoundToWeaponDuration": false,
+                    "WeaponBoundTo": "",
+                    "AnimationFrames": [
+                        {
+                            "SpriteFrame": 0,
+                            "Duration": 0.3499999940395355,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 1,
+                            "Duration": 0.20000000298023225,
+                            "FlipHorizontal": false,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        }
+                    ],
+                    "AnimationConditions": []
+                },
+                {
+                    "Name": "idle_left",
+                    "BoundToGlobalTimeManager": false,
+                    "IndefinitelyLoops": true,
+                    "FixedLoopCount": 0,
+                    "FinalFrameAfterLoops": 0,
+                    "StartOnExistingSpriteFrame": false,
+                    "BoundToWeaponDuration": false,
+                    "WeaponBoundTo": "",
+                    "AnimationFrames": [
+                        {
+                            "SpriteFrame": 0,
+                            "Duration": 0.3499999940395355,
+                            "FlipHorizontal": true,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        },
+                        {
+                            "SpriteFrame": 1,
+                            "Duration": 0.20000000298023225,
+                            "FlipHorizontal": true,
+                            "FlipVertical": false,
+                            "BoundingBoxProperties": [],
+                            "ParticleEffectProperties": []
+                        }
+                    ],
+                    "AnimationConditions": [
+                        {
+                            "ActorTriggerBuilders": [
+                                {
+                                    "TriggerClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.FacingDirection, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                    "TriggerPropertyClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.FacingDirectionProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                                    "TriggerProperties": "{\"FacingDirection\":2}"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "SoundEffects": [],
+            "EditorPosition": {
+                "x": 50.0,
+                "y": 50.0
+            },
+            "StateEntryActorEvents": []
+        }
+    ],
+    "Weapons": [],
+    "BoundingBoxes": [],
+    "StatsFloats": [],
+    "StatsStrings": [],
+    "StatsBools": [],
+    "InteractionEvents": [
+        {
+            "Name": "Face Player Right",
+            "HasExecuted": false,
+            "Enabled": true,
+            "ActorFinderFilterBuilders": [],
+            "FoundActorsComparison": 0,
+            "FoundActorsCount": 0,
+            "ActorTriggerBuilders": [
+                {
+                    "TriggerClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.PositionX, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "TriggerPropertyClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.PositionXProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "TriggerProperties": "{\"Comparison\":0,\"Value\":{\"StartValue\":0.0,\"Entries\":[{\"Operation\":0,\"Value\":7,\"UsesSubValueFloat\":false,\"SubValueFloat\":0.0,\"UsesSubValueString\":false,\"SubValueString\":\"\"}],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}"
+                }
+            ],
+            "ActorEventBuilders": [
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.ChangeFacingDirection, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.ChangeFacingDirectionProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"NewFacingDirection\":3}"
+                }
+            ],
+            "Triggers": []
+        },
+        {
+            "Name": "Face Player Left",
+            "HasExecuted": false,
+            "Enabled": true,
+            "ActorFinderFilterBuilders": [],
+            "FoundActorsComparison": 0,
+            "FoundActorsCount": 0,
+            "ActorTriggerBuilders": [
+                {
+                    "TriggerClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.PositionX, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "TriggerPropertyClass": "Boomerang2DFramework.Framework.Actors.TriggerSystem.Triggers.PositionXProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "TriggerProperties": "{\"Comparison\":4,\"Value\":{\"StartValue\":0.0,\"Entries\":[{\"Operation\":0,\"Value\":7,\"UsesSubValueFloat\":false,\"SubValueFloat\":0.0,\"UsesSubValueString\":false,\"SubValueString\":\"\"}],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}"
+                }
+            ],
+            "ActorEventBuilders": [
+                {
+                    "StartTime": 0.0,
+                    "AffectFilteredActors": false,
+                    "ActorEventClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.ChangeFacingDirection, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventPropertiesClass": "Boomerang2DFramework.Framework.Actors.ActorEvents.Events.ChangeFacingDirectionProperties, B2DFramework, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "ActorEventProperties": "{\"NewFacingDirection\":2}"
+                }
+            ],
+            "Triggers": []
+        }
+    ],
+    "ChildrenActors": [],
+    "ParticleEffects": []
+}
