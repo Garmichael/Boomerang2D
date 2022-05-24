@@ -331,6 +331,7 @@ namespace Boomerang2DFramework.Framework.Editor.TilesetStudio {
 						);
 
 						AssetDatabase.Refresh();
+						BoomerangDatabase.PopulateDatabase();
 						OnEnable();
 						_mainMode = Mode.Normal;
 					});
