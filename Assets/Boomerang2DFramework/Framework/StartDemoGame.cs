@@ -7,7 +7,7 @@ namespace Boomerang2DFramework.Framework {
 	/// First, we always Initialize the Framework.
 	/// Then, you can start executing commands. The Easiest is to build a map made in the Map Editor
 	/// </summary>
-	public class StartGame : MonoBehaviour {
+	public class StartDemoGame : MonoBehaviour {
 		private void Start() {
 			Boomerang2D.InitializeFramework();
 			MapManager.LoadMap("demoTown");
