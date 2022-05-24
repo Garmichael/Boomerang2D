@@ -589,11 +589,9 @@ namespace Boomerang2DFramework.Framework.Actors.ActorStateProperties {
 				particleEffect.transform.localPosition = frame.DefaultOffsetPosition;
 				if (frame.Enabled) {
 					if (!particleEffect.GetComponent<ParticleSystem>().isPlaying) {
-						Debug.Log("Start playing");
 						particleEffect.GetComponent<ParticleSystem>().Play();
 					}
 				} else {
-					Debug.Log("Stop playing");
 					particleEffect.GetComponent<ParticleSystem>().Stop();
 				}
 			}
