@@ -63,6 +63,10 @@ namespace Boomerang2DFramework.Framework.Editor.StartHere {
 						SuperForms.Button("Join Boomerang Discord", () => { Application.OpenURL("https://discord.gg/F4tpUHJsvj"); }, GUILayout.Width(200));
 
 						SuperForms.Space();
+						SuperForms.ParagraphLabel("You can find video tutorials for Boomerang 2D on our YouTube Channel");
+						SuperForms.Button("View Video Tutorials", () => { Application.OpenURL("https://www.youtube.com/playlist?list=PLh_iA7J_8dx1UtZZvP0H6uSiavYcBCQcV"); }, GUILayout.Width(200));
+						
+						SuperForms.Space();
 						SuperForms.ParagraphLabel("Also, if you're looking for a Game Development Team, you might find one at one of our other project sites, Develteam.com");
 						SuperForms.Button("Visit Develteam.com", () => { Application.OpenURL("https://www.develteam.com"); }, GUILayout.Width(200));
 
