@@ -304,26 +304,20 @@ namespace Boomerang2DFramework.Framework.MapGeneration {
 		}
 
 		private void AutoScroll() {
-			Vector2 mapViewOriginPoint = GetOriginPoint();
 			Vector2 depthLayerCameraOriginPoint = GetLayerOriginPoint();
-			Vector2 mainCameraOriginPoint = GetViewOriginPoint();
 
-			Vector2 distanceFromOriginPoint = mapViewOriginPoint - mainCameraOriginPoint;
 			Vector2 scrollDistance = GameProperties.PixelSize * _timeAlive * Properties.DepthLayerScrollSpeed;
 
-			Vector3 offset = new Vector3(
-				scrollDistance.x + distanceFromOriginPoint.x,
-				scrollDistance.y - distanceFromOriginPoint.y,
+			Vector3 offset = new(
+				scrollDistance.x,
+				scrollDistance.y,
 				_realPosition.z
 			);
 
 			_realPosition = (Vector3) depthLayerCameraOriginPoint + offset;
 
-			_realPosition.x = depthLayerCameraOriginPoint.x + scrollDistance.x + distanceFromOriginPoint.x;
-			_realPosition.y = depthLayerCameraOriginPoint.y + scrollDistance.y - distanceFromOriginPoint.y;
-
 			if (Properties.DepthLayerRepeatX) {
-				_realPosition.x = depthLayerCameraOriginPoint.x + scrollDistance.x - distanceFromOriginPoint.x;
+				_realPosition.x = depthLayerCameraOriginPoint.x + scrollDistance.x;
 
 				while (_realPosition.x - LayerCameraController.VisibleTileCount.x / 2 < 0) {
 					_realPosition += new Vector3(_layerBounds.width / 2, 0, 0);
@@ -335,7 +329,7 @@ namespace Boomerang2DFramework.Framework.MapGeneration {
 			}
 
 			if (Properties.DepthLayerRepeatY) {
-				_realPosition.y = depthLayerCameraOriginPoint.y + scrollDistance.y - distanceFromOriginPoint.y;
+				_realPosition.y = depthLayerCameraOriginPoint.y + scrollDistance.y;
 
 				while (_realPosition.y + LayerCameraController.VisibleTileCount.y / 2 > 0) {
 					_realPosition += new Vector3(0, _layerBounds.height / 2, 0);
