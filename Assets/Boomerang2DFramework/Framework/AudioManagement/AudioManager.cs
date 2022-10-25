@@ -11,7 +11,7 @@ using Random = UnityEngine.Random;
 namespace Boomerang2DFramework.Framework.AudioManagement {
 	public static class AudioManager {
 		private static readonly List<AudioSource> BackgroundMusicChannels;
-		private static readonly List<AudioSource> AudioSources;
+		private static readonly List<AudioSource> SfxChannels;
 		private static int _currentBackgroundChannel;
 		private static readonly AudioMixerSnapshot BackgroundChannelAMax;
 		private static readonly AudioMixerSnapshot BackgroundChannelBMax;
@@ -33,9 +33,11 @@ namespace Boomerang2DFramework.Framework.AudioManagement {
 			BackgroundChannelAMax = audioMixer.FindSnapshot("BackgroundAMax");
 			BackgroundChannelBMax = audioMixer.FindSnapshot("BackgroundBMax");
 
-			AudioSources = new List<AudioSource>();
+			SfxChannels = new List<AudioSource>();
 			for (int i = 0; i < 100; i++) {
-				AudioSources.Add(container.AddComponent<AudioSource>());
+				AudioSource newChannel = container.AddComponent<AudioSource>();
+				SfxChannels.Add(newChannel);
+				newChannel.outputAudioMixerGroup = audioMixer.FindMatchingGroups("SoundEffects")[0];
 			}
 		}
 
@@ -112,7 +114,7 @@ namespace Boomerang2DFramework.Framework.AudioManagement {
 				return;
 			}
 
-			AudioSource selectedAudioSource = AudioSources.FirstOrDefault(audioSource => !audioSource.isPlaying);
+			AudioSource selectedAudioSource = SfxChannels.FirstOrDefault(audioSource => !audioSource.isPlaying);
 
 			if (selectedAudioSource == null) {
 				return;
@@ -129,7 +131,7 @@ namespace Boomerang2DFramework.Framework.AudioManagement {
 				return;
 			}
 
-			AudioSource selectedAudioSource = AudioSources.FirstOrDefault(audioSource => !audioSource.isPlaying);
+			AudioSource selectedAudioSource = SfxChannels.FirstOrDefault(audioSource => !audioSource.isPlaying);
 
 			if (selectedAudioSource == null) {
 				return;
@@ -144,7 +146,7 @@ namespace Boomerang2DFramework.Framework.AudioManagement {
 				return;
 			}
 
-			AudioSource selectedAudioSource = AudioSources.FirstOrDefault(audioSource => !audioSource.isPlaying);
+			AudioSource selectedAudioSource = SfxChannels.FirstOrDefault(audioSource => !audioSource.isPlaying);
 
 			if (selectedAudioSource == null) {
 				return;
@@ -180,7 +182,7 @@ namespace Boomerang2DFramework.Framework.AudioManagement {
 					return;
 				}
 
-				AudioSource selectedAudioSource = AudioSources.FirstOrDefault(audioSource => !audioSource.isPlaying);
+				AudioSource selectedAudioSource = SfxChannels.FirstOrDefault(audioSource => !audioSource.isPlaying);
 
 				if (selectedAudioSource == null) {
 					return;
@@ -205,7 +207,7 @@ namespace Boomerang2DFramework.Framework.AudioManagement {
 
 		public static LoopingAudioEffect PlayLoop(List<string> pool, bool isRandom, bool immediatelyDie, float volume = 1f) {
 			AudioSource selectedAudioSource = null;
-			foreach (AudioSource audioSource in AudioSources) {
+			foreach (AudioSource audioSource in SfxChannels) {
 				if (audioSource.isPlaying) {
 					continue;
 				}
@@ -265,7 +267,7 @@ namespace Boomerang2DFramework.Framework.AudioManagement {
 
 			AudioSource selectedAudioSource = null;
 
-			foreach (AudioSource audioSource in AudioSources) {
+			foreach (AudioSource audioSource in SfxChannels) {
 				if (audioSource.isPlaying) {
 					continue;
 				}
