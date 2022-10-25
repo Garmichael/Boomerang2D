@@ -39,6 +39,7 @@ namespace Boomerang2DFramework.Framework {
 		public const string BitmapFontsContentDirectory = "Assets/Boomerang2DFramework/Content/BitmapFonts";
 		public const string HudObjectsContentDirectory = "Assets/Boomerang2DFramework/Content/HudObjects";
 		public const string MapPrefabsContentDirectory = "Assets/Boomerang2DFramework/Content/MapPrefabs";
+		public const string DialogContentContentDirectory = "Assets/Boomerang2DFramework/Content/DialogContent";
 
 		public const string GameFlagContentFile = "Assets/Boomerang2DFramework/Framework/GameFlagManagement/GameFlags.json";
 		public const string DialogContentContentFile = "Assets/Boomerang2DFramework/Content/DialogContent/DialogContent.json";

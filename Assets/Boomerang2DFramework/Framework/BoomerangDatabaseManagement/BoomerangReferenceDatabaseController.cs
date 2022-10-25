@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-//using UnityEditor;
-//using UnityEditor.SceneManagement;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -12,8 +12,9 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 
 #if UNITY_EDITOR
 		public void PopulateDatabaseReferenceContainer() {
-			UnityEditor.AssetDatabase.Refresh();
+			AssetDatabase.Refresh();
 			BuildRequiredDirectories();
+			BuildRequiredFiles();
 			GetReferenceContainer();
 
 			if (_reference != null) {
@@ -33,13 +34,12 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 				PopulateHudObjectData();
 
 				BoomerangDatabase.IndexContent();
-				
+
 				Debug.Log("Boomerang 2D Database Rebuilt at " + System.DateTime.Now);
 
-				
 				if (!Application.isPlaying) {
 					string[] path = UnityEditor.SceneManagement.EditorSceneManager.GetActiveScene().path.Split(char.Parse("/"));
-					
+
 					bool sceneIsSaved = UnityEditor.SceneManagement.EditorSceneManager.SaveScene(
 						UnityEditor.SceneManagement.EditorSceneManager.GetActiveScene(), string.Join("/", path)
 					);
@@ -54,7 +54,7 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 		}
 
 		private void BuildRequiredDirectories() {
-			List<string> folders = new List<string> {
+			List<string> folders = new() {
 				GameProperties.ActorContentDirectory,
 				GameProperties.AudioContentDirectory,
 				GameProperties.TextureBuiltInDirectory,
@@ -68,6 +68,7 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 				GameProperties.BitmapFontsContentDirectory,
 				GameProperties.HudObjectsContentDirectory,
 				GameProperties.MapPrefabsContentDirectory,
+				GameProperties.DialogContentContentDirectory,
 				GameProperties.CustomActorStateClassNs,
 				GameProperties.CustomCameraStateClassNs,
 				GameProperties.CustomActorTriggerClassNs,
@@ -91,10 +92,26 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 				for (int i = 0; i < fullPath.Count - 1; i++) {
 					string pathToHere = string.Join("/", fullPath.Take(i + 1));
 
-					if (!UnityEditor.AssetDatabase.IsValidFolder(pathToHere + "/" + fullPath[i + 1])) {
-						UnityEditor.AssetDatabase.CreateFolder(pathToHere, fullPath[i + 1]);
-						UnityEditor.AssetDatabase.Refresh();
+					if (!AssetDatabase.IsValidFolder(pathToHere + "/" + fullPath[i + 1])) {
+						AssetDatabase.CreateFolder(pathToHere, fullPath[i + 1]);
+						AssetDatabase.Refresh();
 					}
+				}
+			}
+		}
+
+		private void BuildRequiredFiles() {
+			Debug.Log("Building Database..");
+			Dictionary<string, string> files = new() {
+				{ GameProperties.DialogContentContentFile, "{}" }
+			};
+
+			foreach (KeyValuePair<string, string> file in files) {
+				bool fileExists = (TextAsset) AssetDatabase.LoadAssetAtPath(file.Key, typeof(TextAsset))  != null;
+
+				if (!fileExists) {
+					File.WriteAllText(file.Key, file.Value);
+					AssetDatabase.Refresh();
 				}
 			}
 		}
@@ -110,22 +127,22 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 
 		private void PopulateGameFlagData() {
 			_reference.GameFlagsJson =
-				(TextAsset) UnityEditor.AssetDatabase.LoadAssetAtPath(GameProperties.GameFlagContentFile, typeof(TextAsset));
+				(TextAsset) AssetDatabase.LoadAssetAtPath(GameProperties.GameFlagContentFile, typeof(TextAsset));
 		}
 
 		private void PopulateDialogContentItems() {
 			_reference.DialogContentJson =
-				(TextAsset) UnityEditor.AssetDatabase.LoadAssetAtPath(GameProperties.DialogContentContentFile, typeof(TextAsset));
+				(TextAsset) AssetDatabase.LoadAssetAtPath(GameProperties.DialogContentContentFile, typeof(TextAsset));
 		}
 
 		private void PopulateAudioData() {
-			List<AudioClip> data = new List<AudioClip>();
+			List<AudioClip> data = new();
 			_reference.AudioMixer =
-				(AudioMixer) UnityEditor.AssetDatabase.LoadAssetAtPath(GameProperties.AudioMixerAssetFile, typeof(AudioMixer));
+				(AudioMixer) AssetDatabase.LoadAssetAtPath(GameProperties.AudioMixerAssetFile, typeof(AudioMixer));
 
-			string[] fileNames = UnityEditor.AssetDatabase.FindAssets("t:AudioClip", new[] {GameProperties.AudioContentDirectory});
+			string[] fileNames = AssetDatabase.FindAssets("t:AudioClip", new[] { GameProperties.AudioContentDirectory });
 			foreach (string fileName in fileNames) {
-				data.Add((AudioClip) UnityEditor.AssetDatabase.LoadAssetAtPath(UnityEditor.AssetDatabase.GUIDToAssetPath(fileName),
+				data.Add((AudioClip) AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(fileName),
 					typeof(AudioClip)));
 			}
 
@@ -133,15 +150,15 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 		}
 
 		private void PopulateTextureData() {
-			List<Texture> data = new List<Texture>();
+			List<Texture> data = new();
 
-			string[] fileNames = UnityEditor.AssetDatabase.FindAssets(
+			string[] fileNames = AssetDatabase.FindAssets(
 				"t:Texture", new[] {
 					GameProperties.TextureBuiltInDirectory,
 					GameProperties.TextureCustomDirectory,
 				});
 			foreach (string fileName in fileNames) {
-				data.Add((Texture) UnityEditor.AssetDatabase.LoadAssetAtPath(UnityEditor.AssetDatabase.GUIDToAssetPath(fileName),
+				data.Add((Texture) AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(fileName),
 					typeof(Texture)));
 			}
 
@@ -149,15 +166,15 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 		}
 
 		private void PopulateActorData() {
-			List<TextAsset> jsonData = new List<TextAsset>();
-			List<BoomerangDatabase.SpriteDatabaseEntry> spriteData = new List<BoomerangDatabase.SpriteDatabaseEntry>();
+			List<TextAsset> jsonData = new();
+			List<BoomerangDatabase.SpriteDatabaseEntry> spriteData = new();
 
 			string[] jsonFileNames =
-				UnityEditor.AssetDatabase.FindAssets("t:TextAsset", new[] {GameProperties.ActorContentDirectory});
+				AssetDatabase.FindAssets("t:TextAsset", new[] { GameProperties.ActorContentDirectory });
 
 			foreach (string fileName in jsonFileNames) {
 				TextAsset json =
-					(TextAsset) UnityEditor.AssetDatabase.LoadAssetAtPath(UnityEditor.AssetDatabase.GUIDToAssetPath(fileName),
+					(TextAsset) AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(fileName),
 						typeof(TextAsset));
 				jsonData.Add(json);
 			}
@@ -165,7 +182,7 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 			foreach (TextAsset actorJson in jsonData) {
 				string path = GameProperties.ActorContentDirectory + "/" + actorJson.name + ".png";
 				Sprite[] actorSprites =
-					UnityEditor.AssetDatabase.LoadAllAssetRepresentationsAtPath(path).OfType<Sprite>().ToArray();
+					AssetDatabase.LoadAllAssetRepresentationsAtPath(path).OfType<Sprite>().ToArray();
 				spriteData.Add(new BoomerangDatabase.SpriteDatabaseEntry {
 					Name = actorJson.name,
 					Sprites = actorSprites
@@ -177,14 +194,14 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 		}
 
 		private void PopulateWeaponData() {
-			List<TextAsset> data = new List<TextAsset>();
+			List<TextAsset> data = new();
 
 			string[] jsonFileNames =
-				UnityEditor.AssetDatabase.FindAssets("t:TextAsset", new[] {GameProperties.WeaponContentDirectory});
+				AssetDatabase.FindAssets("t:TextAsset", new[] { GameProperties.WeaponContentDirectory });
 
 			foreach (string fileName in jsonFileNames) {
 				TextAsset json =
-					(TextAsset) UnityEditor.AssetDatabase.LoadAssetAtPath(UnityEditor.AssetDatabase.GUIDToAssetPath(fileName),
+					(TextAsset) AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(fileName),
 						typeof(TextAsset));
 				data.Add(json);
 			}
@@ -193,14 +210,14 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 		}
 
 		private void PopulateMapData() {
-			List<TextAsset> data = new List<TextAsset>();
+			List<TextAsset> data = new();
 
 			string[] jsonFileNames =
-				UnityEditor.AssetDatabase.FindAssets("t:TextAsset", new[] {GameProperties.MapContentDirectory});
+				AssetDatabase.FindAssets("t:TextAsset", new[] { GameProperties.MapContentDirectory });
 
 			foreach (string fileName in jsonFileNames) {
 				TextAsset json =
-					(TextAsset) UnityEditor.AssetDatabase.LoadAssetAtPath(UnityEditor.AssetDatabase.GUIDToAssetPath(fileName),
+					(TextAsset) AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(fileName),
 						typeof(TextAsset));
 				data.Add(json);
 			}
@@ -209,15 +226,15 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 		}
 
 		private void PopulateTilesetData() {
-			List<TextAsset> jsonData = new List<TextAsset>();
-			List<BoomerangDatabase.SpriteDatabaseEntry> spriteData = new List<BoomerangDatabase.SpriteDatabaseEntry>();
+			List<TextAsset> jsonData = new();
+			List<BoomerangDatabase.SpriteDatabaseEntry> spriteData = new();
 
 			string[] jsonFileNames =
-				UnityEditor.AssetDatabase.FindAssets("t:TextAsset", new[] {GameProperties.TilesetContentDirectory});
+				AssetDatabase.FindAssets("t:TextAsset", new[] { GameProperties.TilesetContentDirectory });
 
 			foreach (string fileName in jsonFileNames) {
 				TextAsset json =
-					(TextAsset) UnityEditor.AssetDatabase.LoadAssetAtPath(UnityEditor.AssetDatabase.GUIDToAssetPath(fileName),
+					(TextAsset) AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(fileName),
 						typeof(TextAsset));
 				jsonData.Add(json);
 			}
@@ -225,7 +242,7 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 			foreach (TextAsset tilesetJson in jsonData) {
 				string path = GameProperties.TilesetContentDirectory + "/" + tilesetJson.name + ".png";
 				Sprite[] tilesetSprites =
-					UnityEditor.AssetDatabase.LoadAllAssetRepresentationsAtPath(path).OfType<Sprite>().ToArray();
+					AssetDatabase.LoadAllAssetRepresentationsAtPath(path).OfType<Sprite>().ToArray();
 				spriteData.Add(new BoomerangDatabase.SpriteDatabaseEntry {
 					Name = tilesetJson.name,
 					Sprites = tilesetSprites
@@ -237,9 +254,9 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 		}
 
 		private void PopulateTileColliderData() {
-			List<GameObject> data = new List<GameObject>();
+			List<GameObject> data = new();
 
-			string[] prefabFileNames = UnityEditor.AssetDatabase.FindAssets(
+			string[] prefabFileNames = AssetDatabase.FindAssets(
 				"t:GameObject", new[] {
 					GameProperties.TileCollidersBuiltInDirectory,
 					GameProperties.TileCollidersCustomContentDirectory
@@ -247,7 +264,7 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 
 			foreach (string fileName in prefabFileNames) {
 				GameObject collider =
-					(GameObject) UnityEditor.AssetDatabase.LoadAssetAtPath(UnityEditor.AssetDatabase.GUIDToAssetPath(fileName),
+					(GameObject) AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(fileName),
 						typeof(GameObject));
 				data.Add(collider);
 			}
@@ -256,16 +273,16 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 		}
 
 		private void PopulateMapPrefabsData() {
-			List<GameObject> data = new List<GameObject>();
+			List<GameObject> data = new();
 
-			string[] prefabFileNames = UnityEditor.AssetDatabase.FindAssets(
+			string[] prefabFileNames = AssetDatabase.FindAssets(
 				"t:GameObject", new[] {
 					GameProperties.MapPrefabsContentDirectory
 				});
 
 			foreach (string fileName in prefabFileNames) {
 				GameObject prefab =
-					(GameObject) UnityEditor.AssetDatabase.LoadAssetAtPath(UnityEditor.AssetDatabase.GUIDToAssetPath(fileName),
+					(GameObject) AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(fileName),
 						typeof(GameObject));
 				data.Add(prefab);
 			}
@@ -274,14 +291,14 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 		}
 
 		private void PopulateShaderData() {
-			List<Shader> data = new List<Shader> {
+			List<Shader> data = new() {
 				Shader.Find("Unlit/Transparent"),
 				Shader.Find("Sprites/Default"),
 				Shader.Find("Sprites/Diffuse"),
 				Shader.Find("Sprites/Mask")
 			};
 
-			string[] jsonFileNames = UnityEditor.AssetDatabase.FindAssets(
+			string[] jsonFileNames = AssetDatabase.FindAssets(
 				"t:Shader", new[] {
 					GameProperties.SpriteShadersBuiltInDirectory,
 					GameProperties.SpriteShadersCustomDirectory
@@ -289,7 +306,7 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 
 			foreach (string fileName in jsonFileNames) {
 				Shader shader =
-					(Shader) UnityEditor.AssetDatabase.LoadAssetAtPath(UnityEditor.AssetDatabase.GUIDToAssetPath(fileName), typeof(Shader));
+					(Shader) AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(fileName), typeof(Shader));
 				data.Add(shader);
 			}
 
@@ -297,16 +314,16 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 		}
 
 		private void PopulateParticleEffectData() {
-			List<GameObject> data = new List<GameObject>();
+			List<GameObject> data = new();
 
-			string[] particleEffects = UnityEditor.AssetDatabase.FindAssets(
+			string[] particleEffects = AssetDatabase.FindAssets(
 				"t:GameObject", new[] {
 					GameProperties.ParticleEffectContentDirectory
 				});
 
 			foreach (string fileName in particleEffects) {
 				GameObject particleEffect =
-					(GameObject) UnityEditor.AssetDatabase.LoadAssetAtPath(UnityEditor.AssetDatabase.GUIDToAssetPath(fileName),
+					(GameObject) AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(fileName),
 						typeof(GameObject));
 				data.Add(particleEffect);
 			}
@@ -315,15 +332,15 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 		}
 
 		private void PopulateBitmapFontData() {
-			List<TextAsset> jsonData = new List<TextAsset>();
-			List<BoomerangDatabase.SpriteDatabaseEntry> spriteData = new List<BoomerangDatabase.SpriteDatabaseEntry>();
+			List<TextAsset> jsonData = new();
+			List<BoomerangDatabase.SpriteDatabaseEntry> spriteData = new();
 
 			string[] jsonFileNames =
-				UnityEditor.AssetDatabase.FindAssets("t:TextAsset", new[] {GameProperties.BitmapFontsContentDirectory});
+				AssetDatabase.FindAssets("t:TextAsset", new[] { GameProperties.BitmapFontsContentDirectory });
 
 			foreach (string fileName in jsonFileNames) {
 				TextAsset json =
-					(TextAsset) UnityEditor.AssetDatabase.LoadAssetAtPath(UnityEditor.AssetDatabase.GUIDToAssetPath(fileName),
+					(TextAsset) AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(fileName),
 						typeof(TextAsset));
 				jsonData.Add(json);
 			}
@@ -331,7 +348,7 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 			foreach (TextAsset bitmapFontJson in jsonData) {
 				string path = GameProperties.BitmapFontsContentDirectory + "/" + bitmapFontJson.name + ".png";
 				Sprite[] bitmapFontSprites =
-					UnityEditor.AssetDatabase.LoadAllAssetRepresentationsAtPath(path).OfType<Sprite>().ToArray();
+					AssetDatabase.LoadAllAssetRepresentationsAtPath(path).OfType<Sprite>().ToArray();
 				spriteData.Add(new BoomerangDatabase.SpriteDatabaseEntry {
 					Name = bitmapFontJson.name,
 					Sprites = bitmapFontSprites
@@ -343,13 +360,13 @@ namespace Boomerang2DFramework.Framework.BoomerangDatabaseManagement {
 		}
 
 		private void PopulateHudObjectData() {
-			List<TextAsset> jsonData = new List<TextAsset>();
+			List<TextAsset> jsonData = new();
 			string[] jsonFileNames =
-				UnityEditor.AssetDatabase.FindAssets("t:TextAsset", new[] {GameProperties.HudObjectsContentDirectory});
+				AssetDatabase.FindAssets("t:TextAsset", new[] { GameProperties.HudObjectsContentDirectory });
 
 			foreach (string fileName in jsonFileNames) {
 				TextAsset json =
-					(TextAsset) UnityEditor.AssetDatabase.LoadAssetAtPath(UnityEditor.AssetDatabase.GUIDToAssetPath(fileName),
+					(TextAsset) AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(fileName),
 						typeof(TextAsset));
 				jsonData.Add(json);
 			}
