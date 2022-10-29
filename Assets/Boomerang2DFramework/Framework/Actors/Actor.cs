@@ -439,8 +439,7 @@ namespace Boomerang2DFramework.Framework.Actors {
 						RealPosition + (Vector3) boundingBoxProperty.RealOffset,
 						boundingBoxProperty.RealSize,
 						0,
-						hits,
-						1 << LayerMask.NameToLayer("NonSolidTile")
+						hits
 					);
 
 					for (int index = 0; index < totalHits; index++) {

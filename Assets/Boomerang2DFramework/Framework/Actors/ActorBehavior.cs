@@ -27,6 +27,7 @@ namespace Boomerang2DFramework.Framework.Actors {
 		public float DistanceToSolidLeft;
 
 		public string ActiveState;
+		public List<string> Stats = new();
 		public List<State> States;
 
 		public List<BoundingBoxProperties> BoundingBoxProperties = new List<BoundingBoxProperties>();
@@ -54,6 +55,19 @@ namespace Boomerang2DFramework.Framework.Actors {
 			IsEnabled = Actor.IsEnabled;
 
 			States = Actor.StateMachine.AllStates.Values.ToList();
+			
+			Stats.Clear();
+			foreach (FloatStatProperties statProperties in Actor.ActorProperties.StatsFloats) {
+				Stats.Add("[F] " + statProperties.Name + ": " + statProperties.Value);
+			}
+			
+			foreach (BoolStatProperties statProperties in Actor.ActorProperties.StatsBools) {
+				Stats.Add("[B] " + statProperties.Name + ": " + statProperties.Value);
+			}
+			
+			foreach (StringStatProperties statProperties in Actor.ActorProperties.StatsStrings) {
+				Stats.Add("[S] " + statProperties.Name + ": " + statProperties.Value);
+			}
 
 			DistanceToSolidUp = Actor.DistanceToSolidUp;
 			DistanceToSolidRight = Actor.DistanceToSolidRight;
