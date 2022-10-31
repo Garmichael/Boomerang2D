@@ -216,14 +216,24 @@ namespace Boomerang2DFramework.Framework.Actors.ActorStateProperties {
 			}
 		}
 
-		private readonly List<StateEntryEventProperties> _entryEvents = new List<StateEntryEventProperties>();
+		private List<StateEntryExitEventProperties> _entryEvents = new List<StateEntryExitEventProperties>();
+		private List<StateEntryExitEventProperties> _exitEvents = new List<StateEntryExitEventProperties>();
+
+		public void BuildActorStateEntryEvents(List<StateEntryExitEventProperties> actorEvents) {
+			_entryEvents = BuildActorStateEvents(actorEvents);
+		}
+		
+		public void BuildActorStateExitEvents(List<StateEntryExitEventProperties> actorEvents) {
+			_exitEvents = BuildActorStateEvents(actorEvents);
+		}
 
 		/// <summary>
 		/// Builds the Actor Events
 		/// </summary>
 		/// <param name="actorEvents">Unbuilt Actor event properties</param>
-		public void BuildActorEvents(List<StateEntryEventProperties> actorEvents) {
-			foreach (StateEntryEventProperties actorEvent in actorEvents) {
+		private List<StateEntryExitEventProperties> BuildActorStateEvents(List<StateEntryExitEventProperties> actorEvents){ 
+		List<StateEntryExitEventProperties> events = new List<StateEntryExitEventProperties>();
+			foreach (StateEntryExitEventProperties actorEvent in actorEvents) {
 				actorEvent.Triggers.Clear();
 				foreach (ActorTriggerBuilder actorTriggerBuilder in actorEvent.ActorTriggerBuilders) {
 					actorEvent.Triggers.Add(actorTriggerBuilder.BuildTrigger());
@@ -234,8 +244,10 @@ namespace Boomerang2DFramework.Framework.Actors.ActorStateProperties {
 					actorEvent.ActorEvents.Add(actorEventBuilder.BuildActorEvent());
 				}
 
-				_entryEvents.Add(actorEvent);
+				events.Add(actorEvent);
 			}
+
+			return events;
 		}
 
 		/// <summary>
@@ -610,7 +622,7 @@ namespace Boomerang2DFramework.Framework.Actors.ActorStateProperties {
 		/// Called as part of OnEnterState
 		/// </remarks>
 		private void ProcessStateEntryActorEvents() {
-			foreach (StateEntryEventProperties stateActorEvent in _entryEvents) {
+			foreach (StateEntryExitEventProperties stateActorEvent in _entryEvents) {
 				if (stateActorEvent.ActorEvents.Count == 0) {
 					continue;
 				}
@@ -638,6 +650,41 @@ namespace Boomerang2DFramework.Framework.Actors.ActorStateProperties {
 			}
 		}
 
+		/// <summary>
+		/// Processes the State Exits Events
+		/// </summary>
+		/// <remarks>
+		/// Called as part of OnExitState
+		/// </remarks>
+		private void ProcessStateExitActorEvents() {
+			foreach (StateEntryExitEventProperties stateActorEvent in _exitEvents) {
+				if (stateActorEvent.ActorEvents.Count == 0) {
+					continue;
+				}
+
+				bool allTriggersMet = true;
+				bool usesTriggers = stateActorEvent.Triggers.Count > 0;
+
+				if (usesTriggers) {
+					foreach (ActorTrigger trigger in stateActorEvent.Triggers) {
+						if (!trigger.IsTriggered(Actor, this)) {
+							allTriggersMet = false;
+						}
+					}
+				}
+
+				if (allTriggersMet) {
+					foreach (ActorEvent actorEvent in stateActorEvent.ActorEvents) {
+						ActorEvent actorEventLocal = actorEvent;
+						Actor.QueuedActions.Add(
+							GlobalTimeManager.PerformAfter(actorEventLocal.StartTime,
+								() => { actorEventLocal.ApplyOutcome(Actor, Actor); })
+						);
+					}
+				}
+			}
+		}
+		
 		/// <summary>
 		/// Sets the Sound Effects Collection for this State
 		/// </summary>
@@ -690,6 +737,8 @@ namespace Boomerang2DFramework.Framework.Actors.ActorStateProperties {
 			foreach (LoopingAudioEffect loopingSoundEffect in _loopingSoundEffects) {
 				AudioManager.StopLoop(loopingSoundEffect);
 			}
+			
+			ProcessStateExitActorEvents();
 		}
 
 		/// <summary>

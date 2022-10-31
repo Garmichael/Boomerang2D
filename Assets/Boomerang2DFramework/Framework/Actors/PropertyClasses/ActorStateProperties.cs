@@ -21,6 +21,7 @@ namespace Boomerang2DFramework.Framework.Actors.PropertyClasses {
 		public List<StatePropertiesAnimation> Animations = new List<StatePropertiesAnimation>();
 		public List<StatePropertiesSoundEffect> SoundEffects = new List<StatePropertiesSoundEffect>();
 		public Vector2 EditorPosition = Vector2.zero;
-		public List<StateEntryEventProperties> StateEntryActorEvents = new List<StateEntryEventProperties>();
+		public List<StateEntryExitEventProperties> StateEntryActorEvents = new List<StateEntryExitEventProperties>();
+		public List<StateEntryExitEventProperties> StateExitActorEvents = new List<StateEntryExitEventProperties>();
 	}
 }

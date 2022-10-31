@@ -141,8 +141,8 @@ namespace Boomerang2DFramework.Framework.Actors {
 					states[state.Name].AddWeaponTrigger(weaponTriggerProperties);
 				}
 
-
-				states[state.Name].BuildActorEvents(state.StateEntryActorEvents);
+				states[state.Name].BuildActorStateEntryEvents(state.StateEntryActorEvents);
+				states[state.Name].BuildActorStateExitEvents(state.StateExitActorEvents);
 			}
 		}
 

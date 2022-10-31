@@ -75,7 +75,8 @@ namespace Boomerang2DFramework.Framework.Editor.ActorStudio {
 			"Sound Effects",
 			"Modification Triggers",
 			"Weapon Triggers",
-			"Entry Events"
+			"Entry Events",
+			"Exit Events"
 		};
 
 		private int _indexForActiveActor = -1;
@@ -119,9 +120,16 @@ namespace Boomerang2DFramework.Framework.Editor.ActorStudio {
 
 		private int _indexForSelectedStateEntryActorEvent;
 
-		private StateEntryEventProperties StateStateEntryEventEntryEvent =>
+		private StateEntryExitEventProperties StateEntryEvent =>
 			BoomerangUtils.IndexInRange(ActiveState.StateEntryActorEvents, _indexForSelectedStateEntryActorEvent)
 				? ActiveState.StateEntryActorEvents[_indexForSelectedStateEntryActorEvent]
+				: null;
+
+		private int _indexForSelectedStateExitActorEvent;
+		
+		private StateEntryExitEventProperties StateExitEvent =>
+			BoomerangUtils.IndexInRange(ActiveState.StateExitActorEvents, _indexForSelectedStateExitActorEvent)
+				? ActiveState.StateExitActorEvents[_indexForSelectedStateExitActorEvent]
 				: null;
 
 		private bool _addNewStatFloatMode;

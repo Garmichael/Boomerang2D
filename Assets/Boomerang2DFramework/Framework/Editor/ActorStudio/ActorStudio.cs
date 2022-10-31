@@ -1708,6 +1708,9 @@ namespace Boomerang2DFramework.Framework.Editor.ActorStudio {
 					case "Entry Events":
 						DrawEntryEventsManagementForm();
 						break;
+					case "Exit Events":
+						DrawExitEventsManagementForm();
+						break;
 					default:
 						return;
 				}
@@ -2326,7 +2329,7 @@ namespace Boomerang2DFramework.Framework.Editor.ActorStudio {
 			SuperForms.Region.VerticalBox(() => {
 				SuperForms.Region.Horizontal(() => {
 					SuperForms.IconButton(SuperForms.IconButtons.ButtonAdd, () => {
-						ActiveState.StateEntryActorEvents.Add(new StateEntryEventProperties());
+						ActiveState.StateEntryActorEvents.Add(new StateEntryExitEventProperties());
 						_indexForSelectedStateEntryActorEvent = ActiveState.StateEntryActorEvents.Count - 1;
 					});
 
@@ -2342,30 +2345,78 @@ namespace Boomerang2DFramework.Framework.Editor.ActorStudio {
 					);
 				});
 
-				if (StateStateEntryEventEntryEvent == null) {
+				if (StateEntryEvent == null) {
 					return;
 				}
 
-				StateEntryEventProperties toDelete = null;
+				StateEntryExitEventProperties toDelete = null;
 
 				SuperForms.Region.Horizontal(() => {
 					if (SuperForms.IconButton(SuperForms.IconButtons.ButtonDelete)) {
-						toDelete = StateStateEntryEventEntryEvent;
+						toDelete = StateEntryEvent;
 					}
 
 					if (SuperForms.IconButton(SuperForms.IconButtons.ButtonClone)) {
 						ActiveState.StateEntryActorEvents.Add(
-							JsonUtility.FromJson<StateEntryEventProperties>(JsonUtility.ToJson(StateStateEntryEventEntryEvent)));
+							JsonUtility.FromJson<StateEntryExitEventProperties>(JsonUtility.ToJson(StateEntryEvent)));
 						_indexForSelectedStateEntryActorEvent = ActiveState.StateEntryActorEvents.Count - 1;
 					}
 				});
 
-				SuperForms.Region.VerticalBox(() => { DrawInteractionEventsTriggers(StateStateEntryEventEntryEvent.ActorTriggerBuilders); }, GUILayout.Width(280));
-				DrawInteractionEventList(StateStateEntryEventEntryEvent.ActorEventBuilders, false);
+				SuperForms.Region.VerticalBox(() => { DrawInteractionEventsTriggers(StateEntryEvent.ActorTriggerBuilders); }, GUILayout.Width(280));
+				DrawInteractionEventList(StateEntryEvent.ActorEventBuilders, false);
 
 				if (toDelete != null) {
 					ActiveState.StateEntryActorEvents.Remove(toDelete);
 					_indexForSelectedStateEntryActorEvent = 0;
+				}
+			});
+		}
+
+		private void DrawExitEventsManagementForm() {
+			SuperForms.Region.VerticalBox(() => {
+				SuperForms.Region.Horizontal(() => {
+					SuperForms.IconButton(SuperForms.IconButtons.ButtonAdd, () => {
+						ActiveState.StateExitActorEvents.Add(new StateEntryExitEventProperties());
+						_indexForSelectedStateExitActorEvent = ActiveState.StateExitActorEvents.Count - 1;
+					});
+
+					List<string> dropdownLabels = new List<string>();
+					for (int i = 0; i < ActiveState.StateExitActorEvents.Count; i++) {
+						dropdownLabels.Add("Event " + (i + 1));
+					}
+
+					_indexForSelectedStateExitActorEvent = SuperForms.DropDown(
+						_indexForSelectedStateExitActorEvent,
+						dropdownLabels.ToArray(),
+						GUILayout.Width(200)
+					);
+				});
+
+				if (StateExitEvent == null) {
+					return;
+				}
+
+				StateEntryExitEventProperties toDelete = null;
+
+				SuperForms.Region.Horizontal(() => {
+					if (SuperForms.IconButton(SuperForms.IconButtons.ButtonDelete)) {
+						toDelete = StateExitEvent;
+					}
+
+					if (SuperForms.IconButton(SuperForms.IconButtons.ButtonClone)) {
+						ActiveState.StateExitActorEvents.Add(
+							JsonUtility.FromJson<StateEntryExitEventProperties>(JsonUtility.ToJson(StateExitEvent)));
+						_indexForSelectedStateExitActorEvent = ActiveState.StateExitActorEvents.Count - 1;
+					}
+				});
+
+				SuperForms.Region.VerticalBox(() => { DrawInteractionEventsTriggers(StateExitEvent.ActorTriggerBuilders); }, GUILayout.Width(280));
+				DrawInteractionEventList(StateExitEvent.ActorEventBuilders, false);
+
+				if (toDelete != null) {
+					ActiveState.StateExitActorEvents.Remove(toDelete);
+					_indexForSelectedStateExitActorEvent = 0;
 				}
 			});
 		}
