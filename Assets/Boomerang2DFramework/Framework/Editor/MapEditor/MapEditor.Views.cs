@@ -52,6 +52,7 @@ namespace Boomerang2DFramework.Framework.Editor.MapEditor {
 					activeView.Position = SuperForms.Vector2FieldSingleLine("Position", activeView.Position);
 					activeView.Dimensions = SuperForms.Vector2FieldSingleLine("Size", activeView.Dimensions);
 
+					_viewInputSnapSize = SuperForms.IntField("Editor Snap Size", (int)_viewInputSnapSize);
 					SuperForms.Space();
 					SuperForms.BoxSubHeader("Background Music");
 					activeView.PlaysBackgroundMusic = SuperForms.Checkbox("Plays Background Music", activeView.PlaysBackgroundMusic);

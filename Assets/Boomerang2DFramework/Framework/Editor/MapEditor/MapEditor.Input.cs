@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Boomerang2DFramework.Framework.Actors.PropertyClasses;
 using Boomerang2DFramework.Framework.BoomerangDatabaseManagement;
@@ -1620,8 +1621,8 @@ namespace Boomerang2DFramework.Framework.Editor.MapEditor {
 		private void InputDragViews(Vector2Int mapMousePosition) {
 			for (int i = 0; i < _selectedMapViews.Count; i++) {
 				MapViewProperties mapView = _selectedMapViews[i];
-				mapView.Position.x = mapMousePosition.x - _selectedObjectOffsets[i].x;
-				mapView.Position.y = mapMousePosition.y - _selectedObjectOffsets[i].y;
+				mapView.Position.x = (int) Math.Round((mapMousePosition.x - _selectedObjectOffsets[i].x) / _viewInputSnapSize, MidpointRounding.AwayFromZero) * (int) _viewInputSnapSize;
+				mapView.Position.y = (int) Math.Round((mapMousePosition.y - _selectedObjectOffsets[i].y) / _viewInputSnapSize, MidpointRounding.AwayFromZero) * (int) _viewInputSnapSize;
 			}
 		}
 
@@ -1683,11 +1684,12 @@ namespace Boomerang2DFramework.Framework.Editor.MapEditor {
 				} else {
 					if (_objectScalingWidthPositive) {
 						if (mapMousePosition.x >= _scalingObjectOriginalPosition.x) {
-							mapView.Dimensions.x = mapMousePosition.x - _scalingObjectOriginalPosition.x + 1;
+							mapView.Dimensions.x = (int)Math.Round(mapMousePosition.x / _viewInputSnapSize, MidpointRounding.AwayFromZero) * (int) _viewInputSnapSize - 
+								_scalingObjectOriginalPosition.x + 1;
 						}
 					} else {
 						if (mapMousePosition.x < _scalingObjectOriginalPosition.x + _scalingObjectOriginalSize.x) {
-							mapView.Position.x = mapMousePosition.x;
+							mapView.Position.x = (int) Math.Round(mapMousePosition.x / _viewInputSnapSize, MidpointRounding.AwayFromZero) * (int) _viewInputSnapSize;
 							mapView.Dimensions.x = _scalingObjectOriginTopLeft.x - mapView.Position.x + _scalingObjectOriginalSize.x;
 						}
 					}
@@ -1701,11 +1703,12 @@ namespace Boomerang2DFramework.Framework.Editor.MapEditor {
 				} else {
 					if (_objectScalingHeightPositive) {
 						if (mapMousePosition.y >= _scalingObjectOriginalPosition.y) {
-							mapView.Dimensions.y = mapMousePosition.y - _scalingObjectOriginalPosition.y + 1;
+							mapView.Dimensions.y = (int) Math.Round(mapMousePosition.y / _viewInputSnapSize, MidpointRounding.AwayFromZero) * (int) _viewInputSnapSize - 
+								_scalingObjectOriginalPosition.y + 1;
 						}
 					} else {
 						if (mapMousePosition.y < _scalingObjectOriginalPosition.y + _scalingObjectOriginalSize.y) {
-							mapView.Position.y = mapMousePosition.y;
+							mapView.Position.y = (int) Math.Round(mapMousePosition.y / _viewInputSnapSize, MidpointRounding.AwayFromZero) * (int) _viewInputSnapSize;
 							mapView.Dimensions.y = _scalingObjectOriginTopLeft.y - mapView.Position.y + _scalingObjectOriginalSize.y;
 						}
 					}

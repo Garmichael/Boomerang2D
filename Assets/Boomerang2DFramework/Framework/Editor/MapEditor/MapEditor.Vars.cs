@@ -222,6 +222,7 @@ namespace Boomerang2DFramework.Framework.Editor.MapEditor {
 
 		private MapViewProperties _inputHoveredViewOnMouseDown;
 		private List<MapViewProperties> _selectedMapViews = new List<MapViewProperties>();
+		private float _viewInputSnapSize = 16;
 
 		private MapRegionProperties _inputHoveredRegionOnMouseDown;
 		private List<MapRegionProperties> _selectedMapRegions = new List<MapRegionProperties>();
