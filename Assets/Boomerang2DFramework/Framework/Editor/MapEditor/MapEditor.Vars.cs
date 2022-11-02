@@ -233,7 +233,6 @@ namespace Boomerang2DFramework.Framework.Editor.MapEditor {
 		private TileEditorObject _brushEditorObjectBeingEdited;
 		private Vector2Int _brushAreaStartLocation;
 		private int _brushAreaMode;
-		private bool _brushTreatEdgeLikeSolid;
 
 		private Texture2D _mapEditingTransparentBackground;
 		private Texture2D _viewBorderTexture;

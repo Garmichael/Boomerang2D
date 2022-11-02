@@ -208,6 +208,7 @@ namespace Boomerang2DFramework.Framework.Editor.MapEditor {
 						_editingMode = EditingMode.TilesBrushes;
 						_tileEditingMode = TileEditingMode.PaintingBrush;
 						_brushEditorObjectBeingEdited = selectedTileEditorEditorObject;
+						_brushEditorObjectBeingEdited.BrushTreatEdgeLikeSolid = selectedTileEditorEditorObject.BrushTreatEdgeLikeSolid;
 						_selectedTileEditorObjects.Clear();
 
 						MapLayerProperties brushMapLayer = null;
@@ -448,7 +449,11 @@ namespace Boomerang2DFramework.Framework.Editor.MapEditor {
 						SuperForms.Button("Area", _brushMode == BrushModes.Area, () => { _brushMode = BrushModes.Area; });
 					});
 
-					_brushTreatEdgeLikeSolid = SuperForms.Checkbox("Treat Edge as Solid", _brushTreatEdgeLikeSolid);
+					_brushEditorObjectBeingEdited.BrushTreatEdgeLikeSolid = SuperForms.Checkbox(
+						"Treat Edge as Solid",
+						_brushEditorObjectBeingEdited.BrushTreatEdgeLikeSolid
+					);
+					
 					SuperForms.Space();
 					SuperForms.Space();
 					SuperForms.Space();

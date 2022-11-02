@@ -11,6 +11,7 @@ namespace Boomerang2DFramework.Framework.MapGeneration.EditorObjects {
 		public int Width;
 		public int Height;
 		public string BrushMapDefinition;
+		public bool BrushTreatEdgeLikeSolid;
 		public List<List<int>> ParsedBrushMapDefinition;
 		public CachedTileEditorObjectInfo CachedEditorTextureInfo;
 		[System.NonSerialized] public Texture2D CachedEditorTexture;

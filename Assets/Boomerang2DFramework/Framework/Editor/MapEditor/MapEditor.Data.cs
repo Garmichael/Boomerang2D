@@ -252,7 +252,7 @@ namespace Boomerang2DFramework.Framework.Editor.MapEditor {
 									if (isInMap) {
 										int tileToPaint = GetPaintbrushTileId(
 											_allTileSets[mapLayer.Tileset].Properties.Brushes[editorObject.Id],
-											editorObject.ParsedBrushMapDefinition,
+											editorObject,
 											x,
 											y
 										);
@@ -487,7 +487,7 @@ namespace Boomerang2DFramework.Framework.Editor.MapEditor {
 			for (int y = 0; y < map.Count; y++) {
 				for (int x = 0; x < map[y].Count; x++) {
 					if (map[y][x] == 1) {
-						int tileToPaint = GetPaintbrushTileId(brushTileset.Properties.Brushes[brushEditorObject.Id], map, x, y);
+						int tileToPaint = GetPaintbrushTileId(brushTileset.Properties.Brushes[brushEditorObject.Id], brushEditorObject, x, y);
 
 						if (tileToPaint > 0) {
 							int textureId = brushTileset.Properties.TilesLookup[tileToPaint].AnimationFrames[0];
@@ -539,46 +539,48 @@ namespace Boomerang2DFramework.Framework.Editor.MapEditor {
 			return parsedDefinition;
 		}
 
-		private int GetPaintbrushTileId(TilesetEditorBrush brush, List<List<int>> map, int x, int y) {
-			if (map[y][x] == 0) {
+		private int GetPaintbrushTileId(TilesetEditorBrush brush, TileEditorObject editorObject, int x, int y) {
+			
+			
+			if (editorObject.ParsedBrushMapDefinition[y][x] == 0) {
 				return 0;
 			}
 
-			int height = map.Count;
-			int width = map[0].Count;
+			int height = editorObject.ParsedBrushMapDefinition.Count;
+			int width = editorObject.ParsedBrushMapDefinition[0].Count;
 			int bits = 0;
 
-			bool topRight = y > 0 && x < width - 1 && map[y - 1][x + 1] == 1;
-			bool topMiddle = y > 0 && map[y - 1][x] == 1;
-			bool topLeft = y > 0 && x > 0 && map[y - 1][x - 1] == 1;
+			bool topRight = y > 0 && x < width - 1 && editorObject.ParsedBrushMapDefinition[y - 1][x + 1] == 1;
+			bool topMiddle = y > 0 && editorObject.ParsedBrushMapDefinition[y - 1][x] == 1;
+			bool topLeft = y > 0 && x > 0 && editorObject.ParsedBrushMapDefinition[y - 1][x - 1] == 1;
 
-			bool leftMiddle = x > 0 && map[y][x - 1] == 1;
-			bool rightMiddle = x < width - 1 && map[y][x + 1] == 1;
+			bool leftMiddle = x > 0 && editorObject.ParsedBrushMapDefinition[y][x - 1] == 1;
+			bool rightMiddle = x < width - 1 && editorObject.ParsedBrushMapDefinition[y][x + 1] == 1;
 
-			bool bottomLeft = y < height - 1 && x > 0 && map[y + 1][x - 1] == 1;
-			bool bottomMiddle = y < height - 1 && map[y + 1][x] == 1;
-			bool bottomRight = y < height - 1 && x < width - 1 && map[y + 1][x + 1] == 1;
+			bool bottomLeft = y < height - 1 && x > 0 && editorObject.ParsedBrushMapDefinition[y + 1][x - 1] == 1;
+			bool bottomMiddle = y < height - 1 && editorObject.ParsedBrushMapDefinition[y + 1][x] == 1;
+			bool bottomRight = y < height - 1 && x < width - 1 && editorObject.ParsedBrushMapDefinition[y + 1][x + 1] == 1;
 
-			if (_brushTreatEdgeLikeSolid) {
-				if (y == height - 1) {
+			if (editorObject.BrushTreatEdgeLikeSolid) {
+				if (y + editorObject.Y == ActiveMap.Height - 1) {
 					bottomLeft = true;
 					bottomMiddle = true;
 					bottomRight = true;
 				}
 
-				if (y == 0) {
+				if (y - editorObject.Y == 0) {
 					topLeft = true;
 					topMiddle = true;
 					topRight = true;
 				}
 
-				if (x == width - 1) {
+				if (x + editorObject.X == ActiveMap.Width - 1) {
 					topRight = true;
 					rightMiddle = true;
 					bottomRight = true;
 				}
 
-				if (x == 0) {
+				if (x - editorObject.X == 0) {
 					topLeft = true;
 					leftMiddle = true;
 					bottomLeft = true;
@@ -713,6 +715,7 @@ namespace Boomerang2DFramework.Framework.Editor.MapEditor {
 				Y = y,
 				Height = height,
 				Width = width,
+				BrushTreatEdgeLikeSolid = brushObject.BrushTreatEdgeLikeSolid,
 				BrushMapDefinition = brushMapDefinition,
 				ParsedBrushMapDefinition = new List<List<int>>(map),
 				CachedEditorTexture = cachedTexture,
