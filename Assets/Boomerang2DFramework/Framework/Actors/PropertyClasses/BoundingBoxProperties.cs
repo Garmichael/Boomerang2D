@@ -9,8 +9,6 @@ namespace Boomerang2DFramework.Framework.Actors.PropertyClasses {
 	[System.Serializable]
 	public class BoundingBoxProperties {
 		public bool Enabled = true;
-		public Vector2 DefaultSize = new Vector2(1, 1);
-		public Vector2 DefaultOffset = new Vector2(0, 0);
 		public Vector2 Size = new Vector2(1, 1);
 		public Vector2 Offset = new Vector2(0, 0);
 		public Vector2 RealSize => BoomerangUtils.RoundToPixelPerfection(Size / GameProperties.PixelsPerUnit);
@@ -44,7 +42,6 @@ namespace Boomerang2DFramework.Framework.Actors.PropertyClasses {
 		public float RayInsetFirstLeft;
 		public float RayInsetLastLeft;
 
-		public List<string> DefaultFlags = new List<string>();
 		public List<string> Flags = new List<string>();
 	}
 }

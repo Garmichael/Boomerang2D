@@ -381,186 +381,533 @@ namespace Boomerang2DFramework.Framework.Editor.ActorStudio {
 		}
 
 		private void DrawBoundingBoxesForm() {
-			SuperForms.Region.Area(new Rect(220, 20, 280, _windowHeight - 120), () => {
-				SuperForms.Region.Scroll("ActorStudioBoundingBoxesForm", () => {
-					SuperForms.Region.VerticalBox(() => {
-						SuperForms.BoxHeader("Bounding Boxes");
-
-						SuperForms.IconButton(SuperForms.IconButtons.ButtonAdd, () => {
-							ActiveActor.BoundingBoxes.Add(new BoundingBoxProperties());
-							foreach (ActorStateProperties state in ActiveActor.States) {
-								foreach (StatePropertiesAnimation animation in state.Animations) {
-									foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
-										animationFrame.BoundingBoxProperties.Add(new BoundingBoxProperties());
-									}
-								}
+			const int mainColumnWidth = 380;
+			const int buttonWidth = 70;
+			int deleteIndex = -1;
+			
+			SuperForms.Region.Area(new Rect(220, 20, _windowWidth - 250, _windowHeight - 120), () => {
+				SuperForms.IconButton(SuperForms.IconButtons.ButtonAdd, () => {
+					ActiveActor.BoundingBoxes.Add(new BoundingBoxProperties());
+					foreach (ActorStateProperties state in ActiveActor.States) {
+						foreach (StatePropertiesAnimation animation in state.Animations) {
+							foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+								animationFrame.BoundingBoxProperties.Add(new BoundingBoxProperties());
 							}
-						});
+						}
+					}
+				});
+				
+				SuperForms.Region.Scroll("ActorStudioBoundingBoxesFormList", () => {
+					SuperForms.Begin.Horizontal();
 
-						foreach (BoundingBoxProperties boundingBox in ActiveActor.BoundingBoxes) {
-							SuperForms.Begin.VerticalSubBox();
+					foreach (BoundingBoxProperties boundingBox in ActiveActor.BoundingBoxes) {
+						int boundingBoxIndex = ActiveActor.BoundingBoxes.IndexOf(boundingBox);
+						
+						SuperForms.Region.VerticalBox(() => {
+								SuperForms.BoxHeader("Bounding Box " + boundingBoxIndex);
 
-							SuperForms.BoxSubHeader("Default Properties");
-							boundingBox.Enabled = SuperForms.Checkbox("Default Enabled", boundingBox.Enabled);
-							boundingBox.DefaultSize = SuperForms.Vector2Field("Default Size", boundingBox.DefaultSize);
-							boundingBox.DefaultOffset = SuperForms.Vector2Field("Default Offset", boundingBox.DefaultOffset);
+								SuperForms.BoxSubHeader("Default Properties");
 
-							boundingBox.DefaultFlags = SuperForms.ListField("Default Flags", boundingBox.DefaultFlags);
+								SuperForms.Region.Horizontal(() => {
+									boundingBox.Enabled = SuperForms.Checkbox("Default Enabled", boundingBox.Enabled);
+									SuperForms.Button("Set to All", () => {
+										int index = ActiveActor.BoundingBoxes.IndexOf(boundingBox);
 
-							SuperForms.Space();
+										foreach (ActorStateProperties state in ActiveActor.States) {
+											foreach (StatePropertiesAnimation animation in state.Animations) {
+												foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+													animationFrame.BoundingBoxProperties[index].Enabled = boundingBox.Enabled;
+												}
+											}
+										}
+									}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+								});
 
-							boundingBox.RayCastUp = SuperForms.Checkbox("Ray Cast Up", boundingBox.RayCastUp);
+								SuperForms.Region.Horizontal(() => {
+									SuperForms.Region.Horizontal(() => {
+										boundingBox.Size = SuperForms.Vector2FieldSingleLine("Size", boundingBox.Size, 35);
 
-							if (boundingBox.RayCastUp) {
-								SuperForms.Begin.VerticalIndentedBox();
-								boundingBox.RayCountUp = SuperForms.IntField("Rays To Cast", boundingBox.RayCountUp);
-								boundingBox.RayLengthUp = SuperForms.FloatField("Ray Length", boundingBox.RayLengthUp);
+										SuperForms.Button("Set to All", () => {
+											foreach (ActorStateProperties state in ActiveActor.States) {
+												foreach (StatePropertiesAnimation animation in state.Animations) {
+													foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].Size.x = boundingBox.Size.x;
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].Size.y = boundingBox.Size.y;
+													}
+												}
+											}
+										}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+									});
+								});
 
-								if (boundingBox.RayCountUp == 0) {
+								SuperForms.Region.Horizontal(() => {
+									boundingBox.Offset = SuperForms.Vector2FieldSingleLine("Offset", boundingBox.Offset, 35);
+									SuperForms.Button("Set to All", () => {
+										foreach (ActorStateProperties state in ActiveActor.States) {
+											foreach (StatePropertiesAnimation animation in state.Animations) {
+												foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+													animationFrame.BoundingBoxProperties[boundingBoxIndex].Offset.x = boundingBox.Offset.x;
+													animationFrame.BoundingBoxProperties[boundingBoxIndex].Offset.y = boundingBox.Offset.y;
+
+												}
+											}
+										}
+									}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+								});
+
+								SuperForms.Region.Horizontal(() => {
+									boundingBox.Flags = SuperForms.ListField("Default Flags", boundingBox.Flags);
+
+									SuperForms.Button("Set to All", () => {
+										foreach (ActorStateProperties state in ActiveActor.States) {
+											foreach (StatePropertiesAnimation animation in state.Animations) {
+												foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+													animationFrame.BoundingBoxProperties[boundingBoxIndex].Flags = boundingBox.Flags;
+												}
+											}
+										}
+									}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+								});
+
+								SuperForms.Space();
+
+								SuperForms.Region.Horizontal(() => {
+									boundingBox.RayCastUp = SuperForms.Checkbox("Ray Cast Up", boundingBox.RayCastUp);
+									SuperForms.Button("Set to All", () => {
+										foreach (ActorStateProperties state in ActiveActor.States) {
+											foreach (StatePropertiesAnimation animation in state.Animations) {
+												foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+													animationFrame.BoundingBoxProperties[boundingBoxIndex].RayCastUp = boundingBox.RayCastUp;
+												}
+											}
+										}
+									}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+								});
+
+								if (boundingBox.RayCastUp) {
+									SuperForms.Begin.VerticalIndentedBox();
+
+									SuperForms.Region.Horizontal(() => {
+										boundingBox.RayCountUp = SuperForms.IntField("Rays To Cast", boundingBox.RayCountUp);
+										SuperForms.Button("Set to All", () => {
+											foreach (ActorStateProperties state in ActiveActor.States) {
+												foreach (StatePropertiesAnimation animation in state.Animations) {
+													foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].RayCountUp = boundingBox.RayCountUp;
+													}
+												}
+											}
+										}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+									});
+
+									SuperForms.Region.Horizontal(() => {
+										boundingBox.RayLengthUp = SuperForms.FloatField("Ray Length", boundingBox.RayLengthUp);
+										SuperForms.Button("Set to All", () => {
+											foreach (ActorStateProperties state in ActiveActor.States) {
+												foreach (StatePropertiesAnimation animation in state.Animations) {
+													foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].RayLengthUp = boundingBox.RayLengthUp;
+													}
+												}
+											}
+										}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+									});
+
+									if (boundingBox.RayCountUp == 0) {
+										boundingBox.RayCountUp = 1;
+									}
+
+									SuperForms.Region.Horizontal(() => {
+										boundingBox.RayInsetUp = SuperForms.FloatField("Ray Inset From Edge", boundingBox.RayInsetUp);
+										SuperForms.Button("Set to All", () => {
+											foreach (ActorStateProperties state in ActiveActor.States) {
+												foreach (StatePropertiesAnimation animation in state.Animations) {
+													foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].RayInsetUp = boundingBox.RayInsetUp;
+													}
+												}
+											}
+										}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+									});
+
+
+									if (boundingBox.RayCountUp > 1) {
+										SuperForms.Region.Horizontal(() => {
+											boundingBox.RayInsetFirstUp = SuperForms.FloatField("Ray Left Inset", boundingBox.RayInsetFirstUp);
+											SuperForms.Button("Set to All", () => {
+												foreach (ActorStateProperties state in ActiveActor.States) {
+													foreach (StatePropertiesAnimation animation in state.Animations) {
+														foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+															animationFrame.BoundingBoxProperties[boundingBoxIndex].RayInsetFirstUp = boundingBox.RayInsetFirstUp;
+														}
+													}
+												}
+											}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+										});
+
+										SuperForms.Region.Horizontal(() => {
+											boundingBox.RayInsetLastUp = SuperForms.FloatField("Ray Right Inset", boundingBox.RayInsetLastUp);
+											SuperForms.Button("Set to All", () => {
+												foreach (ActorStateProperties state in ActiveActor.States) {
+													foreach (StatePropertiesAnimation animation in state.Animations) {
+														foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+															animationFrame.BoundingBoxProperties[boundingBoxIndex].RayInsetLastUp = boundingBox.RayInsetLastUp;
+														}
+													}
+												}
+											}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+										});
+									}
+
+									SuperForms.End.Vertical();
+								}
+
+								SuperForms.Region.Horizontal(() => {
+									boundingBox.RayCastRight = SuperForms.Checkbox("Ray Cast Right", boundingBox.RayCastRight);
+									SuperForms.Button("Set to All", () => {
+										foreach (ActorStateProperties state in ActiveActor.States) {
+											foreach (StatePropertiesAnimation animation in state.Animations) {
+												foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+													animationFrame.BoundingBoxProperties[boundingBoxIndex].RayCastRight = boundingBox.RayCastRight;
+												}
+											}
+										}
+									}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+								});
+
+								if (boundingBox.RayCastRight) {
+									SuperForms.Begin.VerticalIndentedBox();
+
+									SuperForms.Region.Horizontal(() => {
+										boundingBox.RayCountRight = SuperForms.IntField("Rays To Cast", boundingBox.RayCountRight);
+										SuperForms.Button("Set to All", () => {
+											foreach (ActorStateProperties state in ActiveActor.States) {
+												foreach (StatePropertiesAnimation animation in state.Animations) {
+													foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].RayCountRight = boundingBox.RayCountRight;
+													}
+												}
+											}
+										}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+									});
+
+									SuperForms.Region.Horizontal(() => {
+										boundingBox.RayLengthRight = SuperForms.FloatField("Ray Length", boundingBox.RayLengthRight);
+										SuperForms.Button("Set to All", () => {
+											foreach (ActorStateProperties state in ActiveActor.States) {
+												foreach (StatePropertiesAnimation animation in state.Animations) {
+													foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].RayLengthRight = boundingBox.RayLengthRight;
+													}
+												}
+											}
+										}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+									});
+
+									if (boundingBox.RayCountRight == 0) {
+										boundingBox.RayCountRight = 1;
+									}
+
+
+									SuperForms.Region.Horizontal(() => {
+										boundingBox.RayInsetRight = SuperForms.FloatField("Ray Inset From Edge", boundingBox.RayInsetRight);
+										SuperForms.Button("Set to All", () => {
+											foreach (ActorStateProperties state in ActiveActor.States) {
+												foreach (StatePropertiesAnimation animation in state.Animations) {
+													foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].RayInsetRight = boundingBox.RayInsetRight;
+													}
+												}
+											}
+										}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+									});
+
+									if (boundingBox.RayCountRight > 1) {
+										SuperForms.Region.Horizontal(() => {
+											boundingBox.RayInsetFirstRight = SuperForms.FloatField("Ray Top Inset", boundingBox.RayInsetFirstRight);
+											SuperForms.Button("Set to All", () => {
+												foreach (ActorStateProperties state in ActiveActor.States) {
+													foreach (StatePropertiesAnimation animation in state.Animations) {
+														foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+															animationFrame.BoundingBoxProperties[boundingBoxIndex].RayInsetFirstRight =
+																boundingBox.RayInsetFirstRight;
+														}
+													}
+												}
+											}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+										});
+
+										SuperForms.Region.Horizontal(() => {
+											boundingBox.RayInsetLastRight = SuperForms.FloatField("Ray Bottom Inset", boundingBox.RayInsetLastRight);
+											SuperForms.Button("Set to All", () => {
+												foreach (ActorStateProperties state in ActiveActor.States) {
+													foreach (StatePropertiesAnimation animation in state.Animations) {
+														foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+															animationFrame.BoundingBoxProperties[boundingBoxIndex].RayInsetLastRight =
+																boundingBox.RayInsetLastRight;
+														}
+													}
+												}
+											}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+										});
+									}
+
+									SuperForms.End.Vertical();
+								}
+
+								SuperForms.Region.Horizontal(() => {
+									boundingBox.RayCastDown = SuperForms.Checkbox("Ray Cast Down", boundingBox.RayCastDown);
+									SuperForms.Button("Set to All", () => {
+										foreach (ActorStateProperties state in ActiveActor.States) {
+											foreach (StatePropertiesAnimation animation in state.Animations) {
+												foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+													animationFrame.BoundingBoxProperties[boundingBoxIndex].RayCastDown = boundingBox.RayCastDown;
+												}
+											}
+										}
+									}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+								});
+
+								if (boundingBox.RayCastDown) {
+									SuperForms.Begin.VerticalIndentedBox();
+
+									SuperForms.Region.Horizontal(() => {
+										boundingBox.RayCountDown = SuperForms.IntField("Rays To Cast", boundingBox.RayCountDown);
+										SuperForms.Button("Set to All", () => {
+											foreach (ActorStateProperties state in ActiveActor.States) {
+												foreach (StatePropertiesAnimation animation in state.Animations) {
+													foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].RayCountDown = boundingBox.RayCountDown;
+													}
+												}
+											}
+										}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+									});
+
+									SuperForms.Region.Horizontal(() => {
+										boundingBox.RayLengthDown = SuperForms.FloatField("Ray Length", boundingBox.RayLengthDown);
+										SuperForms.Button("Set to All", () => {
+											foreach (ActorStateProperties state in ActiveActor.States) {
+												foreach (StatePropertiesAnimation animation in state.Animations) {
+													foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].RayLengthDown = boundingBox.RayLengthDown;
+													}
+												}
+											}
+										}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+									});
+
+									if (boundingBox.RayCountDown == 0) {
+										boundingBox.RayCountDown = 1;
+									}
+
+									SuperForms.Region.Horizontal(() => {
+										boundingBox.RayInsetDown = SuperForms.FloatField("Ray Inset From Edge", boundingBox.RayInsetDown);
+										SuperForms.Button("Set to All", () => {
+											foreach (ActorStateProperties state in ActiveActor.States) {
+												foreach (StatePropertiesAnimation animation in state.Animations) {
+													foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].RayInsetDown = boundingBox.RayInsetDown;
+													}
+												}
+											}
+										}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+									});
+
+									if (boundingBox.RayCountDown > 1) {
+										SuperForms.Region.Horizontal(() => {
+											boundingBox.RayInsetFirstDown = SuperForms.FloatField("Ray Left Inset", boundingBox.RayInsetFirstDown);
+											SuperForms.Button("Set to All", () => {
+												foreach (ActorStateProperties state in ActiveActor.States) {
+													foreach (StatePropertiesAnimation animation in state.Animations) {
+														foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+															animationFrame.BoundingBoxProperties[boundingBoxIndex].RayInsetFirstDown =
+																boundingBox.RayInsetFirstDown;
+														}
+													}
+												}
+											}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+										});
+
+										SuperForms.Region.Horizontal(() => {
+											boundingBox.RayInsetLastDown = SuperForms.FloatField("Ray Right Inset", boundingBox.RayInsetLastDown);
+											SuperForms.Button("Set to All", () => {
+												foreach (ActorStateProperties state in ActiveActor.States) {
+													foreach (StatePropertiesAnimation animation in state.Animations) {
+														foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+															animationFrame.BoundingBoxProperties[boundingBoxIndex].RayInsetLastDown = boundingBox.RayInsetLastDown;
+														}
+													}
+												}
+											}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+										});
+									}
+
+									SuperForms.End.Vertical();
+								}
+
+								SuperForms.Region.Horizontal(() => {
+									boundingBox.RayCastLeft = SuperForms.Checkbox("Ray Cast Left", boundingBox.RayCastLeft);
+									SuperForms.Button("Set to All", () => {
+										foreach (ActorStateProperties state in ActiveActor.States) {
+											foreach (StatePropertiesAnimation animation in state.Animations) {
+												foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+													animationFrame.BoundingBoxProperties[boundingBoxIndex].RayCastLeft = boundingBox.RayCastLeft;
+												}
+											}
+										}
+									}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+								});
+
+								if (boundingBox.RayCastLeft) {
+									SuperForms.Begin.VerticalIndentedBox();
+									SuperForms.Region.Horizontal(() => {
+										boundingBox.RayCountLeft = SuperForms.IntField("Rays To Cast", boundingBox.RayCountLeft);
+										SuperForms.Button("Set to All", () => {
+											foreach (ActorStateProperties state in ActiveActor.States) {
+												foreach (StatePropertiesAnimation animation in state.Animations) {
+													foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].RayCountLeft = boundingBox.RayCountLeft;
+													}
+												}
+											}
+										}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+									});
+
+									SuperForms.Region.Horizontal(() => {
+										boundingBox.RayLengthLeft = SuperForms.FloatField("Ray Length", boundingBox.RayLengthLeft);
+										SuperForms.Button("Set to All", () => {
+											foreach (ActorStateProperties state in ActiveActor.States) {
+												foreach (StatePropertiesAnimation animation in state.Animations) {
+													foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].RayLengthLeft = boundingBox.RayLengthLeft;
+													}
+												}
+											}
+										}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+									});
+
+									if (boundingBox.RayCountLeft == 0) {
+										boundingBox.RayCountLeft = 1;
+									}
+
+									SuperForms.Region.Horizontal(() => {
+										boundingBox.RayInsetLeft = SuperForms.FloatField("Ray Inset From Edge", boundingBox.RayInsetLeft);
+										SuperForms.Button("Set to All", () => {
+											foreach (ActorStateProperties state in ActiveActor.States) {
+												foreach (StatePropertiesAnimation animation in state.Animations) {
+													foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+														animationFrame.BoundingBoxProperties[boundingBoxIndex].RayInsetLeft = boundingBox.RayInsetLeft;
+													}
+												}
+											}
+										}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+									});
+
+									if (boundingBox.RayCountLeft > 1) {
+										SuperForms.Region.Horizontal(() => {
+											boundingBox.RayInsetFirstLeft = SuperForms.FloatField("Ray Top Inset", boundingBox.RayInsetFirstLeft);
+											SuperForms.Button("Set to All", () => {
+												foreach (ActorStateProperties state in ActiveActor.States) {
+													foreach (StatePropertiesAnimation animation in state.Animations) {
+														foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+															animationFrame.BoundingBoxProperties[boundingBoxIndex].RayInsetFirstLeft =
+																boundingBox.RayInsetFirstLeft;
+														}
+													}
+												}
+											}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+										});
+
+										SuperForms.Region.Horizontal(() => {
+											boundingBox.RayInsetLastLeft = SuperForms.FloatField("Ray Bottom Inset", boundingBox.RayInsetLastLeft);
+											SuperForms.Button("Set to All", () => {
+												foreach (ActorStateProperties state in ActiveActor.States) {
+													foreach (StatePropertiesAnimation animation in state.Animations) {
+														foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+															animationFrame.BoundingBoxProperties[boundingBoxIndex].RayInsetLastLeft = boundingBox.RayInsetLastLeft;
+														}
+													}
+												}
+											}, new GUIStyle(SuperFormsStyles.Button) { fixedWidth = buttonWidth });
+										});
+									}
+
+									SuperForms.End.Vertical();
+								}
+
+								if (boundingBox.RayCountUp < 1) {
 									boundingBox.RayCountUp = 1;
 								}
 
-								boundingBox.RayInsetUp = SuperForms.FloatField("Ray Inset From Edge", boundingBox.RayInsetUp);
-
-								if (boundingBox.RayCountUp > 1) {
-									boundingBox.RayInsetFirstUp = SuperForms.FloatField("Ray Left Inset", boundingBox.RayInsetFirstUp);
-									boundingBox.RayInsetLastUp = SuperForms.FloatField("Ray Right Inset", boundingBox.RayInsetLastUp);
-								}
-
-								SuperForms.End.Vertical();
-							}
-
-							boundingBox.RayCastRight = SuperForms.Checkbox("Ray Cast Right", boundingBox.RayCastRight);
-							if (boundingBox.RayCastRight) {
-								SuperForms.Begin.VerticalIndentedBox();
-								boundingBox.RayCountRight = SuperForms.IntField("Rays To Cast", boundingBox.RayCountRight);
-								boundingBox.RayLengthRight = SuperForms.FloatField("Ray Length", boundingBox.RayLengthRight);
-
-								if (boundingBox.RayCountRight == 0) {
+								if (boundingBox.RayCountRight < 1) {
 									boundingBox.RayCountRight = 1;
 								}
 
-								boundingBox.RayInsetRight = SuperForms.FloatField("Ray Inset From Edge", boundingBox.RayInsetRight);
-
-								if (boundingBox.RayCountRight > 1) {
-									boundingBox.RayInsetFirstRight = SuperForms.FloatField("Ray Top Inset", boundingBox.RayInsetFirstRight);
-									boundingBox.RayInsetLastRight = SuperForms.FloatField("Ray Bottom Inset", boundingBox.RayInsetLastRight);
-								}
-
-								SuperForms.End.Vertical();
-							}
-
-							boundingBox.RayCastDown = SuperForms.Checkbox("Ray Cast Down", boundingBox.RayCastDown);
-							if (boundingBox.RayCastDown) {
-								SuperForms.Begin.VerticalIndentedBox();
-								boundingBox.RayCountDown = SuperForms.IntField("Rays To Cast", boundingBox.RayCountDown);
-								boundingBox.RayLengthDown = SuperForms.FloatField("Ray Length", boundingBox.RayLengthDown);
-
-								if (boundingBox.RayCountDown == 0) {
+								if (boundingBox.RayCountDown < 1) {
 									boundingBox.RayCountDown = 1;
 								}
 
-								boundingBox.RayInsetDown = SuperForms.FloatField("Ray Inset From Edge", boundingBox.RayInsetDown);
-
-								if (boundingBox.RayCountDown > 1) {
-									boundingBox.RayInsetFirstDown = SuperForms.FloatField("Ray Left Inset", boundingBox.RayInsetFirstDown);
-									boundingBox.RayInsetLastDown = SuperForms.FloatField("Ray Right Inset", boundingBox.RayInsetLastDown);
-								}
-
-								SuperForms.End.Vertical();
-							}
-
-							boundingBox.RayCastLeft = SuperForms.Checkbox("Ray Cast Left", boundingBox.RayCastLeft);
-							if (boundingBox.RayCastLeft) {
-								SuperForms.Begin.VerticalIndentedBox();
-								boundingBox.RayCountLeft = SuperForms.IntField("Rays To Cast", boundingBox.RayCountLeft);
-								boundingBox.RayLengthLeft = SuperForms.FloatField("Ray Length", boundingBox.RayLengthLeft);
-
-								if (boundingBox.RayCountLeft == 0) {
+								if (boundingBox.RayCountLeft < 1) {
 									boundingBox.RayCountLeft = 1;
 								}
 
-								boundingBox.RayInsetLeft = SuperForms.FloatField("Ray Inset From Edge", boundingBox.RayInsetLeft);
-
-								if (boundingBox.RayCountLeft > 1) {
-									boundingBox.RayInsetFirstLeft = SuperForms.FloatField("Ray Top Inset", boundingBox.RayInsetFirstLeft);
-									boundingBox.RayInsetLastLeft = SuperForms.FloatField("Ray Bottom Inset", boundingBox.RayInsetLastLeft);
+								if (boundingBox.RayLengthUp < 0.01f) {
+									boundingBox.RayLengthUp = 0.01f;
 								}
 
-								SuperForms.End.Vertical();
-							}
-
-
-							if (boundingBox.RayCountUp < 1) {
-								boundingBox.RayCountUp = 1;
-							}
-
-							if (boundingBox.RayCountRight < 1) {
-								boundingBox.RayCountRight = 1;
-							}
-
-							if (boundingBox.RayCountDown < 1) {
-								boundingBox.RayCountDown = 1;
-							}
-
-							if (boundingBox.RayCountLeft < 1) {
-								boundingBox.RayCountLeft = 1;
-							}
-
-							if (boundingBox.RayLengthUp < 0.01f) {
-								boundingBox.RayLengthUp = 0.01f;
-							}
-
-							if (boundingBox.RayLengthRight < 0.01f) {
-								boundingBox.RayLengthRight = 0.01f;
-							}
-
-							if (boundingBox.RayLengthDown < 0.01f) {
-								boundingBox.RayLengthDown = 0.01f;
-							}
-
-							if (boundingBox.RayLengthLeft < 0.01f) {
-								boundingBox.RayLengthLeft = 0.01f;
-							}
-
-							if (SuperForms.Button("Set to all Animation Frames")) {
-								int index = ActiveActor.BoundingBoxes.IndexOf(boundingBox);
-
-								foreach (ActorStateProperties state in ActiveActor.States) {
-									foreach (StatePropertiesAnimation animation in state.Animations) {
-										foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
-											animationFrame.BoundingBoxProperties[index] =
-												JsonUtility.FromJson<BoundingBoxProperties>(JsonUtility.ToJson(boundingBox));
-											animationFrame.BoundingBoxProperties[index].Flags = animationFrame.BoundingBoxProperties[index].DefaultFlags;
-											animationFrame.BoundingBoxProperties[index].Offset = animationFrame.BoundingBoxProperties[index].DefaultOffset;
-											animationFrame.BoundingBoxProperties[index].Size = animationFrame.BoundingBoxProperties[index].DefaultSize;
-										}
-									}
+								if (boundingBox.RayLengthRight < 0.01f) {
+									boundingBox.RayLengthRight = 0.01f;
 								}
-							}
 
-							if (SuperForms.IconButton(SuperForms.IconButtons.ButtonDelete)) {
-								int index = ActiveActor.BoundingBoxes.IndexOf(boundingBox);
+								if (boundingBox.RayLengthDown < 0.01f) {
+									boundingBox.RayLengthDown = 0.01f;
+								}
 
-								foreach (ActorStateProperties state in ActiveActor.States) {
-									foreach (StatePropertiesAnimation animation in state.Animations) {
-										foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
-											if (animationFrame.BoundingBoxProperties.Count > index) {
-												animationFrame.BoundingBoxProperties.RemoveAt(index);
+								if (boundingBox.RayLengthLeft < 0.01f) {
+									boundingBox.RayLengthLeft = 0.01f;
+								}
+
+								if (SuperForms.Button("Set all to all Animation Frames")) {
+									int index = ActiveActor.BoundingBoxes.IndexOf(boundingBox);
+
+									foreach (ActorStateProperties state in ActiveActor.States) {
+										foreach (StatePropertiesAnimation animation in state.Animations) {
+											foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+												animationFrame.BoundingBoxProperties[index] =
+													JsonUtility.FromJson<BoundingBoxProperties>(JsonUtility.ToJson(boundingBox));
+												animationFrame.BoundingBoxProperties[index].Flags = animationFrame.BoundingBoxProperties[index].Flags;
+												animationFrame.BoundingBoxProperties[index].Offset = animationFrame.BoundingBoxProperties[index].Offset;
+												animationFrame.BoundingBoxProperties[index].Size = animationFrame.BoundingBoxProperties[index].Size;
 											}
 										}
 									}
 								}
 
-								ActiveActor.BoundingBoxes.RemoveAt(index);
-								return;
-							}
+								if (SuperForms.IconButton(SuperForms.IconButtons.ButtonDelete)) {
+									deleteIndex = ActiveActor.BoundingBoxes.IndexOf(boundingBox);
+								}
 
-							SuperForms.End.Vertical();
-						}
-					});
+						}, new GUIStyle(SuperFormsStyles.BoxStyle) { fixedWidth = mainColumnWidth, margin = new RectOffset(0, 10, 0, 0)});
+					}
+					
+					SuperForms.End.Horizontal();
 				});
 			});
+
+			if (deleteIndex >= 0) {
+				foreach (ActorStateProperties state in ActiveActor.States) {
+					foreach (StatePropertiesAnimation animation in state.Animations) {
+						foreach (StatePropertiesAnimationFrame animationFrame in animation.AnimationFrames) {
+							if (animationFrame.BoundingBoxProperties.Count > deleteIndex) {
+								animationFrame.BoundingBoxProperties.RemoveAt(deleteIndex);
+							}
+						}
+					}
+				}
+
+				ActiveActor.BoundingBoxes.RemoveAt(deleteIndex);
+			}
 		}
 
 		private void DrawParticleEffectsForm() {
@@ -3013,9 +3360,9 @@ namespace Boomerang2DFramework.Framework.Editor.ActorStudio {
 					StatePropertiesAnimationFrame newAnimationFrame = new StatePropertiesAnimationFrame();
 					List<BoundingBoxProperties> allBoundingBoxes = ActiveActor.BoundingBoxes
 						.Select(box => new BoundingBoxProperties {
-							Size = box.DefaultSize,
-							Offset = box.DefaultOffset,
-							Flags = box.DefaultFlags,
+							Size = box.Size,
+							Offset = box.Offset,
+							Flags = box.Flags,
 
 							RayCastUp = box.RayCastUp,
 							RayCountUp = box.RayCountUp,
@@ -3094,9 +3441,9 @@ namespace Boomerang2DFramework.Framework.Editor.ActorStudio {
 				if (animationFrame.BoundingBoxProperties.Count != ActiveActor.BoundingBoxes.Count) {
 					animationFrame.BoundingBoxProperties = ActiveActor.BoundingBoxes
 						.Select(box => new BoundingBoxProperties {
-							Size = box.DefaultSize,
-							Offset = box.DefaultOffset,
-							Flags = box.DefaultFlags,
+							Size = box.Size,
+							Offset = box.Offset,
+							Flags = box.Flags,
 
 							RayCastUp = box.RayCastUp,
 							RayCountUp = box.RayCountUp,

@@ -715,46 +715,46 @@ namespace Boomerang2DFramework.Framework.EditorHelpers {
 			return value;
 		}
 
-		public static Vector2 Vector2FieldSingleLine(Vector2 value) {
+		public static Vector2 Vector2FieldSingleLine(Vector2 value, int width = 25) {
 			Begin.Horizontal();
 			Label("X", GUILayout.Width(20));
-			value.x = FloatField(value.x, GUILayout.Width(25));
+			value.x = FloatField(value.x, GUILayout.Width(width));
 			Label("Y", GUILayout.Width(20));
-			value.y = FloatField(value.y, GUILayout.Width(25));
+			value.y = FloatField(value.y, GUILayout.Width(width));
 			End.Horizontal();
 			return value;
 		}
 
-		public static Vector2Int Vector2FieldSingleLine(Vector2Int value) {
+		public static Vector2Int Vector2FieldSingleLine(Vector2Int value, int width = 25) {
 			Begin.Horizontal();
 			Label("X", GUILayout.Width(20));
-			value.x = IntField(value.x, GUILayout.Width(25));
+			value.x = IntField(value.x, GUILayout.Width(width));
 			Label("Y", GUILayout.Width(20));
-			value.y = IntField(value.y, GUILayout.Width(25));
+			value.y = IntField(value.y, GUILayout.Width(width));
 			End.Horizontal();
 			return value;
 		}
 		
-		public static Vector2 Vector2FieldSingleLine(string label, Vector2 value) {
+		public static Vector2 Vector2FieldSingleLine(string label, Vector2 value, int width = 25) {
 			Begin.Horizontal();
 			Label(label, GUILayout.ExpandWidth(true));
 			FlexibleSpace();
 			Label("X", GUILayout.Width(20));
-			value.x = FloatField(value.x, GUILayout.Width(25));
+			value.x = FloatField(value.x, GUILayout.Width(width));
 			Label("Y", GUILayout.Width(20));
-			value.y = FloatField(value.y, GUILayout.Width(25));
+			value.y = FloatField(value.y, GUILayout.Width(width));
 			End.Horizontal();
 			return value;
 		}
 
-		public static Vector2Int Vector2FieldSingleLine(string label, Vector2Int value) {
+		public static Vector2Int Vector2FieldSingleLine(string label, Vector2Int value, int width = 25) {
 			Begin.Horizontal();
 			Label(label, GUILayout.ExpandWidth(true));
 			FlexibleSpace();
 			Label("X", GUILayout.Width(20));
-			value.x = IntField(value.x, GUILayout.Width(25));
+			value.x = IntField(value.x, GUILayout.Width(width));
 			Label("Y", GUILayout.Width(20));
-			value.y = IntField(value.y, GUILayout.Width(25));
+			value.y = IntField(value.y, GUILayout.Width(width));
 			End.Horizontal();
 			return value;
 		}
@@ -985,6 +985,22 @@ namespace Boomerang2DFramework.Framework.EditorHelpers {
 			return position;
 		}
 
+		public Vector2 Scroll(string scrollId, Action action, GUIStyle style, params GUILayoutOption[] options) {
+			Vector2 position = Vector2.zero;
+
+			if (SuperForms.ScrollPositions.ContainsKey(scrollId)) {
+				position = SuperForms.ScrollPositions[scrollId];
+			} else {
+				SuperForms.ScrollPositions.Add(scrollId, Vector2.zero);
+			}
+
+			position = GUILayout.BeginScrollView(position, style, options);
+			action();
+			GUILayout.EndScrollView();
+			SuperForms.ScrollPositions[scrollId] = position;
+			return position;
+		}
+
 		public Vector2 ScrollDisabledWheel(Vector2 position, Action action, params GUILayoutOption[] options) {
 			position = GUILayout.BeginScrollView(position, options);
 			action();
@@ -1029,7 +1045,14 @@ namespace Boomerang2DFramework.Framework.EditorHelpers {
 			action();
 			GUILayout.EndVertical();
 		}
+		
 
+		public void VerticalBox(Action action, GUIStyle style, params GUILayoutOption[] options) {
+			GUILayout.BeginVertical(new GUIStyle(style), options);
+			action();
+			GUILayout.EndVertical();
+		}
+		
 		public void VerticalSubBox(Action action, params GUILayoutOption[] options) {
 			GUILayout.BeginVertical(SuperFormsStyles.SubBoxStyle, options);
 			action();
