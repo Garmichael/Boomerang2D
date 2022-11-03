@@ -44,14 +44,32 @@ namespace Boomerang2DFramework.Framework.MapGeneration {
 		private void Update() {
 			bool shouldSetToActiveView = Boomerang2D.Player != null &&
 			                             Boomerang2D.MainCameraController.CurrentView != this &&
-			                             _boxCollider.bounds.Contains(Boomerang2D.Player.Transform.localPosition);
+			                             PointInsideView(Boomerang2D.Player.Transform.localPosition);
 
 			if (shouldSetToActiveView) {
 				SetToActiveView();
 			}
 		}
-
+		
+		/// <summary>
+		/// Determines if a point is inside this View
+		/// </summary>
+		/// <param name="point"></param>
+		/// <returns></returns>
+		private bool PointInsideView(Vector3 point) {
+			Bounds bounds = _boxCollider.bounds;
+			
+			return point.x > bounds.min.x &&
+			       point.x <= bounds.max.x &&
+			       point.y > bounds.min.y &&
+			       point.y <= bounds.max.y;
+		}
+		
+		/// <summary>
+		/// Set the current Active view to this View
+		/// </summary>
 		private void SetToActiveView() {
+			Debug.Log("Setting to this view " + this);
 			Boomerang2D.MainCameraController.SetCurrentView(this);
 
 			if (_properties.PlaysBackgroundMusic) {
