@@ -69,7 +69,6 @@ namespace Boomerang2DFramework.Framework.MapGeneration {
 		/// Set the current Active view to this View
 		/// </summary>
 		private void SetToActiveView() {
-			Debug.Log("Setting to this view " + this);
 			Boomerang2D.MainCameraController.SetCurrentView(this);
 
 			if (_properties.PlaysBackgroundMusic) {
