@@ -244,6 +244,11 @@ namespace Boomerang2DFramework.Framework.Actors.ActorStateProperties {
 					actorEvent.ActorEvents.Add(actorEventBuilder.BuildActorEvent());
 				}
 
+				actorEvent.ActorElseEvents.Clear();
+				foreach (ActorEventBuilder actorEventBuilder in actorEvent.ActorElseEventBuilders) {
+					actorEvent.ActorElseEvents.Add(actorEventBuilder.BuildActorEvent());
+				}
+
 				events.Add(actorEvent);
 			}
 
@@ -623,7 +628,7 @@ namespace Boomerang2DFramework.Framework.Actors.ActorStateProperties {
 		/// </remarks>
 		private void ProcessStateEntryActorEvents() {
 			foreach (StateEntryExitEventProperties stateActorEvent in _entryEvents) {
-				if (stateActorEvent.ActorEvents.Count == 0) {
+				if (stateActorEvent.ActorEvents.Count == 0 && stateActorEvent.ActorElseEvents.Count == 0) {
 					continue;
 				}
 
@@ -646,6 +651,14 @@ namespace Boomerang2DFramework.Framework.Actors.ActorStateProperties {
 								() => { actorEventLocal.ApplyOutcome(Actor, Actor); })
 						);
 					}
+				} else {
+					foreach (ActorEvent actorEvent in stateActorEvent.ActorElseEvents) {
+						ActorEvent actorEventLocal = actorEvent;
+						Actor.QueuedActions.Add(
+							GlobalTimeManager.PerformAfter(actorEventLocal.StartTime,
+								() => { actorEventLocal.ApplyOutcome(Actor, Actor); })
+						);
+					}	
 				}
 			}
 		}
@@ -658,7 +671,7 @@ namespace Boomerang2DFramework.Framework.Actors.ActorStateProperties {
 		/// </remarks>
 		private void ProcessStateExitActorEvents() {
 			foreach (StateEntryExitEventProperties stateActorEvent in _exitEvents) {
-				if (stateActorEvent.ActorEvents.Count == 0) {
+				if (stateActorEvent.ActorEvents.Count == 0 && stateActorEvent.ActorElseEvents.Count == 0) {
 					continue;
 				}
 
@@ -681,6 +694,14 @@ namespace Boomerang2DFramework.Framework.Actors.ActorStateProperties {
 								() => { actorEventLocal.ApplyOutcome(Actor, Actor); })
 						);
 					}
+				} else {
+					foreach (ActorEvent actorEvent in stateActorEvent.ActorElseEvents) {
+						ActorEvent actorEventLocal = actorEvent;
+						Actor.QueuedActions.Add(
+							GlobalTimeManager.PerformAfter(actorEventLocal.StartTime,
+								() => { actorEventLocal.ApplyOutcome(Actor, Actor); })
+						);
+					}		
 				}
 			}
 		}

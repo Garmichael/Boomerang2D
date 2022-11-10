@@ -1462,13 +1462,13 @@ namespace Boomerang2DFramework.Framework.Editor.ActorStudio {
 			});
 		}
 
-		private void DrawInteractionEventList(List<ActorEventBuilder> actorEventBuilders, bool isFilteredActorEvent) {
-			SuperForms.BoxHeader("Events");
+		private void DrawInteractionEventList(List<ActorEventBuilder> actorEventBuilders, bool isFilteredActorEvent, string eventSubType = "") {
+			SuperForms.BoxHeader(eventSubType + "Events");
 			if (SuperForms.IconButton(SuperForms.IconButtons.ButtonAdd)) {
 				actorEventBuilders.Add(new ActorEventBuilder());
 			}
 
-			SuperForms.Region.Scroll("ActorStudioListOfInteractionEventsEventList", () => {
+			SuperForms.Region.Scroll("ActorStudioListOfInteractionEventsEventList" + eventSubType, () => {
 				Dictionary<string, string> actorEventClasses = AssemblyFinder.Assemblies.ActorEvents;
 				Dictionary<string, string> actorEventPropertyClasses = AssemblyFinder.Assemblies.ActorEventProperties;
 
@@ -2712,6 +2712,7 @@ namespace Boomerang2DFramework.Framework.Editor.ActorStudio {
 
 				SuperForms.Region.VerticalBox(() => { DrawInteractionEventsTriggers(StateEntryEvent.ActorTriggerBuilders); }, GUILayout.Width(280));
 				DrawInteractionEventList(StateEntryEvent.ActorEventBuilders, false);
+				DrawInteractionEventList(StateEntryEvent.ActorElseEventBuilders, false, "Else ");
 
 				if (toDelete != null) {
 					ActiveState.StateEntryActorEvents.Remove(toDelete);
@@ -2760,6 +2761,7 @@ namespace Boomerang2DFramework.Framework.Editor.ActorStudio {
 
 				SuperForms.Region.VerticalBox(() => { DrawInteractionEventsTriggers(StateExitEvent.ActorTriggerBuilders); }, GUILayout.Width(280));
 				DrawInteractionEventList(StateExitEvent.ActorEventBuilders, false);
+				DrawInteractionEventList(StateExitEvent.ActorElseEventBuilders, false, "Else ");
 
 				if (toDelete != null) {
 					ActiveState.StateExitActorEvents.Remove(toDelete);
