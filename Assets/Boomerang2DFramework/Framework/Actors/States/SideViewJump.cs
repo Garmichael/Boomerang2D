@@ -20,7 +20,7 @@ namespace Boomerang2DFramework.Framework.Actors.States {
 				Actor.FacingDirection = MyStateProperties.FacingDirectionOnEntry;
 			}
 
-			Vector2 newVelocity = new Vector2(0, MyStateProperties.JumpStrength.BuildValue(Actor));
+			Vector2 newVelocity = new Vector2(Actor.Velocity.x, MyStateProperties.JumpStrength.BuildValue(Actor));
 
 			if (MyStateProperties.SetInitialHorizontalJumpStrength) {
 				newVelocity.x = Actor.FacingDirection == Directions.Right
