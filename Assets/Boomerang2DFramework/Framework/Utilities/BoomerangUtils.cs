@@ -462,5 +462,21 @@ namespace Boomerang2DFramework.Framework.Utilities {
 			       comparison == ValueComparison.GreaterThanOrEqual && value >= targetValue ||
 			       comparison == ValueComparison.GreaterThan && value >= targetValue;
 		}
+		
+		public static Vector2 GetPointOnBezier(float time, Vector2 startPoint, Vector2 controlA, Vector2 controlB, Vector2 endPoint) {
+			float cx = 3 * (controlA.x - startPoint.x);
+			float cy = 3 * (controlA.y - startPoint.y);
+			float bx = 3 * (controlB.x - controlA.x) - cx;
+			float by = 3 * (controlB.y - controlA.y) - cy;
+			float ax = endPoint.x - startPoint.x - cx - bx;
+			float ay = endPoint.y - startPoint.y - cy - by;
+			float cube = time * time * time;
+			float square = time * time;
+
+			float resX = (ax * cube) + (bx * square) + (cx * time) + startPoint.x;
+			float resY = (ay * cube) + (by * square) + (cy * time) + startPoint.y;
+
+			return new Vector2(resX, resY);
+		}
 	}
 }

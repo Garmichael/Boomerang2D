@@ -8,6 +8,7 @@ namespace Boomerang2DFramework.Framework.StateManagement {
 	[Serializable]
 	public class State {
 		public string Name = "Unnamed_State";
+		public bool CompletedAction = false;
 		protected StateProperties StateProperties;
 
 		protected StateMachine MyStateMachine;
@@ -18,6 +19,7 @@ namespace Boomerang2DFramework.Framework.StateManagement {
 		/// Called once when this State is transitioned into
 		/// </summary>
 		public virtual void OnEnterState() {
+			CompletedAction = false;
 			TimeInState = 0f;
 		}
 
