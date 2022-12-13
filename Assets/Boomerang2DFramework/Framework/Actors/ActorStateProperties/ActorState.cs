@@ -617,6 +617,7 @@ namespace Boomerang2DFramework.Framework.Actors.ActorStateProperties {
 				Actor.SpriteRenderer.sprite = Actor.Sprites[ActiveAnimationFrame.SpriteFrame];
 				Actor.SpriteRenderer.flipX = ActiveAnimationFrame.FlipHorizontal;
 				Actor.SpriteRenderer.flipY = ActiveAnimationFrame.FlipVertical;
+				Actor.SpriteRenderer.transform.rotation = Quaternion.Euler(0, 0, ActiveAnimationFrame.Rotate ? 90 : 0);
 			}
 		}
 

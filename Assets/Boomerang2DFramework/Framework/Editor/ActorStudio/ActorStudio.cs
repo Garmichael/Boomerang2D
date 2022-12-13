@@ -3025,8 +3025,8 @@ namespace Boomerang2DFramework.Framework.Editor.ActorStudio {
 
 			AnimationFrameDetails frameToDraw = GetAnimationFrame(animationToPlay);
 
-			float rotation = 0;
 			if (frameToDraw.SpriteFrame < _activeActorTextures.Count) {
+				float rotation = animationToPlay.AnimationFrames[frameToDraw.AnimationFrame].Rotate ? -90 : 0;
 				Matrix4x4 rotationAndPivotBackup = GUI.matrix;
 				GUIUtility.RotateAroundPivot(rotation, new Vector2(
 					spritePreviewImageBounds.x + spritePreviewImageBounds.width / 2,
@@ -3418,6 +3418,7 @@ namespace Boomerang2DFramework.Framework.Editor.ActorStudio {
 					animationFrame.SpriteFrame = SuperForms.IntField("Sprite Frame", animationFrame.SpriteFrame);
 					animationFrame.FlipHorizontal = SuperForms.Checkbox("Flip Horizontal", animationFrame.FlipHorizontal);
 					animationFrame.FlipVertical = SuperForms.Checkbox("Flip Vertical", animationFrame.FlipVertical);
+					animationFrame.Rotate = SuperForms.Checkbox("Rotate 90º", animationFrame.Rotate);
 
 					if (animationFrame.SpriteFrame < 0 || animationFrame.SpriteFrame >= _activeActorTextures.Count) {
 						animationFrame.SpriteFrame = 0;

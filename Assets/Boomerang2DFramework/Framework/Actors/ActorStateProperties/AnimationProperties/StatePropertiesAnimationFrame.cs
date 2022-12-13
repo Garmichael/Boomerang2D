@@ -11,6 +11,7 @@ namespace Boomerang2DFramework.Framework.Actors.ActorStateProperties.AnimationPr
 		public float Duration;
 		public bool FlipHorizontal;
 		public bool FlipVertical;
+		public bool Rotate;
 		public List<BoundingBoxProperties> BoundingBoxProperties = new List<BoundingBoxProperties>();
 		public List<ActorParticleEffectProperties> ParticleEffectProperties = new List<ActorParticleEffectProperties>();
 	}
