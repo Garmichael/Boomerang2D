@@ -55,6 +55,10 @@ namespace Boomerang2DFramework.Framework.Actors {
 			IsEnabled = Actor.IsEnabled;
 
 			States = Actor.StateMachine.AllStates.Values.ToList();
+
+			if (Actor.ActorProperties == null) {
+				return;
+			}
 			
 			Stats.Clear();
 			foreach (FloatStatProperties statProperties in Actor.ActorProperties.StatsFloats) {
