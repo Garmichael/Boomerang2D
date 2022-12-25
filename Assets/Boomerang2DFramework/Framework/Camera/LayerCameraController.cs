@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using Boomerang2DFramework.Framework.MapGeneration;
 using UnityEngine;
@@ -15,26 +14,31 @@ namespace Boomerang2DFramework.Framework.Camera {
 		public UnityEngine.Camera Camera;
 		public RenderTexture RenderTexture;
 		public Vector2 VisibleTileCount;
-		private Material _material;
+		public Material Material;
 
+		private string _mapName;
+		
 		public void RegisterMapLayerCamera(string mapName, MapLayerBehavior mapLayerBehavior) {
-			RenderTexture renderTexture = BuildRenderTexture();
-			Boomerang2D.MainCameraController.AddMapLayerRender(mapName, mapLayerBehavior, renderTexture);
+			_mapName = mapName;
+			BuildRenderMaterial();
+			BuildRenderTexture();
+			Boomerang2D.MainCameraController.AddMapLayerRender(mapName, mapLayerBehavior, this);
 		}
 
 		public void RegisterUiLayerCamera(string mapName) {
-			RenderTexture renderTexture = BuildRenderTexture();
-
-			Boomerang2D.MainCameraController.AddUiLayerRender(mapName, renderTexture);
+			_mapName = mapName;
+			BuildRenderMaterial();
+			BuildRenderTexture();
+			Boomerang2D.MainCameraController.AddUiLayerRender(mapName, this);
 		}
 
-		private RenderTexture BuildRenderTexture() {
+		private void BuildRenderTexture() {
 			RenderTexture = new RenderTexture(
 				GameProperties.RenderDimensionsWidth,
 				GameProperties.RenderDimensionsHeight,
 				24,
 				RenderTextureFormat.Default
-			) {filterMode = FilterMode.Point};
+			) { filterMode = FilterMode.Point };
 			RenderTexture.Create();
 
 			Camera = gameObject.AddComponent<UnityEngine.Camera>();
@@ -54,8 +58,6 @@ namespace Boomerang2DFramework.Framework.Camera {
 				Camera.orthographicSize * 2f * Camera.aspect,
 				Camera.orthographicSize * 2f
 			);
-
-			return RenderTexture;
 		}
 
 		public void SetShader(
@@ -65,48 +67,38 @@ namespace Boomerang2DFramework.Framework.Camera {
 			Dictionary<string, Color> colors = null,
 			Dictionary<string, Texture> textures = null
 		) {
-			BuildRenderMaterial();
-
-			_material.shader = Shader.Find(shader);
-
+			Material.shader = Shader.Find(shader);
+			
 			if (floats != null) {
 				foreach (KeyValuePair<string, float> property in floats) {
-					_material.SetFloat(property.Key, property.Value);
+					Debug.Log("Setting Float " + property.Key + " as " + property.Value);
+					Material.SetFloat(property.Key, property.Value);
 				}
 			}
 
 			if (ints != null) {
 				foreach (KeyValuePair<string, int> property in ints) {
-					_material.SetInt(property.Key, property.Value);
+					Material.SetInt(property.Key, property.Value);
 				}
 			}
 
 			if (colors != null) {
 				foreach (KeyValuePair<string, Color> property in colors) {
-					_material.SetColor(property.Key, property.Value);
+					Material.SetColor(property.Key, property.Value);
 				}
 			}
 
 			if (textures != null) {
 				foreach (KeyValuePair<string, Texture> property in textures) {
-					_material.SetTexture(property.Key, property.Value);
+					Material.SetTexture(property.Key, property.Value);
 				}
 			}
 
-			_material.SetFloat(Shader.PropertyToID("_StartTime"), Time.time);
+			Material.SetFloat(Shader.PropertyToID("_StartTime"), Time.time);
 		}
 
-		private void OnPostRender() {
-			if (_material == null) {
-				BuildRenderMaterial();
-			}
-
-			Graphics.Blit(RenderTexture, RenderTexture, _material);
-		}
-
-		private void BuildRenderMaterial() {
-			Shader shader = Shader.Find("Unlit/Transparent");
-			_material = new Material(shader);
+		private void BuildRenderMaterial(string shader = "Unlit/Transparent") {
+			Material = new Material(Shader.Find(shader));
 		}
 	}
 }
