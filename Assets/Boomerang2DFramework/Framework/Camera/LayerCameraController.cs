@@ -71,7 +71,6 @@ namespace Boomerang2DFramework.Framework.Camera {
 			
 			if (floats != null) {
 				foreach (KeyValuePair<string, float> property in floats) {
-					Debug.Log("Setting Float " + property.Key + " as " + property.Value);
 					Material.SetFloat(property.Key, property.Value);
 				}
 			}
