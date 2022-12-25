@@ -15,18 +15,14 @@ namespace Boomerang2DFramework.Framework.Camera {
 		public RenderTexture RenderTexture;
 		public Vector2 VisibleTileCount;
 		public Material Material;
-
-		private string _mapName;
 		
 		public void RegisterMapLayerCamera(string mapName, MapLayerBehavior mapLayerBehavior) {
-			_mapName = mapName;
 			BuildRenderMaterial();
 			BuildRenderTexture();
 			Boomerang2D.MainCameraController.AddMapLayerRender(mapName, mapLayerBehavior, this);
 		}
 
 		public void RegisterUiLayerCamera(string mapName) {
-			_mapName = mapName;
 			BuildRenderMaterial();
 			BuildRenderTexture();
 			Boomerang2D.MainCameraController.AddUiLayerRender(mapName, this);
