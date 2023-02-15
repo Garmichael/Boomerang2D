@@ -539,7 +539,8 @@ namespace Boomerang2DFramework.Framework.EditorHelpers {
 					FloatValueConstructorValue.GameFlagValue,
 				};
 				FloatValueConstructorValue[] valuesThatUseMinMax = {
-					FloatValueConstructorValue.RandomValue
+					FloatValueConstructorValue.RandomValue,
+					FloatValueConstructorValue.RandomInt,
 				};
 
 				if (outputValue.Entries == null) {

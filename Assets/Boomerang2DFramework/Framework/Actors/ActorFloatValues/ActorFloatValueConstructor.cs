@@ -114,6 +114,9 @@ namespace Boomerang2DFramework.Framework.Actors.ActorFloatValues {
 					case FloatValueConstructorValue.RandomValue:
 						value += Random.Range(entry.SubValueMin, entry.SubValueMax);
 						break;
+					case FloatValueConstructorValue.RandomInt:
+						value += (float) Math.Round(Random.Range(entry.SubValueMin, entry.SubValueMax), MidpointRounding.AwayFromZero);
+						break;
 					default:
 						throw new ArgumentOutOfRangeException();
 				}
@@ -192,6 +195,7 @@ namespace Boomerang2DFramework.Framework.Actors.ActorFloatValues {
 		DistanceToSolidRight,
 		DistanceToSolidDown,
 		DistanceToSolidLeft,
-		RandomValue
+		RandomValue,
+		RandomInt
 	}
 }

@@ -27,12 +27,14 @@ namespace Boomerang2DFramework.Framework.Camera {
 
 		public StateMachine StateMachine;
 
-		private readonly Dictionary<string, MapCameraLayer> _mapCameraLayers = new();
-		private readonly Dictionary<string, LayerCameraController> _uiCameraLayers = new();
+		private Texture2D _backdrop;
+
+		private readonly Dictionary<string, MapCameraLayer> _mapCameraLayers = new Dictionary<string, MapCameraLayer>();
+		private readonly Dictionary<string, RenderTexture> _uiCameraLayers = new Dictionary<string, RenderTexture>();
 
 		private struct MapCameraLayer {
 			public MapLayerBehavior MapLayerBehavior;
-			public LayerCameraController LayerCameraController;
+			public RenderTexture RenderTexture;
 		}
 
 		private Vector3 _velocity = Vector3.zero;
@@ -41,6 +43,7 @@ namespace Boomerang2DFramework.Framework.Camera {
 			StateMachine = new StateMachine();
 			OrthographicSize = GameProperties.DefaultCameraSize;
 			Aspect = GameProperties.AspectRatio;
+			BuildBackdropTexture();
 		}
 
 		private void LateUpdate() {
@@ -99,15 +102,15 @@ namespace Boomerang2DFramework.Framework.Camera {
 		}
 
 
-		public void AddMapLayerRender(string mapName, MapLayerBehavior mapLayerBehavior, LayerCameraController layerCameraController) {
+		public void AddMapLayerRender(string mapName, MapLayerBehavior mapLayerBehavior, RenderTexture renderTexture) {
 			_mapCameraLayers.Add(mapName, new MapCameraLayer {
 				MapLayerBehavior = mapLayerBehavior,
-				LayerCameraController = layerCameraController
+				RenderTexture = renderTexture
 			});
 		}
 
-		public void AddUiLayerRender(string hudObjectName, LayerCameraController layerCameraController) {
-			_uiCameraLayers.Add(hudObjectName, layerCameraController);
+		public void AddUiLayerRender(string hudObjectName, RenderTexture renderTexture) {
+			_uiCameraLayers.Add(hudObjectName, renderTexture);
 		}
 
 		public void ClearAllMapLayers() {
@@ -122,29 +125,36 @@ namespace Boomerang2DFramework.Framework.Camera {
 		/// Renders all the LayerCamera RenderTextures to the screen
 		/// </summary>
 		private void OnGUI() {
-			GL.Clear(false, true, Color.clear);
+			RenderBackdrop();
 
 			GUI.BeginGroup(new Rect(0, 0, Screen.width, Screen.height));
 			foreach (KeyValuePair<string, MapCameraLayer> mapCameraLayer in _mapCameraLayers) {
-				RenderLayer(mapCameraLayer.Value.LayerCameraController.RenderTexture, mapCameraLayer.Value.LayerCameraController.Material);
+				RenderLayer(mapCameraLayer.Value.RenderTexture);
 			}
 
-			foreach (KeyValuePair<string, LayerCameraController> uiCameraLayer in _uiCameraLayers) {
-				RenderLayer(uiCameraLayer.Value.RenderTexture, uiCameraLayer.Value.Material);
+			foreach (KeyValuePair<string, RenderTexture> uiCameraLayer in _uiCameraLayers) {
+				RenderLayer(uiCameraLayer.Value);
 			}
 
 			GUI.EndGroup();
 		}
 
-		private void RenderLayer(RenderTexture renderTexture, Material material) {
-			Rect screenRenderRect = GetRenderRect();
-			Graphics.DrawTexture(screenRenderRect, renderTexture, material);
+		private void BuildBackdropTexture() {
+			Color32[] backdropColor = {Color.black};
+			_backdrop = new Texture2D(1, 1);
+			_backdrop.SetPixels32(backdropColor);
+			_backdrop.Apply();
 		}
 
-		private Rect GetRenderRect() {
-			Rect screenRenderRect = new Rect();
+		private void RenderBackdrop() {
+			Graphics.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), _backdrop);
+		}
+
+		private void RenderLayer(RenderTexture renderTexture) {
 			float scaleX = Screen.width / (float) GameProperties.RenderDimensionsWidth;
 			float scaleY = Screen.height / (float) GameProperties.RenderDimensionsHeight;
+
+			Rect screenRenderRect = new Rect();
 
 #pragma warning disable 0162
 			switch (GameProperties.RenderDisplayMode) {
@@ -184,7 +194,7 @@ namespace Boomerang2DFramework.Framework.Camera {
 				screenRenderRect.y = (Screen.height - screenRenderRect.height) / 2;
 			}
 
-			return screenRenderRect;
+			Graphics.DrawTexture(screenRenderRect, renderTexture);
 		}
 	}
 }

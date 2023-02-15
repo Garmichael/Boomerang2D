@@ -639,14 +639,17 @@ namespace Boomerang2DFramework.Framework.Actors {
 		public void GenerateRayData(Directions direction) {
 			float shortestSolidHitDistance = 2000f;
 
-			List<List<List<RaycastHit2D>>> raysInThisDirection = new List<List<List<RaycastHit2D>>>();
-
-			new Dictionary<Directions, List<ActorBoundingBoxes>> {
-				{Directions.Up, ActorBoundingBoxesHitByRaysUp},
-				{Directions.Right, ActorBoundingBoxesHitByRaysRight},
-				{Directions.Down, ActorBoundingBoxesHitByRaysDown},
-				{Directions.Left, ActorBoundingBoxesHitByRaysLeft}
-			}[direction].Clear();
+			Dictionary<Directions, List<ActorBoundingBoxes>> actorBoundingBoxHitByRayCollectionMap =
+				new() {
+					{Directions.Up, ActorBoundingBoxesHitByRaysUp},
+					{Directions.Right, ActorBoundingBoxesHitByRaysRight},
+					{Directions.Down, ActorBoundingBoxesHitByRaysDown},
+					{Directions.Left, ActorBoundingBoxesHitByRaysLeft}
+				};
+			
+			actorBoundingBoxHitByRayCollectionMap[direction].Clear();
+			
+			List<List<List<RaycastHit2D>>> raysInThisDirection = new();
 
 			foreach (BoundingBoxProperties actorPropertiesBoundingBox in ActorProperties.BoundingBoxes) {
 				bool boundingBoxCastsInThisDirection =
@@ -922,7 +925,7 @@ namespace Boomerang2DFramework.Framework.Actors {
 							};
 
 							Dictionary<Directions, List<ActorBoundingBoxes>> boundingBoxHitByRayCollectionMap =
-								new Dictionary<Directions, List<ActorBoundingBoxes>> {
+								new() {
 									{Directions.Up, ActorBoundingBoxesHitByRaysUp},
 									{Directions.Right, ActorBoundingBoxesHitByRaysRight},
 									{Directions.Down, ActorBoundingBoxesHitByRaysDown},
@@ -953,7 +956,10 @@ namespace Boomerang2DFramework.Framework.Actors {
 					shortestSolidHit.distance = 0f;
 				}
 
-				rayDataCollection.Add(shortestSolidHit);
+				if (!(hitGameObject.layer == LayerMask.NameToLayer("Actor") && shortestSolidHit.distance >= 2000)) {
+					rayDataCollection.Add(shortestSolidHit);	
+				}
+				
 			}
 		}
 

@@ -1,85 +1,131 @@
-﻿Shader "Boomerang2D/ScreenWipe"
+﻿// Originally Written By Dan Moran from Making Things Look Good In Unity | 
+// https://www.youtube.com/channel/UCEklP9iLcpExB8vp_fWQseg
+// https://www.patreon.com/DanMoran
+// Modified for the Boomerang2D Framework. Copyright (c) 2020 StormGarden Games.
+
+Shader "Boomerang2D/ScreenWipe"
 {
-    Properties
-    {
-        [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
-        _TransitionTex("Transition Texture", 2D) = "white" {}
-        _Color ("Tint", Color) = (1,1,1,1)
-        [MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
-        [HideInInspector] _RendererColor ("RendererColor", Color) = (1,1,1,1)
-        [HideInInspector] _Flip ("Flip", Vector) = (1,1,1,1)
-        [PerRendererData] _AlphaTex ("External Alpha", 2D) = "white" {}
-        [PerRendererData] _EnableExternalAlpha ("Enable External Alpha", Float) = 0
-        [HideInInspector] _StartTime ("StartTime", float) = 0
-        _TransitionTime ("Speed", Float) = 2
-    }
+	Properties
+	{
+		_MainTex("Texture", 2D) = "white" {}
+		_TransitionTex("Transition Texture", 2D) = "white" {}
+		_Color("Screen Color", Color) = (0,0,0,1)
+		_Cutoff("Cutoff", Range(0, 1)) = 0
+		[MaterialToggle] _Distort("Distort", Float) = 0
+		_Fade("Fade", Range(0, 1)) = 1
+		_StartTime ("StartTime", float) = 0
+        _TransitionTime ("Speed", Float) = 10
+	}
 
     SubShader
     {
-        Tags
-        {
-            "Queue"="Transparent"
-            "IgnoreProjector"="True"
-            "RenderType"="Transparent"
-            "PreviewType"="Plane"
-            "CanUseSpriteAtlas"="True"
-        }
-
-        Cull Off
-        Lighting Off
-        ZWrite Off
-        Blend SrcAlpha OneMinusSrcAlpha
+        // No culling or depth
+        Cull Off ZWrite Off ZTest Always
 
         Pass
         {
             CGPROGRAM
-            #pragma vertex SpriteVert
+            #pragma vertex vert
             #pragma fragment frag
-            #pragma target 2.0
-            #pragma multi_compile_instancing
-            #pragma multi_compile_local _ PIXELSNAP_ON
-            #pragma multi_compile _ ETC1_EXTERNAL_ALPHA
-            #include "UnitySprites.cginc"
 
-            float _TransitionTime;
-            float _StartTime;
-            sampler2D _TransitionTex;
+            #include "UnityCG.cginc"
 
-            fixed4 frag(v2f IN) : SV_Target
+            struct appdata
             {
-                fixed4 color = tex2D(_MainTex, IN.texcoord);
-                fixed4 transitionColor = tex2D(_TransitionTex, IN.texcoord);
-                const float current_time = _Time[1] - _StartTime;
-                float percentage_done = current_time / _TransitionTime;
+                float4 vertex : POSITION;
+                float2 uv : TEXCOORD0;
+            };
 
-                if (percentage_done >= 1)
-                {
-                    percentage_done = 1;
-                }
+            struct v2f
+            {
+                float2 uv : TEXCOORD0;
+                float2 uv1 : TEXCOORD1;
+                float4 vertex : SV_POSITION;
+            };
 
-                if (transitionColor.r >= percentage_done)
-                {
-                    if (color.a == 0)
-                    {
-                        transitionColor.a = 0;
-                    } else
-                    {
-                        transitionColor.r = color.r;
-                        transitionColor.g = color.g;
-                        transitionColor.b = color.b;
-                        transitionColor.a = color.a;
-                    }
-                }
-                else
-                {
-                    transitionColor.r = 0;
-                    transitionColor.b = 0;
-                    transitionColor.g = 0;
-                    transitionColor.a = 1;
-                }
+            float4 _MainTex_TexelSize;
 
-                return transitionColor;
+            v2f simplevert(appdata v)
+            {
+                v2f o;
+                o.vertex = UnityObjectToClipPos(v.vertex);
+                o.uv = v.uv;
+                return o;
             }
+
+            v2f vert(appdata v)
+            {
+                v2f o;
+                o.vertex = UnityObjectToClipPos(v.vertex);
+                o.uv = v.uv;
+                o.uv1 = v.uv;
+
+                #if UNITY_UV_STARTS_AT_TOP
+                if (_MainTex_TexelSize.y < 0)
+                    o.uv1.y = 1 - o.uv1.y;
+                #endif
+
+                return o;
+            }
+
+            sampler2D _TransitionTex;
+            int _Distort;
+            float _Fade;
+
+            sampler2D _MainTex;
+            float _Cutoff;
+            fixed4 _Color;
+            float _StartTime;
+            float _TransitionTime;
+
+            fixed4 simplefrag(v2f i) : SV_Target
+            {
+                if (i.uv.x < _Cutoff)
+                    return _Color;
+
+                return tex2D(_MainTex, i.uv);
+            }
+
+            fixed4 simplefragopen(v2f i) : SV_Target
+            {
+                if (0.5 - abs(i.uv.y - 0.5) < abs(_Cutoff) * 0.5)
+                    return _Color;
+
+                return tex2D(_MainTex, i.uv);
+            }
+
+            fixed4 simpleTexture(v2f i) : SV_Target
+            {
+                fixed4 transit = tex2D(_TransitionTex, i.uv);
+
+                if (transit.b < _Cutoff)
+                    return _Color;
+
+                return tex2D(_MainTex, i.uv);
+            }
+
+            fixed4 frag(v2f i) : SV_Target
+            {
+                float currentTime = _Time[1] - _StartTime;
+                float percentageDone = currentTime / _TransitionTime;
+                 
+                if(percentageDone >= 1){
+                    percentageDone = 1;
+                }
+            
+                fixed4 transit = tex2D(_TransitionTex, i.uv1);
+
+                fixed2 direction = float2(0,0);
+                if(_Distort)
+                    direction = normalize(float2((transit.r - 0.5) * 2, (transit.g - 0.5) * 2));
+
+                fixed4 col = tex2D(_MainTex, i.uv + percentageDone * direction);
+
+                if (transit.b < percentageDone)
+                    return col = lerp(col, _Color, _Fade);
+
+                return col;
+            }					
             ENDCG
         }
     }

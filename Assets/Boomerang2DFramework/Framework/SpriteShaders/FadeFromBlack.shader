@@ -34,39 +34,39 @@ Shader "Boomerang2D/FadeFromBlack"
 
         Pass
         {
-            CGPROGRAM
+        CGPROGRAM
             #pragma vertex SpriteVert
-            #pragma fragment frag
+            #pragma fragment SpriteFragFlash
             #pragma target 2.0
             #pragma multi_compile_instancing
             #pragma multi_compile_local _ PIXELSNAP_ON
             #pragma multi_compile _ ETC1_EXTERNAL_ALPHA
             #include "UnitySprites.cginc"
-
+            
             float _TransitionTime;
             float _StartTime;
-
-            fixed4 frag(v2f IN) : SV_Target
+            
+            fixed4 SpriteFragFlash(v2f IN) : SV_Target
             {
-                fixed4 color = tex2D(_MainTex, IN.texcoord);
-                const float current_time = _Time[1] - _StartTime;
-                float percentage_done = current_time / _TransitionTime;
-
-                if (percentage_done >= 1)
-                {
-                    percentage_done = 1;
+                fixed4 c = SampleSpriteTexture (IN.texcoord) * IN.color;
+                
+                float currentTime = _Time[1] - _StartTime;
+                float percentageDone = currentTime / _TransitionTime;
+                 
+                if(percentageDone >= 1){
+                    percentageDone = 1;
                 }
-
-                color.r *= percentage_done;
-                color.g *= percentage_done;
-                color.b *= percentage_done;
-                color.a = 1 + ((color.a - 1) * percentage_done);
-
-                color.rgb *= color.a;
-
-                return color;
+                
+                c.r *= percentageDone;
+                c.g *= percentageDone;
+                c.b *= percentageDone;
+                c.a =  1 + ((c.a  - 1) * percentageDone);
+                
+                c.rgb *= c.a;
+                
+                return c;
             }
-            ENDCG
+        ENDCG
         }
     }
 }

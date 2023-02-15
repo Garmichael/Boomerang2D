@@ -21,6 +21,8 @@ namespace Boomerang2DFramework.Framework.Actors {
 		public Vector3 RealPosition;
 		public Directions FacingDirection;
 
+		public bool IsGrounded;
+		
 		public float DistanceToSolidUp;
 		public float DistanceToSolidRight;
 		public float DistanceToSolidDown;
@@ -81,6 +83,7 @@ namespace Boomerang2DFramework.Framework.Actors {
 			Velocity = Actor.Velocity;
 			RealPosition = Actor.RealPosition;
 			FacingDirection = Actor.FacingDirection;
+			IsGrounded = Actor.IsGrounded;
 			ActiveState = Actor.StateMachine.GetCurrentState()?.Name;
 
 			BoundingBoxProperties = Actor.CurrentBoundingBoxProperties;
