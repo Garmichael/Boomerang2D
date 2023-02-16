@@ -30,7 +30,6 @@
                             "Duration": 0.3499999940395355,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -39,7 +38,6 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         }
@@ -61,7 +59,6 @@
                             "Duration": 0.3499999940395355,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -70,7 +67,6 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         }
@@ -93,8 +89,7 @@
                 "x": 50.0,
                 "y": 50.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         }
     ],
     "Weapons": [],

@@ -30,10 +30,17 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 4.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 4.0,
                                         "y": 4.0
@@ -66,6 +73,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "enemyBullet"
+                                    ],
                                     "Flags": [
                                         "enemyBullet"
                                     ]
@@ -82,8 +92,7 @@
                 "x": 30.0,
                 "y": 30.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         },
         {
             "Name": "Negative",
@@ -110,10 +119,17 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 4.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 4.0,
                                         "y": 4.0
@@ -146,6 +162,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "enemyBullet"
+                                    ],
                                     "Flags": [
                                         "enemyBullet"
                                     ]
@@ -162,8 +181,7 @@
                 "x": 30.0,
                 "y": 110.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         },
         {
             "Name": "Neutral",
@@ -190,10 +208,17 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 4.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 2.0,
                                         "y": 2.0
@@ -226,6 +251,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "enemyBullet"
+                                    ],
                                     "Flags": [
                                         "enemyBullet"
                                     ]
@@ -242,14 +270,21 @@
                 "x": 30.0,
                 "y": 190.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         }
     ],
     "Weapons": [],
     "BoundingBoxes": [
         {
             "Enabled": true,
+            "DefaultSize": {
+                "x": 2.0,
+                "y": 2.0
+            },
+            "DefaultOffset": {
+                "x": -1.0,
+                "y": 1.0
+            },
             "Size": {
                 "x": 1.0,
                 "y": 1.0
@@ -282,6 +317,9 @@
             "RayInsetLeft": 0.0,
             "RayInsetFirstLeft": 0.0,
             "RayInsetLastLeft": 0.0,
+            "DefaultFlags": [
+                "enemyBullet"
+            ],
             "Flags": []
         }
     ],

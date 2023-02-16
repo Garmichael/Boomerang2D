@@ -30,10 +30,17 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 8.0,
+                                        "y": 5.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 5.0
@@ -66,6 +73,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "enemyBullet"
+                                    ],
                                     "Flags": [
                                         "enemyBullet"
                                     ]
@@ -82,14 +92,21 @@
                 "x": 20.0,
                 "y": 40.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         }
     ],
     "Weapons": [],
     "BoundingBoxes": [
         {
             "Enabled": true,
+            "DefaultSize": {
+                "x": 8.0,
+                "y": 5.0
+            },
+            "DefaultOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
             "Size": {
                 "x": 1.0,
                 "y": 1.0
@@ -122,6 +139,9 @@
             "RayInsetLeft": 0.0,
             "RayInsetFirstLeft": 0.0,
             "RayInsetLastLeft": 0.0,
+            "DefaultFlags": [
+                "enemyBullet"
+            ],
             "Flags": []
         }
     ],

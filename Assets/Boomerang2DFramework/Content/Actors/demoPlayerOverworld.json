@@ -81,10 +81,17 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -6.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 4.0
@@ -117,6 +124,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Player"
+                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
@@ -142,10 +152,17 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -6.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 4.0
@@ -178,6 +195,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Player"
+                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
@@ -213,10 +233,17 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -6.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 4.0
@@ -249,6 +276,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Player"
+                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
@@ -284,10 +314,17 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -6.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 4.0
@@ -320,6 +357,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Player"
+                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
@@ -346,8 +386,7 @@
                 "x": 230.0,
                 "y": 150.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         },
         {
             "Name": "Walking",
@@ -400,10 +439,17 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -6.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 4.0
@@ -436,6 +482,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Player"
+                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
@@ -448,10 +497,17 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -6.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 4.0
@@ -484,6 +540,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Player"
+                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
@@ -509,10 +568,17 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -6.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 4.0
@@ -545,6 +611,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Player"
+                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
@@ -557,10 +626,17 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -6.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 4.0
@@ -593,6 +669,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Player"
+                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
@@ -646,10 +725,17 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -6.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 4.0
@@ -682,6 +768,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Player"
+                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
@@ -694,10 +783,17 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -6.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 4.0
@@ -730,6 +826,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Player"
+                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
@@ -783,10 +882,17 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -6.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 4.0
@@ -819,6 +925,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Player"
+                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
@@ -831,10 +940,17 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -6.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 4.0
@@ -867,6 +983,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Player"
+                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
@@ -893,8 +1012,7 @@
                 "x": 230.0,
                 "y": 280.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         },
         {
             "Name": "GoingInLevel",
@@ -921,10 +1039,17 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 4.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -6.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 4.0
@@ -957,6 +1082,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Player"
+                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
@@ -973,14 +1101,21 @@
                 "x": 480.0,
                 "y": 150.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         }
     ],
     "Weapons": [],
     "BoundingBoxes": [
         {
             "Enabled": true,
+            "DefaultSize": {
+                "x": 12.0,
+                "y": 4.0
+            },
+            "DefaultOffset": {
+                "x": 0.0,
+                "y": -6.0
+            },
             "Size": {
                 "x": 1.0,
                 "y": 1.0
@@ -1013,6 +1148,9 @@
             "RayInsetLeft": 0.0,
             "RayInsetFirstLeft": 0.0,
             "RayInsetLastLeft": 0.0,
+            "DefaultFlags": [
+                "Player"
+            ],
             "Flags": []
         }
     ],

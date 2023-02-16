@@ -41,10 +41,17 @@
                             "Duration": 1.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 16.0,
+                                        "y": 16.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 16.0,
                                         "y": 16.0
@@ -77,12 +84,21 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Solid"
                                     ]
                                 },
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 14.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 4.0
+                                    },
                                     "Size": {
                                         "x": 14.0,
                                         "y": 8.0
@@ -115,6 +131,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "DamageFromEnemy"
+                                    ],
                                     "Flags": [
                                         "DamageFromEnemy"
                                     ]
@@ -131,8 +150,7 @@
                 "x": 60.0,
                 "y": 60.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         },
         {
             "Name": "Dying",
@@ -159,10 +177,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 16.0,
                                         "y": 16.0
@@ -195,10 +220,19 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": []
                                 },
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 14.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 4.0
+                                    },
                                     "Size": {
                                         "x": 14.0,
                                         "y": 8.0
@@ -231,6 +265,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "DamageFromEnemy"
+                                    ],
                                     "Flags": [
                                         "DamageFromEnemy"
                                     ]
@@ -243,10 +280,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 16.0,
                                         "y": 16.0
@@ -279,10 +323,19 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": []
                                 },
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 14.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 4.0
+                                    },
                                     "Size": {
                                         "x": 14.0,
                                         "y": 8.0
@@ -315,6 +368,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "DamageFromEnemy"
+                                    ],
                                     "Flags": [
                                         "DamageFromEnemy"
                                     ]
@@ -327,10 +383,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 16.0,
                                         "y": 16.0
@@ -363,10 +426,19 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": []
                                 },
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 14.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 4.0
+                                    },
                                     "Size": {
                                         "x": 14.0,
                                         "y": 8.0
@@ -399,6 +471,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "DamageFromEnemy"
+                                    ],
                                     "Flags": [
                                         "DamageFromEnemy"
                                     ]
@@ -411,10 +486,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 16.0,
                                         "y": 16.0
@@ -447,10 +529,19 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": []
                                 },
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 14.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 4.0
+                                    },
                                     "Size": {
                                         "x": 14.0,
                                         "y": 8.0
@@ -483,6 +574,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "DamageFromEnemy"
+                                    ],
                                     "Flags": [
                                         "DamageFromEnemy"
                                     ]
@@ -499,14 +593,21 @@
                 "x": 60.0,
                 "y": 190.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         }
     ],
     "Weapons": [],
     "BoundingBoxes": [
         {
             "Enabled": true,
+            "DefaultSize": {
+                "x": 16.0,
+                "y": 16.0
+            },
+            "DefaultOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
             "Size": {
                 "x": 1.0,
                 "y": 1.0
@@ -539,10 +640,19 @@
             "RayInsetLeft": 0.0,
             "RayInsetFirstLeft": 0.0,
             "RayInsetLastLeft": 0.0,
+            "DefaultFlags": [],
             "Flags": []
         },
         {
             "Enabled": true,
+            "DefaultSize": {
+                "x": 14.0,
+                "y": 8.0
+            },
+            "DefaultOffset": {
+                "x": 0.0,
+                "y": 4.0
+            },
             "Size": {
                 "x": 1.0,
                 "y": 1.0
@@ -575,6 +685,9 @@
             "RayInsetLeft": 0.0,
             "RayInsetFirstLeft": 0.0,
             "RayInsetLastLeft": 0.0,
+            "DefaultFlags": [
+                "DamageFromEnemy"
+            ],
             "Flags": []
         }
     ],

@@ -30,10 +30,17 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 2.0,
+                                        "y": 16.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -16.0
+                                    },
                                     "Size": {
                                         "x": 2.0,
                                         "y": 16.0
@@ -66,6 +73,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Door"
+                                    ],
                                     "Flags": [
                                         "Door"
                                     ]
@@ -91,10 +101,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 2.0,
+                                        "y": 16.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -16.0
+                                    },
                                     "Size": {
                                         "x": 2.0,
                                         "y": 16.0
@@ -127,6 +144,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Door"
+                                    ],
                                     "Flags": [
                                         "Door"
                                     ]
@@ -139,10 +159,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 2.0,
                                         "y": 16.0
@@ -175,6 +202,7 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Door"
                                     ]
@@ -187,10 +215,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 2.0,
                                         "y": 16.0
@@ -223,6 +258,7 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Door"
                                     ]
@@ -235,10 +271,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 2.0,
                                         "y": 16.0
@@ -271,6 +314,7 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Door"
                                     ]
@@ -283,10 +327,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 2.0,
                                         "y": 16.0
@@ -319,6 +370,7 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Door"
                                     ]
@@ -345,14 +397,21 @@
                 "x": 50.0,
                 "y": 70.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         }
     ],
     "Weapons": [],
     "BoundingBoxes": [
         {
             "Enabled": true,
+            "DefaultSize": {
+                "x": 2.0,
+                "y": 16.0
+            },
+            "DefaultOffset": {
+                "x": 0.0,
+                "y": -16.0
+            },
             "Size": {
                 "x": 1.0,
                 "y": 1.0
@@ -385,6 +444,9 @@
             "RayInsetLeft": 0.0,
             "RayInsetFirstLeft": 0.0,
             "RayInsetLastLeft": 0.0,
+            "DefaultFlags": [
+                "Door"
+            ],
             "Flags": []
         }
     ],

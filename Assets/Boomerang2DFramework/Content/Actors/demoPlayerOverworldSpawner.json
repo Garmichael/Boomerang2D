@@ -30,7 +30,6 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         }
@@ -55,11 +54,9 @@
                             "ActorEventProperties": "{\"Actor\":\"demoPlayerOverworld\",\"RelativePosition\":false,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[{\"Operation\":0,\"Value\":11,\"UsesSubValueFloat\":false,\"SubValueFloat\":0.0,\"UsesSubValueMinMax\":false,\"SubValueMin\":0.0,\"SubValueMax\":0.0,\"UsesSubValueString\":true,\"SubValueString\":\"OverworldPositionX\"}],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.0,\"Entries\":[{\"Operation\":0,\"Value\":11,\"UsesSubValueFloat\":false,\"SubValueFloat\":0.0,\"UsesSubValueMinMax\":false,\"SubValueMin\":0.0,\"SubValueMax\":0.0,\"UsesSubValueString\":true,\"SubValueString\":\"OverworldPositionY\"}],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":-0.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":true,\"FacingDirection\":1}"
                         }
                     ],
-                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ],
-            "StateExitActorEvents": []
+            ]
         }
     ],
     "Weapons": [],

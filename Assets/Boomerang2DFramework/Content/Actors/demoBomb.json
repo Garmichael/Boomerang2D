@@ -41,10 +41,17 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 10.0,
                                         "y": 10.0
@@ -77,6 +84,7 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Bomb"
                                     ]
@@ -93,8 +101,7 @@
                 "x": 100.0,
                 "y": 30.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         },
         {
             "Name": "idle",
@@ -142,10 +149,17 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 10.0,
+                                        "y": 10.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -3.0
+                                    },
                                     "Size": {
                                         "x": 10.0,
                                         "y": 10.0
@@ -178,6 +192,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Bomb"
+                                    ],
                                     "Flags": [
                                         "Bomb"
                                     ]
@@ -190,10 +207,17 @@
                             "Duration": 0.25,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 10.0,
+                                        "y": 10.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -3.0
+                                    },
                                     "Size": {
                                         "x": 10.0,
                                         "y": 10.0
@@ -226,6 +250,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Bomb"
+                                    ],
                                     "Flags": [
                                         "Bomb"
                                     ]
@@ -251,10 +278,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 10.0,
+                                        "y": 10.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -3.0
+                                    },
                                     "Size": {
                                         "x": 10.0,
                                         "y": 10.0
@@ -287,6 +321,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Bomb"
+                                    ],
                                     "Flags": [
                                         "Bomb"
                                     ]
@@ -299,10 +336,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 10.0,
+                                        "y": 10.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -3.0
+                                    },
                                     "Size": {
                                         "x": 10.0,
                                         "y": 10.0
@@ -335,6 +379,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Bomb"
+                                    ],
                                     "Flags": [
                                         "Bomb"
                                     ]
@@ -361,8 +408,7 @@
                 "x": 100.0,
                 "y": 140.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         },
         {
             "Name": "Explodey",
@@ -389,10 +435,17 @@
                             "Duration": 0.05000000074505806,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 10.0,
                                         "y": 10.0
@@ -425,6 +478,7 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Bomb"
                                     ]
@@ -437,10 +491,17 @@
                             "Duration": 0.05000000074505806,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 10.0,
                                         "y": 10.0
@@ -473,6 +534,7 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Bomb"
                                     ]
@@ -485,10 +547,17 @@
                             "Duration": 0.05000000074505806,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 24.0,
                                         "y": 24.0
@@ -521,6 +590,7 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": [
                                         "BombExplosion"
                                     ]
@@ -533,10 +603,17 @@
                             "Duration": 0.05000000074505806,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 10.0,
                                         "y": 10.0
@@ -569,6 +646,7 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Bomb"
                                     ]
@@ -581,10 +659,17 @@
                             "Duration": 0.05000000074505806,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 10.0,
                                         "y": 10.0
@@ -617,6 +702,7 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Bomb"
                                     ]
@@ -629,10 +715,17 @@
                             "Duration": 0.05000000074505806,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 1.0,
+                                        "y": 1.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 10.0,
                                         "y": 10.0
@@ -665,6 +758,7 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Bomb"
                                     ]
@@ -706,11 +800,9 @@
                             "ActorEventProperties": "{}"
                         }
                     ],
-                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ],
-            "StateExitActorEvents": []
+            ]
         },
         {
             "Name": "Fall",
@@ -748,10 +840,17 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 10.0,
+                                        "y": 10.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -3.0
+                                    },
                                     "Size": {
                                         "x": 10.0,
                                         "y": 10.0
@@ -784,6 +883,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Bomb"
+                                    ],
                                     "Flags": [
                                         "Bomb"
                                     ]
@@ -796,10 +898,17 @@
                             "Duration": 0.25,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 10.0,
+                                        "y": 10.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": -3.0
+                                    },
                                     "Size": {
                                         "x": 10.0,
                                         "y": 10.0
@@ -832,6 +941,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
+                                    "DefaultFlags": [
+                                        "Bomb"
+                                    ],
                                     "Flags": [
                                         "Bomb"
                                     ]
@@ -848,14 +960,21 @@
                 "x": 380.0,
                 "y": 140.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         }
     ],
     "Weapons": [],
     "BoundingBoxes": [
         {
             "Enabled": true,
+            "DefaultSize": {
+                "x": 10.0,
+                "y": 10.0
+            },
+            "DefaultOffset": {
+                "x": 0.0,
+                "y": -3.0
+            },
             "Size": {
                 "x": 1.0,
                 "y": 1.0
@@ -888,6 +1007,9 @@
             "RayInsetLeft": 0.0,
             "RayInsetFirstLeft": 0.0,
             "RayInsetLastLeft": 0.0,
+            "DefaultFlags": [
+                "Bomb"
+            ],
             "Flags": []
         }
     ],

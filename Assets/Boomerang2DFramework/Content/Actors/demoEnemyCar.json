@@ -30,10 +30,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -66,6 +73,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -78,10 +88,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -114,6 +131,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -126,10 +146,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -162,6 +189,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -174,10 +204,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -210,6 +247,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -235,10 +275,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -271,6 +318,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -283,10 +333,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -319,6 +376,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -331,10 +391,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -367,6 +434,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -379,10 +449,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -415,6 +492,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -441,8 +521,7 @@
                 "x": 20.0,
                 "y": 40.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         },
         {
             "Name": "exploding",
@@ -469,10 +548,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -505,6 +591,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -517,10 +606,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -553,6 +649,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -565,10 +664,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -601,6 +707,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -617,8 +726,7 @@
                 "x": 20.0,
                 "y": 130.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         },
         {
             "Name": "flattened",
@@ -645,10 +753,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -681,6 +796,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -693,10 +811,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -729,6 +854,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -741,10 +869,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -777,6 +912,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -802,10 +940,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -838,6 +983,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -850,10 +998,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -886,6 +1041,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -898,10 +1056,17 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
-                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
+                                    "DefaultSize": {
+                                        "x": 12.0,
+                                        "y": 8.0
+                                    },
+                                    "DefaultOffset": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 8.0
@@ -934,6 +1099,9 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 1.0,
                                     "RayInsetLastLeft": 1.0,
+                                    "DefaultFlags": [
+                                        "SquashableEnemy"
+                                    ],
                                     "Flags": [
                                         "SquashableEnemy"
                                     ]
@@ -960,14 +1128,21 @@
                 "x": 20.0,
                 "y": 220.0
             },
-            "StateEntryActorEvents": [],
-            "StateExitActorEvents": []
+            "StateEntryActorEvents": []
         }
     ],
     "Weapons": [],
     "BoundingBoxes": [
         {
             "Enabled": true,
+            "DefaultSize": {
+                "x": 12.0,
+                "y": 8.0
+            },
+            "DefaultOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
             "Size": {
                 "x": 1.0,
                 "y": 1.0
@@ -1000,6 +1175,9 @@
             "RayInsetLeft": 0.0,
             "RayInsetFirstLeft": 1.0,
             "RayInsetLastLeft": 1.0,
+            "DefaultFlags": [
+                "SquashableEnemy"
+            ],
             "Flags": []
         }
     ],
