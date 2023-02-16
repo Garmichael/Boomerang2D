@@ -30,6 +30,7 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         }
@@ -42,7 +43,8 @@
                 "x": 30.0,
                 "y": 40.0
             },
-            "StateEntryActorEvents": []
+            "StateEntryActorEvents": [],
+            "StateExitActorEvents": []
         }
     ],
     "Weapons": [],

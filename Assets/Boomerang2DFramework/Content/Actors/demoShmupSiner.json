@@ -30,17 +30,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 16.0,
-                                        "y": 12.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 16.0,
                                         "y": 12.0
@@ -73,9 +66,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "enemyShip"
-                                    ],
                                     "Flags": [
                                         "enemyShip"
                                     ]
@@ -92,7 +82,8 @@
                 "x": 40.0,
                 "y": 80.0
             },
-            "StateEntryActorEvents": []
+            "StateEntryActorEvents": [],
+            "StateExitActorEvents": []
         },
         {
             "Name": "exploding",
@@ -119,17 +110,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 16.0,
-                                        "y": 12.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 16.0,
                                         "y": 12.0
@@ -162,9 +146,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "enemyShip"
-                                    ],
                                     "Flags": [
                                         "enemyShip"
                                     ]
@@ -207,9 +188,11 @@
                             "ActorEventProperties": "{\"ShaderName\":\"Boomerang2D/Flashing\",\"FloatsProperties\":{\"Keys\":[],\"Values\":[]},\"IntsProperties\":{\"Keys\":[],\"Values\":[]},\"ColorsProperties\":{\"Keys\":[],\"Values\":[]},\"TexturesProperties\":{\"Keys\":[],\"Values\":[]}}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         },
         {
             "Name": "negative",
@@ -236,17 +219,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 16.0,
-                                        "y": 12.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 16.0,
                                         "y": 12.0
@@ -279,9 +255,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "enemyShip"
-                                    ],
                                     "Flags": [
                                         "enemyShip"
                                     ]
@@ -298,21 +271,14 @@
                 "x": 260.0,
                 "y": 80.0
             },
-            "StateEntryActorEvents": []
+            "StateEntryActorEvents": [],
+            "StateExitActorEvents": []
         }
     ],
     "Weapons": [],
     "BoundingBoxes": [
         {
             "Enabled": true,
-            "DefaultSize": {
-                "x": 16.0,
-                "y": 12.0
-            },
-            "DefaultOffset": {
-                "x": 0.0,
-                "y": 0.0
-            },
             "Size": {
                 "x": 1.0,
                 "y": 1.0
@@ -345,9 +311,6 @@
             "RayInsetLeft": 0.0,
             "RayInsetFirstLeft": 0.0,
             "RayInsetLastLeft": 0.0,
-            "DefaultFlags": [
-                "enemyShip"
-            ],
             "Flags": []
         }
     ],

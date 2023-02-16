@@ -30,17 +30,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 48.0,
-                                        "y": 2.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -15.0
-                                    },
                                     "Size": {
                                         "x": 48.0,
                                         "y": 2.0
@@ -73,7 +66,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": []
                                 }
                             ],
@@ -97,17 +89,10 @@
                             "Duration": 0.30000001192092898,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 48.0,
-                                        "y": 2.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -15.0
-                                    },
                                     "Size": {
                                         "x": 48.0,
                                         "y": 2.0
@@ -140,7 +125,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": []
                                 }
                             ],
@@ -151,17 +135,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 48.0,
-                                        "y": 2.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -15.0
-                                    },
                                     "Size": {
                                         "x": 48.0,
                                         "y": 2.0
@@ -194,7 +171,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": []
                                 }
                             ],
@@ -205,17 +181,10 @@
                             "Duration": 0.5,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 48.0,
-                                        "y": 2.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -15.0
-                                    },
                                     "Size": {
                                         "x": 48.0,
                                         "y": 2.0
@@ -248,7 +217,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": []
                                 }
                             ],
@@ -259,17 +227,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 48.0,
-                                        "y": 2.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -15.0
-                                    },
                                     "Size": {
                                         "x": 48.0,
                                         "y": 2.0
@@ -302,7 +263,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": []
                                 }
                             ],
@@ -327,21 +287,14 @@
                 "x": 20.0,
                 "y": 20.0
             },
-            "StateEntryActorEvents": []
+            "StateEntryActorEvents": [],
+            "StateExitActorEvents": []
         }
     ],
     "Weapons": [],
     "BoundingBoxes": [
         {
             "Enabled": true,
-            "DefaultSize": {
-                "x": 48.0,
-                "y": 2.0
-            },
-            "DefaultOffset": {
-                "x": 0.0,
-                "y": -15.0
-            },
             "Size": {
                 "x": 1.0,
                 "y": 1.0
@@ -374,7 +327,6 @@
             "RayInsetLeft": 0.0,
             "RayInsetFirstLeft": 0.0,
             "RayInsetLastLeft": 0.0,
-            "DefaultFlags": [],
             "Flags": []
         }
     ],

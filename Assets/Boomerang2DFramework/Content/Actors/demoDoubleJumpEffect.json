@@ -30,6 +30,7 @@
                             "Duration": 0.05000000074505806,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -38,6 +39,7 @@
                             "Duration": 0.05000000074505806,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -46,6 +48,7 @@
                             "Duration": 0.05000000074505806,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         }
@@ -70,9 +73,11 @@
                             "ActorEventProperties": "{}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         }
     ],
     "Weapons": [],

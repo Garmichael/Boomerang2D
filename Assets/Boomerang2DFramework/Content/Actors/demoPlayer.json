@@ -171,17 +171,10 @@
                             "Duration": 0.3499999940395355,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -214,23 +207,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -263,9 +245,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -278,17 +257,10 @@
                             "Duration": 0.30000001192092898,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -321,23 +293,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -370,9 +331,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -398,17 +356,10 @@
                             "Duration": 0.3499999940395355,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -441,23 +392,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -490,9 +430,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -505,17 +442,10 @@
                             "Duration": 0.30000001192092898,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -548,23 +478,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -597,9 +516,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -635,17 +551,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -678,23 +587,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -727,9 +625,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -742,17 +637,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -785,23 +673,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -834,9 +711,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -849,17 +723,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -892,23 +759,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -941,9 +797,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -956,17 +809,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -999,23 +845,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -1048,9 +883,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -1086,17 +918,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -1129,23 +954,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -1178,9 +992,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -1193,17 +1004,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -1236,23 +1040,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -1285,9 +1078,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -1300,17 +1090,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -1343,23 +1126,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -1392,9 +1164,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -1407,17 +1176,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -1450,23 +1212,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -1499,9 +1250,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -1545,6 +1293,7 @@
                             "ActorEventProperties": "{\"ShaderName\":\"Sprites/Default\",\"FloatsProperties\":{\"Keys\":[],\"Values\":[]},\"IntsProperties\":{\"Keys\":[],\"Values\":[]},\"ColorsProperties\":{\"Keys\":[],\"Values\":[]},\"TexturesProperties\":{\"Keys\":[],\"Values\":[]}}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 },
                 {
@@ -1558,9 +1307,11 @@
                             "ActorEventProperties": "{\"StatName\":\"TotalJumps\",\"NewValue\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         },
         {
             "Name": "Walk",
@@ -1668,17 +1419,10 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -1711,23 +1455,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -1760,9 +1493,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -1775,17 +1505,10 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -1818,23 +1541,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -1867,9 +1579,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -1882,17 +1591,10 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -1925,23 +1627,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -1974,9 +1665,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -1989,17 +1677,10 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -2032,23 +1713,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -2081,9 +1751,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -2109,17 +1776,10 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -2152,23 +1812,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -2201,9 +1850,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -2216,17 +1862,10 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -2259,23 +1898,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -2308,9 +1936,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -2323,17 +1948,10 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -2366,23 +1984,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -2415,9 +2022,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -2430,17 +2034,10 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -2473,23 +2070,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -2522,9 +2108,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -2560,17 +2143,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -2603,23 +2179,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -2652,9 +2217,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -2695,17 +2257,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -2738,23 +2293,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -2787,9 +2331,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -2821,7 +2362,8 @@
                 "x": 290.0,
                 "y": 340.0
             },
-            "StateEntryActorEvents": []
+            "StateEntryActorEvents": [],
+            "StateExitActorEvents": []
         },
         {
             "Name": "Jump",
@@ -2869,17 +2411,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -2912,23 +2447,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -2961,9 +2485,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -2989,17 +2510,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -3032,23 +2546,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -3081,9 +2584,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -3135,6 +2635,7 @@
                             "ActorEventProperties": "{\"StatName\":\"TotalJumps\",\"NewValue\":{\"StartValue\":1.0,\"Entries\":[{\"Operation\":0,\"Value\":6,\"UsesSubValueFloat\":false,\"SubValueFloat\":0.0,\"UsesSubValueString\":true,\"SubValueString\":\"TotalJumps\"}],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 },
                 {
@@ -3154,9 +2655,11 @@
                             "ActorEventProperties": "{\"Actor\":\"demoDoubleJumpEffect\",\"RelativePosition\":true,\"PositionX\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":0.25,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":false,\"FacingDirection\":0}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         },
         {
             "Name": "Fall",
@@ -3289,17 +2792,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -3332,23 +2828,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -3381,9 +2866,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -3409,17 +2891,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -3452,23 +2927,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -3501,9 +2965,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -3548,9 +3009,11 @@
                             "ActorEventProperties": "{\"StatName\":\"TotalJumps\",\"NewValue\":{\"StartValue\":1.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         },
         {
             "Name": "duck",
@@ -3598,17 +3061,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -3641,23 +3097,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -3690,9 +3135,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -3718,17 +3160,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -3761,23 +3196,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -3810,9 +3234,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -3839,7 +3260,8 @@
                 "x": 20.0,
                 "y": 220.0
             },
-            "StateEntryActorEvents": []
+            "StateEntryActorEvents": [],
+            "StateExitActorEvents": []
         },
         {
             "Name": "ClimbingLadder",
@@ -3902,17 +3324,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -3945,21 +3360,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -3992,9 +3398,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -4020,17 +3423,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -4063,21 +3459,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -4110,9 +3497,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -4125,17 +3509,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -4168,21 +3545,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -4215,9 +3583,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -4265,6 +3630,7 @@
                             "ActorEventProperties": "{\"SnapValue\":{\"StartValue\":0.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 },
                 {
@@ -4278,9 +3644,11 @@
                             "ActorEventProperties": "{\"UpdateHorizontalVelocity\":true,\"HorizontalVelocity\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"UpdateVerticalVelocity\":false,\"VerticalVelocity\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         },
         {
             "Name": "Attack",
@@ -4318,17 +3686,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -4361,21 +3722,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -4408,9 +3760,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -4446,17 +3795,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -4489,21 +3831,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -4536,9 +3869,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -4574,17 +3904,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -4617,21 +3940,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -4664,9 +3978,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -4707,17 +4018,10 @@
                             "Duration": 0.20000000298023225,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -4750,21 +4054,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -4797,9 +4092,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -4856,9 +4148,11 @@
                             "ActorEventProperties": "{\"StatName\":\"punchLeft\"}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         },
         {
             "Name": "KnockBackFall",
@@ -4916,17 +4210,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -4959,23 +4246,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -5008,9 +4284,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -5036,17 +4309,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -5079,23 +4345,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -5128,9 +4383,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -5157,7 +4409,8 @@
                 "x": 20.0,
                 "y": 100.0
             },
-            "StateEntryActorEvents": []
+            "StateEntryActorEvents": [],
+            "StateExitActorEvents": []
         },
         {
             "Name": "KnockBackAir",
@@ -5205,17 +4458,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -5248,23 +4494,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         ""
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -5297,9 +4532,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -5325,17 +4557,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -5368,23 +4593,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -5417,9 +4631,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -5465,9 +4676,11 @@
                             "ActorEventProperties": "{\"ShaderName\":\"Boomerang2D/Flashing\",\"FloatsProperties\":{\"Keys\":[],\"Values\":[]},\"IntsProperties\":{\"Keys\":[],\"Values\":[]},\"ColorsProperties\":{\"Keys\":[],\"Values\":[]},\"TexturesProperties\":{\"Keys\":[],\"Values\":[]}}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         },
         {
             "Name": "KnockBackRest",
@@ -5515,17 +4728,10 @@
                             "Duration": 0.3499999940395355,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -5558,23 +4764,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -5607,9 +4802,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -5635,17 +4827,10 @@
                             "Duration": 0.3499999940395355,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -5678,23 +4863,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -5727,9 +4901,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -5756,7 +4927,8 @@
                 "x": 290.0,
                 "y": 100.0
             },
-            "StateEntryActorEvents": []
+            "StateEntryActorEvents": [],
+            "StateExitActorEvents": []
         },
         {
             "Name": "Dead",
@@ -5794,17 +4966,10 @@
                             "Duration": 0.3499999940395355,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -5837,23 +5002,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -5886,9 +5040,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -5914,17 +5065,10 @@
                             "Duration": 0.3499999940395355,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -5957,23 +5101,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -6006,9 +5139,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -6047,9 +5177,11 @@
                             "ActorEventProperties": "{\"ShaderName\":\"Sprites/Default\",\"FloatsProperties\":{\"Keys\":[],\"Values\":[]},\"IntsProperties\":{\"Keys\":[],\"Values\":[]},\"ColorsProperties\":{\"Keys\":[],\"Values\":[]},\"TexturesProperties\":{\"Keys\":[],\"Values\":[]}}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         },
         {
             "Name": "WallGrab",
@@ -6147,17 +5279,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -6190,21 +5315,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -6237,7 +5353,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -6263,17 +5378,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -6306,21 +5414,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -6353,7 +5452,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -6392,9 +5490,11 @@
                             "ActorEventProperties": "{\"StatName\":\"TotalJumps\",\"NewValue\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         },
         {
             "Name": "JumpOffWallToLeft",
@@ -6442,17 +5542,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -6485,23 +5578,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -6534,9 +5616,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -6562,17 +5641,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -6605,23 +5677,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -6654,9 +5715,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -6708,9 +5766,11 @@
                             "ActorEventProperties": "{\"StatName\":\"TotalJumps\",\"NewValue\":{\"StartValue\":1.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         },
         {
             "Name": "JumpOffWallToRight",
@@ -6758,17 +5818,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -6801,23 +5854,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -6850,9 +5892,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -6878,17 +5917,10 @@
                             "Duration": 0.0,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 12.0,
-                                        "y": 14.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": -1.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -6921,23 +5953,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "Player"
-                                    ],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -6970,9 +5991,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -7024,9 +6042,11 @@
                             "ActorEventProperties": "{\"StatName\":\"TotalJumps\",\"NewValue\":{\"StartValue\":1.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0}}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         },
         {
             "Name": "ClimbingWall",
@@ -7199,17 +6219,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -7242,21 +6255,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -7289,9 +6293,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -7304,17 +6305,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -7347,21 +6341,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -7394,7 +6379,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -7407,17 +6391,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -7450,21 +6427,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -7497,7 +6465,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -7510,17 +6477,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -7553,21 +6513,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -7600,7 +6551,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -7626,17 +6576,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -7669,21 +6612,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -7716,9 +6650,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -7731,17 +6662,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -7774,21 +6698,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -7821,7 +6736,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -7834,17 +6748,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -7877,21 +6784,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -7924,7 +6822,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -7937,17 +6834,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -7980,21 +6870,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -8027,7 +6908,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -8063,17 +6943,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -8106,21 +6979,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -8153,9 +7017,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -8168,17 +7029,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -8211,21 +7065,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -8258,7 +7103,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -8271,17 +7115,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -8314,21 +7151,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -8361,7 +7189,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -8374,17 +7201,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -8417,21 +7237,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -8464,7 +7275,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -8500,17 +7310,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -8543,21 +7346,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 8.0,
-                                        "y": 8.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 12.0,
-                                        "y": -2.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -8590,9 +7384,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [
-                                        "DamageFromPlayer"
-                                    ],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -8605,17 +7396,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -8648,21 +7432,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -8695,7 +7470,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -8708,17 +7482,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -8751,21 +7518,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -8798,7 +7556,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -8811,17 +7568,10 @@
                             "Duration": 0.15000000596046449,
                             "FlipHorizontal": true,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [
                                 {
                                     "Enabled": true,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 12.0,
                                         "y": 14.0
@@ -8854,21 +7604,12 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "Player"
                                     ]
                                 },
                                 {
                                     "Enabled": false,
-                                    "DefaultSize": {
-                                        "x": 1.0,
-                                        "y": 1.0
-                                    },
-                                    "DefaultOffset": {
-                                        "x": 0.0,
-                                        "y": 0.0
-                                    },
                                     "Size": {
                                         "x": 8.0,
                                         "y": 8.0
@@ -8901,7 +7642,6 @@
                                     "RayInsetLeft": 0.0,
                                     "RayInsetFirstLeft": 0.0,
                                     "RayInsetLastLeft": 0.0,
-                                    "DefaultFlags": [],
                                     "Flags": [
                                         "DamageFromPlayer"
                                     ]
@@ -8933,21 +7673,14 @@
                 "x": 1100.0,
                 "y": 220.0
             },
-            "StateEntryActorEvents": []
+            "StateEntryActorEvents": [],
+            "StateExitActorEvents": []
         }
     ],
     "Weapons": [],
     "BoundingBoxes": [
         {
             "Enabled": true,
-            "DefaultSize": {
-                "x": 12.0,
-                "y": 14.0
-            },
-            "DefaultOffset": {
-                "x": 0.0,
-                "y": -1.0
-            },
             "Size": {
                 "x": 1.0,
                 "y": 1.0
@@ -8980,21 +7713,10 @@
             "RayInsetLeft": 0.0,
             "RayInsetFirstLeft": 0.0,
             "RayInsetLastLeft": 0.0,
-            "DefaultFlags": [
-                "Player"
-            ],
             "Flags": []
         },
         {
             "Enabled": false,
-            "DefaultSize": {
-                "x": 8.0,
-                "y": 8.0
-            },
-            "DefaultOffset": {
-                "x": 12.0,
-                "y": -2.0
-            },
             "Size": {
                 "x": 1.0,
                 "y": 1.0
@@ -9027,9 +7749,6 @@
             "RayInsetLeft": 0.0,
             "RayInsetFirstLeft": 0.0,
             "RayInsetLastLeft": 0.0,
-            "DefaultFlags": [
-                "DamageFromPlayer"
-            ],
             "Flags": []
         }
     ],

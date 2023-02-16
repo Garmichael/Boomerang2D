@@ -30,6 +30,7 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         }
@@ -60,6 +61,7 @@
                             "ActorEventProperties": "{\"Actor\":\"demoPlayer\",\"RelativePosition\":false,\"PositionX\":{\"StartValue\":11.625,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":14.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":true,\"FacingDirection\":3}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 },
                 {
@@ -86,9 +88,11 @@
                             "ActorEventProperties": "{\"Actor\":\"demoPlayer\",\"RelativePosition\":false,\"PositionX\":{\"StartValue\":13.25,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionY\":{\"StartValue\":3.5,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"PositionZ\":{\"StartValue\":0.0,\"Entries\":[],\"ClampMin\":false,\"ClampMinValue\":0.0,\"ClampMax\":false,\"ClampMaxValue\":0.0},\"ActorInstanceProperties\":{\"FacingDirection\":3,\"LinkedActors\":[]},\"StartInDefaultState\":true,\"StateToStartIn\":\"\",\"SetFacingDirection\":true,\"FacingDirection\":2}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         }
     ],
     "Weapons": [],
