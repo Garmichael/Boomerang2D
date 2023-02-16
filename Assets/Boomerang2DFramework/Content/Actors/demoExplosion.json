@@ -30,6 +30,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -38,6 +39,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -46,6 +48,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -54,6 +57,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -62,6 +66,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -70,6 +75,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -78,6 +84,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -86,6 +93,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -94,6 +102,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -102,6 +111,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -110,6 +120,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -118,6 +129,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         }
@@ -147,6 +159,7 @@
                 {
                     "ActorTriggerBuilders": [],
                     "ActorEventBuilders": [],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 },
                 {
@@ -160,9 +173,11 @@
                             "ActorEventProperties": "{}"
                         }
                     ],
+                    "ActorElseEventBuilders": [],
                     "Triggers": []
                 }
-            ]
+            ],
+            "StateExitActorEvents": []
         }
     ],
     "Weapons": [],

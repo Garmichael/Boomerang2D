@@ -57,6 +57,7 @@
                     "Width": 40,
                     "Height": 30,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 40,
                         "Height": 30,
@@ -72,6 +73,7 @@
                     "Width": 2,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 2,
                         "Height": 1,
@@ -146,6 +148,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -161,6 +164,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -176,6 +180,7 @@
                     "Width": 4,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 4,
                         "Height": 1,
@@ -191,6 +196,7 @@
                     "Width": 35,
                     "Height": 28,
                     "BrushMapDefinition": "1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 35,
                         "Height": 28,
@@ -206,6 +212,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -221,6 +228,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -236,6 +244,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -251,6 +260,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -266,6 +276,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -281,6 +292,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -296,6 +308,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -311,6 +324,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -326,6 +340,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -341,6 +356,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -356,6 +372,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -371,6 +388,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -386,6 +404,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -401,6 +420,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -416,6 +436,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -431,6 +452,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -446,6 +468,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -602,6 +625,7 @@
                     "Width": 32,
                     "Height": 25,
                     "BrushMapDefinition": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 32,
                         "Height": 25,
@@ -617,6 +641,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -632,6 +657,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -647,6 +673,7 @@
                     "Width": 2,
                     "Height": 2,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 2,
                         "Height": 2,
@@ -662,6 +689,7 @@
                     "Width": 3,
                     "Height": 3,
                     "BrushMapDefinition": "1,1,0,1,1,1,1,1,1",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 3,
                         "Height": 3,
@@ -677,6 +705,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -692,6 +721,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -707,6 +737,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -722,6 +753,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -737,6 +769,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -752,6 +785,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -767,6 +801,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -782,6 +817,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -797,6 +833,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -812,6 +849,7 @@
                     "Width": 3,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 3,
                         "Height": 1,
@@ -827,6 +865,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -842,6 +881,7 @@
                     "Width": 2,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 2,
                         "Height": 1,
@@ -857,6 +897,7 @@
                     "Width": 2,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 2,
                         "Height": 1,
@@ -872,6 +913,7 @@
                     "Width": 1,
                     "Height": 3,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 3,
@@ -887,6 +929,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -902,6 +945,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -917,6 +961,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -932,6 +977,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -947,6 +993,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -962,6 +1009,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -977,6 +1025,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -992,6 +1041,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1007,6 +1057,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1022,6 +1073,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1037,6 +1089,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1052,6 +1105,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1067,6 +1121,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1082,6 +1137,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1097,6 +1153,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1112,6 +1169,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1127,6 +1185,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1142,6 +1201,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1157,6 +1217,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1172,6 +1233,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1187,6 +1249,7 @@
                     "Width": 1,
                     "Height": 1,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 1,
                         "Height": 1,
@@ -1202,6 +1265,7 @@
                     "Width": 27,
                     "Height": 17,
                     "BrushMapDefinition": "1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 27,
                         "Height": 17,

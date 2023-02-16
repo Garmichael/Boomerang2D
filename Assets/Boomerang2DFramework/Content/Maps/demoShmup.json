@@ -43,6 +43,7 @@
                     "Width": 22,
                     "Height": 15,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 22,
                         "Height": 15,
@@ -58,6 +59,7 @@
                     "Width": 20,
                     "Height": 13,
                     "BrushMapDefinition": "",
+                    "BrushTreatEdgeLikeSolid": false,
                     "CachedEditorTextureInfo": {
                         "Width": 20,
                         "Height": 13,

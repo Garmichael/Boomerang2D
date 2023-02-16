@@ -30,6 +30,7 @@
                             "Duration": 0.0,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         }
@@ -42,7 +43,8 @@
                 "x": 220.0,
                 "y": 10.0
             },
-            "StateEntryActorEvents": []
+            "StateEntryActorEvents": [],
+            "StateExitActorEvents": []
         },
         {
             "Name": "driveLeft",
@@ -69,6 +71,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -77,6 +80,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -85,6 +89,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         }
@@ -97,7 +102,8 @@
                 "x": 10.0,
                 "y": 10.0
             },
-            "StateEntryActorEvents": []
+            "StateEntryActorEvents": [],
+            "StateExitActorEvents": []
         },
         {
             "Name": "driveRight",
@@ -124,6 +130,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -132,6 +139,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         },
@@ -140,6 +148,7 @@
                             "Duration": 0.10000000149011612,
                             "FlipHorizontal": false,
                             "FlipVertical": false,
+                            "Rotate": false,
                             "BoundingBoxProperties": [],
                             "ParticleEffectProperties": []
                         }
@@ -152,7 +161,8 @@
                 "x": 430.0,
                 "y": 10.0
             },
-            "StateEntryActorEvents": []
+            "StateEntryActorEvents": [],
+            "StateExitActorEvents": []
         }
     ],
     "Weapons": [],
