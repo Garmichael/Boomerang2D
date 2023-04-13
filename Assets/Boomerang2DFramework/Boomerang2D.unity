@@ -158,15 +158,15 @@ MonoBehaviour:
   DialogContentJson: {fileID: 4900000, guid: 474394771556e0844bdc811afd595114, type: 3}
   AudioMixer: {fileID: 24100000, guid: 3dfd6b119b1c51f4492e89d5b3b85681, type: 2}
   AudioClips:
-  - {fileID: 8300000, guid: b76c5efa62c3d04488d5bd1b44c7f4b9, type: 3}
+  - {fileID: 8300000, guid: d19962d1a22c6a2469bd90e430111c02, type: 3}
   - {fileID: 8300000, guid: 470fddbf7fbc6a94394b21d67b2e4b58, type: 3}
   - {fileID: 8300000, guid: f576ea8199c72464d9b22f0baede96b3, type: 3}
   - {fileID: 8300000, guid: 5b03df6a71c9cf84f8bed36af3e46896, type: 3}
   - {fileID: 8300000, guid: 04f53867c48cf0c4080bcf8fb8470e69, type: 3}
   - {fileID: 8300000, guid: d68ab348e3694384dbd4e754e5e1bb09, type: 3}
-  - {fileID: 8300000, guid: 153367b926e61e448b16a036c3e95900, type: 3}
-  - {fileID: 8300000, guid: 74808ad9ccb89584bb1e407d389d657a, type: 3}
-  - {fileID: 8300000, guid: fd5acce1b93e2034c9ddb0f1f7957a0a, type: 3}
+  - {fileID: 8300000, guid: 8f28189d380a21d4a99b6e4ac3af0e2d, type: 3}
+  - {fileID: 8300000, guid: a67b2bc4c0e836a42b30b1c328acf8d6, type: 3}
+  - {fileID: 8300000, guid: d78696849587b04448a7d96587c3ab80, type: 3}
   Textures:
   - {fileID: 2800000, guid: ba6a1098712f522418697e7a4893fb62, type: 3}
   - {fileID: 2800000, guid: 68f4073b468eba74d96f98f2b950a25d, type: 3}

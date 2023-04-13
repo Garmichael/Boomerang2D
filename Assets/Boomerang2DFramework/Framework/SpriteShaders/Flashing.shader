@@ -29,29 +29,28 @@ Shader "Boomerang2D/Flashing"
         Cull Off
         Lighting Off
         ZWrite Off
-        Blend One OneMinusSrcAlpha
+        Blend SrcAlpha OneMinusSrcAlpha
 
         Pass
         {
-        CGPROGRAM
+            CGPROGRAM
             #pragma vertex SpriteVert
-            #pragma fragment SpriteFragFlash
+            #pragma fragment frag
             #pragma target 2.0
             #pragma multi_compile_instancing
             #pragma multi_compile_local _ PIXELSNAP_ON
             #pragma multi_compile _ ETC1_EXTERNAL_ALPHA
             #include "UnitySprites.cginc"
-            
+
             float _Frequency;
-            
-            fixed4 SpriteFragFlash(v2f IN) : SV_Target
+
+            fixed4 frag(v2f IN) : SV_Target
             {
-                fixed4 c = SampleSpriteTexture (IN.texcoord) * IN.color;
-                c.a = floor(c.a * (_Time[1] * _Frequency) % 2);
-                c.rgb *= c.a;
-                return c;
+                fixed4 color = tex2D(_MainTex, IN.texcoord);
+                color.a = color.a * floor(_Time.y * _Frequency % 2);
+                return color;
             }
-        ENDCG
+            ENDCG
         }
     }
 }
